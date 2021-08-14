@@ -1,0 +1,131 @@
+GL Vender : S3 Graphics, Incorporated
+GL Renderer : VIA Chrome9 HC3 IGP
+GL Version : 1.4 20.10.01h
+GLSL Version : Not Supported
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 1024 x 768 : color 32 bits
+# 1, RGBA 8/8/8/0, Z 16, WIN, GDI, GL
+# 2, RGBA 8/8/8/0, db, Z 16, WIN, GL, SWCP
+# 3, RGBA 8/8/8/0, Z 24, WIN, GDI, GL
+# 4, RGBA 8/8/8/0, db, Z 24, WIN, GL, SWCP
+# 5, RGBA 8/8/8/0, Z 24, S 8, WIN, GDI, GL
+# 6, RGBA 8/8/8/0, db, Z 24, S 8, WIN, GL, SWCP
+# 7, RGBA 8/8/8/8, Z 16, WIN, GDI, GL
+# 8, RGBA 8/8/8/8, db, Z 16, WIN, GL, SWCP
+# 9, RGBA 8/8/8/8, Z 24, WIN, GDI, GL
+#10, RGBA 8/8/8/8, db, Z 24, WIN, GL, SWCP
+#11, RGBA 8/8/8/8, Z 24, S 8, WIN, GDI, GL
+#12, RGBA 8/8/8/8, db, Z 24, S 8, WIN, GL, SWCP
+#49, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#50, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#53, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#54, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#57, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#58, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#59, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#60, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#61, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#62, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#63, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#64, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#65, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#66, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#67, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#68, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#69, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#70, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#71, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#72, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#73, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#74, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#75, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#76, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#77, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#78, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#79, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#80, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#81, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#82, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#83, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#84, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+WGL_ARB_extensions_string
+WGL_EXT_extensions_string
+WGL_EXT_swap_control
+GL_S3_s3tc
+GL_EXT_compiled_vertex_array
+GL_EXT_texture_env_add
+GL_ARB_multitexture
+GL_ARB_transpose_matrix
+GL_ARB_texture_env_add
+GL_ARB_texture_cube_map
+GL_ARB_texture_compression
+GL_ARB_texture_border_clamp
+GL_ARB_point_parameters
+GL_ARB_texture_env_combine
+GL_ARB_texture_env_crossbar
+GL_ARB_texture_env_dot3
+GL_ARB_texture_mirrored_repeat
+GL_ARB_depth_texture
+GL_ARB_shadow
+GL_ARB_shadow_ambient
+GL_ARB_window_pos
+GL_ARB_vertex_program
+GL_ARB_fragment_program
+GL_ARB_vertex_buffer_object
+GL_ARB_occlusion_query
+GL_ARB_texture_non_power_of_two
+GL_ARB_point_sprite
+GL_EXT_texture_rectangle
+GL_ARB_texture_rectangle
+GL_EXT_abgr
+GL_EXT_blend_color
+GL_EXT_texture3D
+GL_EXT_histogram
+GL_EXT_convolution
+GL_EXT_packed_pixels
+GL_SGIS_texture_lod
+GL_EXT_rescale_normal
+GL_EXT_vertex_array
+GL_SGIS_generate_mipmap
+GL_SGIS_texture_edge_clamp
+GL_SGIS_texture_border_clamp
+GL_EXT_blend_minmax
+GL_EXT_blend_subtract
+GL_EXT_point_parameters
+GL_EXT_draw_range_elements
+GL_EXT_bgra
+GL_EXT_separate_specular_color
+GL_EXT_secondary_color
+GL_EXT_multi_draw_arrays
+GL_EXT_fog_coord
+GL_EXT_texture_env_combine
+GL_EXT_blend_func_separate
+GL_EXT_stencil_wrap
+GL_NV_texgen_reflection
+GL_EXT_texture_lod_bias
+GL_EXT_texture_filter_anisotropic
+GL_NV_blend_square
+GL_EXT_texture_compression_s3tc
+GL_NV_texture_rectangle
+GL_ATI_fragment_shader
+GL_ATI_vertex_array_object
+GL_EXT_vertex_shader
+GL_ATI_element_array
+GL_EXT_shadow_funcs
+GL_EXT_stencil_two_side
+GL_ATI_texture_env_combine3
+GL_ATI_separate_stencil
+GL_ATI_vertex_attrib_array_object
+GL_EXT_blend_equation_separate
+GL_KTX_buffer_region
+GL_WIN_swap_hint
+GL_EXT_color_table
+GL_SGI_color_matrix
+GL_EXT_texture_cube_map
+GL_EXT_texture_edge_clamp
+GL_EXT_framebuffer_object
+
+

@@ -1,0 +1,907 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<TITLE>PC Memo</TITLE>
+</HEAD>
+<BODY BGCOLOR="#90B0C0" TEXT="#101010" VLINK="#5050A0">
+<FONT SIZE=8>
+<I>PC Memo</I><BR>
+</FONT>
+
+<BR>
+<A HREF="s_m2006.html">2006年</A>　<A HREF="s_m2007.html">2007年</A>　<A HREF="s_m2008.html">2008年</A>　<A HREF="s_m2009.html">2009年</A><BR>
+<A HREF="s_m2010.html">2010年</A>　<A HREF="s_m2011.html">2011年</A>
+　2012年　<A HREF="s_m2013.html">2013年</A>　<A HREF="s_m2014.html">2014年</A>　<A HREF="s_m2015.html">2015年</A>　<A HREF="s_m2016.html">2016年</A>　<A HREF="s_m2017.html">2017年</A>
+　<A HREF="s_m2018.html">2018年</A>　<A HREF="s_m2019.html">2019年</A>
+<A HREF="s_m2020.html">2020年</A>　<A HREF="s_m2021.html">2021年</A>
+
+<BR><HR>
+2012/12/22 - BD-MLT UJ230AS のファームウェア更新<BR>
+<BR>
+BDマルチドライブ UJ230AS のファームウェアをアップデートすることにした。<BR>
+<BR>
+デバイスマネージャの UJ230AS のプロパティの詳細から<BR>
+ハードウェアIDを見ると現在のバージョンは 1.03 と判明。<BR>
+<BR>
+ネットを検索してみると Ver 1.23 があったので試してみると<BR>
+アップデートを拒否され更新ができなかった。<BR>
+<BR>
+次に Ver 1.11 を試してみるとこれは成功した。<BR>
+どうやら調べてみるとバージョンによって制限があるらしい。<BR>
+<BR>
+・Ver 1.00～1.10 までは Ver 1.11 に更新可能。<BR>
+・Ver 1.20～1.22 までは Ver 1.23 に更新可能。<BR>
+<BR>
+Ver 1.11 から Ver 1.20 にアップデートできれば Ver 1.23 には出来そうだけど、<BR>
+更新がみつからないってことはハードウェアのリビジョンとかに<BR>
+依存してるのかも知れない。<BR>
+<BR>
+
+<BR><HR>
+2012/11/25 - Intel Graphics HD4000/2500<BR>
+<BR>
+core 3g (IvyBridge) HD4000/2500。<BR>
+core 2g (SandyBridge) HD3000/2000。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>Intel Graphics</td>
+<td>DirectX</td>
+<td>OpenGL</td>
+<td>OpenCL</td>
+<td>Quick<BR>Sync<BR>Video</td>
+<td>Wireless<BR>Display</td>
+<td>Intel<BR>Insider</td>
+<td>InTru<BR>3D</td>
+<td>HD Clear<BR>Video<BR>Technology</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">HD Graphics 4000</td>
+<td bgcolor="#FFFFCC">11</td>
+<td bgcolor="#FFFFCC">4</td>
+<td bgcolor="#FFFFCC">1.1</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">HD Graphics 2500</td>
+<td bgcolor="#FFFFCC">11</td>
+<td bgcolor="#FFFFCC">4</td>
+<td bgcolor="#FFFFCC">1.1</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">HD Graphics 3000</td>
+<td bgcolor="#FFFFCC">10.1</td>
+<td bgcolor="#FFFFCC">3.1</td>
+<td bgcolor="#FFFFCC">No</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">HD Graphics 2000</td>
+<td bgcolor="#FFFFCC">10.1</td>
+<td bgcolor="#FFFFCC">3.1</td>
+<td bgcolor="#FFFFCC">No</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Pentium Gxxx</td>
+<td bgcolor="#FFFFCC">10.1</td>
+<td bgcolor="#FFFFCC">2.1</td>
+<td bgcolor="#FFFFCC">No</td>
+<td bgcolor="#FFFFCC">No</td>
+<td bgcolor="#FFFFCC">No</td>
+<td bgcolor="#FFFFCC">No</td>
+<td bgcolor="#FFFFCC">No</td>
+<td bgcolor="#FFFFCC">No</td>
+</tr>
+</table>
+
+<BR><HR>
+2012/11/17 - 続2 Intel Atom N2800<BR>
+<BR>
+新しいドライバが出てるけど…。<BR>
+<BR>
+GFX_EMGD_1_15_PV.exe Version:1.15<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="580" BGCOLOR="#008888">
+Limitations:<BR>
+<FONT COLOR="#0000ff">制限:</FONT><BR>
+<BR>
+- Hardware acceleration for 3D graphics is limited to pure DX9.<BR>
+	DX7 "fixed function" features are not supported and use will<BR>
+	result in image distortion or error messages.<BR>
+<FONT  COLOR="#0000ff">
+- 3Dグラフィックスのためのハードウェア加速は純粋なDX9に制限されています。<BR>
+DX7「固定関数」特徴は支援されません。また、使用は変形視症または<BR>
+エラーメッセージに帰着するでしょう。<BR>
+</FONT>
+<BR>
+- Hardware accelerated video decode is not supported.  Software<BR>
+	decode is supported per the Technical Product Spec.<BR>
+<FONT COLOR="#0000ff">
+- ハードウェアはビデオを加速しました、解読する、支援されません。<BR>
+ソフトウェア、解読する、工業製品スペックにつき支援されます。<BR>
+</FONT>
+<BR>
+※エキサイト翻訳<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+・DX9 はサポートするが DX7 までの固定機能ファンクションのアクセラレーションはない。<BR>
+　それによって画面の乱れやエラーメッセージが発生する。<BR>
+・ビデオのデコードはソフトウェア処理でサポートされる。<BR>
+<BR>
+とりあえずシェーダーだけは使えるようにして DX7 まではソフトウェア、<BR>
+DX9(DX8含む？)はハードウェアで処理されるみたいだね…<BR>
+<BR>
+
+<BR><HR>
+2012/10/22 - 1プラッタ ハードディスク<BR>
+<BR>
+基本的に同容量であれば記録密度が高い1プラッタの方が高速になる。<BR>
+また、稼動部品が減るため消費電力や重量の低下も期待できる。<BR>
+<BR>
+HGST の 2.5" HDD だと Z5K500 が1プラッタと言われている。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width="170">項目名</td>
+<td width="180">5K1000</td>
+<td width="180">5K500.B</td>
+<td width="180">Z5K500</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Interface</td>
+<td bgcolor="#FFFFCC">SATA 6.0Gb/s</td>
+<td bgcolor="#FFFFCC">SATA 3.0Gb/s</td>
+<td bgcolor="#FFFFCC">SATA 3.0Gb/s</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Capacity</td>
+<td bgcolor="#FFFFCC">1T/750G/640G</td>
+<td bgcolor="#FFFFCC">500/320/250/160/120</td>
+<td bgcolor="#FFFFCC">500/320/250</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Sector size</td>
+<td bgcolor="#FFFFCC">512e</td>
+<td bgcolor="#FFFFCC">512</td>
+<td bgcolor="#FFFFCC">512e</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Buffer</td>
+<td bgcolor="#FFFFCC">8MB</td>
+<td bgcolor="#FFFFCC">8MB</td>
+<td bgcolor="#FFFFCC">8MB</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">RPM</td>
+<td bgcolor="#FFFFCC">5400</td>
+<td bgcolor="#FFFFCC">5400</td>
+<td bgcolor="#FFFFCC">5400</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Media Transfer rate</td>
+<td bgcolor="#FFFFCC">998MB</td>
+<td bgcolor="#FFFFCC">875MB</td>
+<td bgcolor="#FFFFCC">1004MB</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Seek time</td>
+<td bgcolor="#FFFFCC">12ms</td>
+<td bgcolor="#FFFFCC">12ms</td>
+<td bgcolor="#FFFFCC">13ms</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Latency time</td>
+<td bgcolor="#FFFFCC">5.5ms</td>
+<td bgcolor="#FFFFCC">5.5ms</td>
+<td bgcolor="#FFFFCC">5.5ms</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Read/Write(Wat,Avg)</td>
+<td bgcolor="#FFFFCC">1.6w</td>
+<td bgcolor="#FFFFCC">1.4w</td>
+<td bgcolor="#FFFFCC">1.6w</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Physical size</td>
+<td bgcolor="#FFFFCC">9.5(H) * 70(W) * 100(D)</td>
+<td bgcolor="#FFFFCC">9.5(H) * 70(W) * 100(D)</td>
+<td bgcolor="#FFFFCC">7.0(H) * 70(W) * 100(D)</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Weight</td>
+<td bgcolor="#FFFFCC">102g</td>
+<td bgcolor="#FFFFCC">104g</td>
+<td bgcolor="#FFFFCC">95g</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Acoustics</td>
+<td bgcolor="#FFFFCC">idle 24db/seek 26db</td>
+<td bgcolor="#FFFFCC">idle 24db/seek 26db</td>
+<td bgcolor="#FFFFCC">no data</td>
+</tr>
+</table>
+512e = Advanced Format<BR>
+
+<BR>
+次は Western Digital。<BR>
+2.5" HDD では WD5000LPVT が1プラッタと言われている。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width="170">項目名</td>
+<td width="180">WD10JPVT</td>
+<td width="180">WD5000BPVT</td>
+<td width="180">WD5000LPVT</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Interface</td>
+<td bgcolor="#FFFFCC">SATA 3.0Gb/s</td>
+<td bgcolor="#FFFFCC">SATA 3.0Gb/s</td>
+<td bgcolor="#FFFFCC">SATA 3.0Gb/s</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Capacity</td>
+<td bgcolor="#FFFFCC">1T</td>
+<td bgcolor="#FFFFCC">500G</td>
+<td bgcolor="#FFFFCC">500G</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Sector size</td>
+<td bgcolor="#FFFFCC">AF</td>
+<td bgcolor="#FFFFCC">AF</td>
+<td bgcolor="#FFFFCC">AF</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Buffer</td>
+<td bgcolor="#FFFFCC">8MB</td>
+<td bgcolor="#FFFFCC">8MB</td>
+<td bgcolor="#FFFFCC">8MB</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">RPM</td>
+<td bgcolor="#FFFFCC">5400</td>
+<td bgcolor="#FFFFCC">5400</td>
+<td bgcolor="#FFFFCC">5400</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Drive Transfer rate</td>
+<td bgcolor="#FFFFCC">144MB</td>
+<td bgcolor="#FFFFCC">136MB</td>
+<td bgcolor="#FFFFCC">147MB</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Seek time</td>
+<td bgcolor="#FFFFCC">-</td>
+<td bgcolor="#FFFFCC">-</td>
+<td bgcolor="#FFFFCC">-</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Latency time</td>
+<td bgcolor="#FFFFCC">5.5ms</td>
+<td bgcolor="#FFFFCC">5.5ms</td>
+<td bgcolor="#FFFFCC">5.5ms</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Read/Write(Wat,Avg)</td>
+<td bgcolor="#FFFFCC">1.4w</td>
+<td bgcolor="#FFFFCC">1.6w</td>
+<td bgcolor="#FFFFCC">1.4w</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Physical size</td>
+<td bgcolor="#FFFFCC">9.5(H) * 70(W) * 100(D)</td>
+<td bgcolor="#FFFFCC">9.5(H) * 70(W) * 100(D)</td>
+<td bgcolor="#FFFFCC">7.0(H) * 70(W) * 100(D)</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Weight</td>
+<td bgcolor="#FFFFCC">116g</td>
+<td bgcolor="#FFFFCC">100g</td>
+<td bgcolor="#FFFFCC">91g</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Acoustics(Avg)</td>
+<td bgcolor="#FFFFCC">idle 22db/seek 25db</td>
+<td bgcolor="#FFFFCC">idle 22db/seek 25db</td>
+<td bgcolor="#FFFFCC">idle 17db/seek 22db</td>
+</tr>
+</table>
+AF = Advanced Format<BR>
+<BR>
+
+<BR><HR>
+2012/09/08 - HDD Advanced Format Technology<BR>
+<BR>
+物理セクタサイズを512バイトから4096バイトに変更する規格。<BR>
+<BR>
+●物理セクタサイズを拡大する理由<BR>
+512バイトに対して40バイトECC、さらに40バイトがリードイン/ギャップが付与される。<BR>
+これを4096バイトの100バイトECC＋40バイトがリードイン/ギャップに変更する事により<BR>
+管理領域の割合を低くすることで容量の効率を上げることができる。<BR>
+例えば4096バイトの情報を保存すると<BR>
+(512+40+40)*8 = 4736<BR>
+4096+100+40 = 4236<BR>
+4736 / 4236 = 1.11<BR>
+となり約11%の記憶容量が増える事になる。<BR>
+(2TBなら220GBも増える事になります。)<BR>
+<BR>
+ちなみに容量は8倍なのにECCは2.5倍で良いのかと思うけど、対象となるバイト数に対して<BR>
+ECCの必要バイト数は正比例しないので問題ないらしい。<BR>
+<BR>
+さらにx86のメモリページサイズは4096、Windowsのファイルキャッシュも4096となっていて、<BR>
+ファイルシステムに対する読み書き4096単位で揃っていることになる…ハズだった。<BR>
+<BR>
+●物理セクタサイズの拡大による問題<BR>
+古い時代から使われているPC/AT互換機のパーティションにはいくつかの制約があって<BR>
+「シリンダ1個＝ヘッド255個×セクタ63個＝セクタ16065個」 <FONT COLOR="#0000ff">※1</FONT><BR>
+「パーティション境界はシリンダ境界と一致する」 <FONT COLOR="#0000ff">※2,3</FONT><BR>
+という制約が存在し、これが大きな問題となります。<BR>
+<FONT COLOR="#0000ff">※1</FONT> シリンダは0～n、ヘッドは0～254、セクタは1～63<BR>
+<FONT COLOR="#0000ff">※2</FONT> シリンダ0のパーティションは MBR があるのでヘッド1(セクタ64)から開始される。<BR>
+<FONT COLOR="#0000ff">※3</FONT> XPではこの制約を守らなければ起動できないが、Vista以降は起動が可能。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>用途</td>
+<td COLSPAN=8>MBR</td>
+<td COLSPAN=9>未使用</td>
+<td COLSPAN=13>第１パーティション</td>
+</tr>
+<tr bgcolor="#eeeff1">
+<td>シリンダ</td>
+<td COLSPAN=29>0</td>
+<td COLSPAN=1>1</td>
+</tr>
+<tr bgcolor="#eeeff1">
+<td>ヘッド</td>
+<td COLSPAN=17>0</td>
+<td COLSPAN=3>1 ...</td>
+<td COLSPAN=9>... 254</td>
+<td COLSPAN=1>255</td>
+</tr>
+<tr bgcolor="#eeeff1">
+<td>セクタ512</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>...</td>
+<td>57</td>
+<td>58</td>
+<td>59</td>
+<td>60</td>
+<td>61</td>
+<td>62</td>
+<td>63</td>
+<td>64</td>
+<td>65</td>
+<td>...</td>
+<td>16057</td>
+<td>16058</td>
+<td>16059</td>
+<td>16060</td>
+<td>16061</td>
+<td>16062</td>
+<td>16063</td>
+<td>16064</td>
+<td>16065</td>
+<td>16066</td>
+</tr>
+<tr bgcolor="#eeeff1">
+<td>セクタ4096</td>
+<td COLSPAN=8>1</td>
+<td COLSPAN=2>2 ...</td>
+<td COLSPAN=8>8</td>
+<td COLSPAN=2>9 ...</td>
+<td COLSPAN=8>2008</td>
+<td COLSPAN=2>2009</td>
+</tr>
+</table>
+<BR>
+これにより、ヘッド1から始まる先頭パーティションの開始位置とセクタ4096の<BR>
+開始位置が異なってしまい、パーティションの開始位置から4096バイト読み込むと<BR>
+物理セクタ8の最後の512バイトと物理セクタ9の先頭から3584バイトを読み出して<BR>
+4096バイトにする処理が発生してしまう。（書き込みも同様。）<BR>
+<BR>
+本来は1セクタで済むものが2セクタ読むのでI/O アクセスが増えパフォーマンスが低下する。<BR>
+<BR>
+●対策方法<BR>
+1. Windows Vista 以降のOSを使う。<BR>
+　※Vista 以降のアライメント対応OSでは 8の倍数＋1 にする。（第二 パーティション以降）<BR>
+2. パーティションの<FONT COLOR="ff0000">シリンダの開始位置を８の倍数にする</FONT>こと。<BR>
+3. HDDの論理セクタにアライメントオフセットを行い、先頭の物理セクタだけ3584バイト、<BR>
+それ以降の物理セクタは4096バイトにすることによって512バイトのズレを補正する。<BR>
+<BR>
+2.はVista以降のWindowsで領域を確保すれば問題は解決される？<BR>
+3.はXPで起動可能だが、HDDのジャンパ設定やアライメントを調整するソフトが必要になる。<BR>
+<BR>
+●HDD メーカーが配布しているツール<BR>
+<a href="http://www.wdc.com/global/products/features/?id=7&language=1">WD Allgn</a><BR>
+<a href="http://www.hgst.com/support/downloads/">HGST Align Tool</a><BR>
+<BR>
+どちらも Acronis が提供しているソフトらしいがメーカーごとに分けているみたい。<BR>
+（メーカーごとに設定値等が違うのかも。）<BR>
+<BR>
+このツールはすでに書き込まれたファイルを512バイトづつずらす処理も行っているようで、<BR>
+空き容量が多い状態ではすぐに終わるが、空き容量が少ない状態だと変換作業に多大な時間を要する。<BR>
+よってXPでAFT-HDDを使う場合には容量確保直後にツールで調整するのが良いと思われる。<BR>
+<BR>
+この問題は当然、第2パーティション以降にも発生するので注意が必要。<BR>
+また、Vista以降で確保した領域にアライメント調整を行うと、再調整でセクタがズレるので<BR>
+アライメント調整は行わないこと。<BR>
+<BR>
+
+<BR><HR>
+2012/09/04 - CFD ELIXIR W3U1600HQ-2G<BR>
+<BR>
+片面８チップの DDR3 800MHz(PC3-12800@9) の2GBメモリの２枚組み。<BR>
+CPU-Z 1.61.3 で SPD を確認してみた。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width="170">項目名</td>
+<td width="240">値</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Manufacturer (ID)</td>
+<td bgcolor="#FFFFCC">Nanya Technology</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Part number</td>
+<td bgcolor="#FFFFCC">M2X2G64CB88GHN-DG</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #1</td>
+<td bgcolor="#FFFFCC">5.0-5-5-14-19 @ 380 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #2</td>
+<td bgcolor="#FFFFCC">6.0-6-6-16-22 @ 457 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #3</td>
+<td bgcolor="#FFFFCC">7.0-7-7-19-26 @ 533 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #4</td>
+<td bgcolor="#FFFFCC">8.0-8-8-22-30 @ 609 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #5</td>
+<td bgcolor="#FFFFCC">9.0-9-9-25-34 @ 685 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #6</td>
+<td bgcolor="#FFFFCC">10.0-10-10-27-37 @ 761 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #7</td>
+<td bgcolor="#FFFFCC">11.0-11-11-30-41 @ 838 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">XMP-1600</td>
+<td bgcolor="#FFFFCC">9.0-9-9-28-37 @ 800 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">XMP-1066</td>
+<td bgcolor="#FFFFCC">11.0-11-11-32-43 @ 800 MHz 1.65v</td>
+</tr>
+</table>
+<BR>
+XMP-1066 の値は本当に合ってるのか…。<BR>
+<FONT COLOR="#ff0000">※1866が正しいみたい。</FONT><BR>
+<BR>
+
+<BR><HR>
+2012/08/26 - IvyBridge の統合グラフィック<BR>
+<BR>
+SandyBridge との機能比較。<BR>
+あまり大きな変更が無いようにも見えるけど、DX11が大きいか。<BR>
+クロックは据え置きだが、一応EUのユニット数が増えてるので<BR>
+性能アップと言うことらしい。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width="200">項目名</td>
+<td width="180">HD2500/4000</td>
+<td width="180">HD2000/3000</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Unified Shader Architecture</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Execution Units(EUs)</td>
+<td bgcolor="#FFFFCC">6/16</td>
+<td bgcolor="#FFFFCC">6/12</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Dedicated Math box</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Media Processing</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Targeted OS Optimizations</td>
+<td bgcolor="#FFFFCC">Windows7/8</td>
+<td bgcolor="#FFFFCC">Windows7/Vista/XP</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Core Frequency</td>
+<td bgcolor="#FFFFCC">Up to 1350MHz</td>
+<td bgcolor="#FFFFCC">Up to 1350MHz</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">DirectX Support</td>
+<td bgcolor="#FFFFCC">DX11</td>
+<td bgcolor="#FFFFCC">DX10.1</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">OpenGL Support</td>
+<td bgcolor="#FFFFCC">OpenGL 3.1</td>
+<td bgcolor="#FFFFCC">OpenGL 3.0</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Shader Model Support</td>
+<td bgcolor="#FFFFCC">SM 4.1</td>
+<td bgcolor="#FFFFCC">SM 4.1</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Dynamic Frequency Scaling</td>
+<td bgcolor="#FFFFCC">Yes(Mobile and DT)</td>
+<td bgcolor="#FFFFCC">Yes(Mobile and DT)</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Maximum Resolution</td>
+<td bgcolor="#FFFFCC">2560 * 1600</td>
+<td bgcolor="#FFFFCC">2560 * 1600</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">HDMI (V1.4) Support</td>
+<td bgcolor="#FFFFCC">Yes</td>
+<td bgcolor="#FFFFCC">Yes</td>
+</tr>
+</table>
+<BR>
+
+<BR><HR>
+2012/07/24 - 続 Intel Atom N2800<BR>
+<BR>
+いつのまにかドライバが出てるけど…EMGD版ってまさか…。<BR>
+<BR>
+GFX_EMGD_1_12_PV.exe Version:1.12<BR>
+Date:07/11/2012 Status:Latest<BR>
+Size:73.42 MB Language:English<BR>
+Operating Systems:<BR>
+Windows XP Home Edition*,<BR>
+Windows XP Media Center Edition*,<BR>
+Windows XP Professional<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="580" BGCOLOR="#008888">
+Purpose<BR>
+<BR>
+Installs the video graphics driver version 1.12 for Intel Desktop Boards<BR>
+ with the Intel Atom Processor N2000 and D2000 Series.<BR>
+This driver release has no hardware acceleration for 2D, 3D, or video. <BR>
+<FONT  COLOR="#0000ff">
+目的<BR>
+Intel アトム・プロセッサーN2000およびD2000シリーズを持った<BR>
+インテル・デスクトップ・ボード用のビデオ・グラフィックス・ドライバ・バージョン 1.12を<BR>
+インストールします。<BR>
+このドライバ・リリースには 2D、3D あるいはビデオのためのハードウェア加速が<BR>
+ありません。<BR>
+</FONT>
+<BR>
+<BR>
+Additional notes<BR>
+<BR>
+For tips on troubleshooting video graphics issues specific to the onboard<BR>
+ video solutions on Intel Desktop Boards, refer to Troubleshooting Video Issues.<BR>
+<FONT  COLOR="#0000ff">
+補注<BR>
+ビデオ・グラフィックスのトラブルシュートについてのこつのために、出る、<BR>
+特定、に、Intelデスクトップ・ボード上のビデオ解決策に搭載されて、<BR>
+ビデオ問題をトラブルシュートすることを指します。<BR>
+</FONT>
+<BR>
+※エキサイト翻訳<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+ハードウェアアクセラレーションが利かないって、ドライバの意味が…。<BR>
+<BR>
+
+<BR><HR>
+2012/07/22 - DELL Studio 1536の熱暴走<BR>
+<BR>
+突然画面にゴミが出るようになって、再起動してもBIOSのPOST画面で<BR>
+ゴミが出ていたのでVRAMに使われるメインメモリが怪しい。<BR>
+<BR>
+しかし、SO-DIMMをいろいろ変えても症状が良くならない。<BR>
+<BR>
+とりあえずBIOSのダイアグでハードウェアチェックをすると異常はなし。<BR>
+ハードウェアチェック後はなぜか、画面にゴミが出なくなった。あれ？<BR>
+直ったのかと思ったけど今度は本体が異常な熱を持ち、勝手にシャットダウン。<BR>
+これはもうマザボの寿命かも知れないと…<BR>
+ネットを検索すると確かに熱暴走して困っている人が何人か居る。<BR>
+<BR>
+とりあえずファンが常に回っているのが怪しいと本体の裏蓋を開けてファン付近を<BR>
+ダストブロワーで掃除するとなんかデカイ埃の塊が…まさかコイツが原因？<BR>
+（外側から内側に放射した時に埃の塊が出た。）<BR>
+<BR>
+掃除後にStudio 1536を使ってみると熱暴走がまったく起きない。<BR>
+ファンが回転してもすぐに止まるし、本体の異常な熱も無くなった。<BR>
+しかし、マザボは寿命に達してしまったようで…画面にゴミが出る現象が多発。<BR>
+<BR>
+たまにはノートPC本体の掃除をしなきゃダメだと思ったけど、後の祭りという結果。<BR>
+<BR>
+
+<BR><HR>
+2012/07/14 - ASROCK H61M-ITX のPCI-E 16xスロット<BR>
+<BR>
+なんとなく某キャプチャボード(PCI-E x1接続)を購入。<BR>
+<BR>
+H61M-ITX のPCI-E 16xスロットに搭載すると…あれ？…認識しない…<BR>
+最悪な事にPnPの「新しいデバイスがみつかりました」も出ない。<BR>
+これはマザボの問題か、それともボードの初期不良か…<BR>
+仕方がないので某所の945チップセットのPCI-E 16xスロットに接続してみると<BR>
+普通に認識するではありませんか。<BR>
+どうやらASROCK H61M-ITXが悪いらしい。<BR>
+<BR>
+試しに会社から私物のQuadro NVSを回収して来て、ASROCK H61M-ITXの<BR>
+PCI-E 16xスロットに接続してみると普通に認識する。<BR>
+<BR>
+H61M-ITXのBIOSを最新の 1.70に更新してみたが変化はない。<BR>
+<BR>
+●Ver 1.60 3/15/2012<BR>
+1. Supports Intel's 3rd Generation CPU.<BR>
+2. Add "Custom Fan Speed" setup item in BIOS.<BR>
+<BR>
+●Ver 1.70 6/13/2012<BR>
+1. Modify for Windows8 shut down behavior.<BR>
+2. Improve USB compatibility.<BR>
+3. Update CPU code.<BR>
+<BR>
+他のH77マザボのPCI-E 16xスロットで某キャプチャボードが動作するのを<BR>
+確認したのでASROCK H61M-ITXのPCI-E 16xスロットの相性として諦めました。<BR>
+安さで買うのは良くないですね。<BR>
+<BR>
+
+<BR><HR>
+2012/06/29 - Intel Atom N2800<BR>
+<BR>
+コードネーム Cedar Trail。<BR>
+３月下旬から搭載製品を見るようになったけど、発売当初から困った事に<BR>
+対応ＯＳが Windows7(32bit) のみ。理由は内蔵グラフィックのドライバが無いから。<BR>
+<BR>
+製品によっては外付けグラフィックを搭載してXPに対応しているほど。<BR>
+<BR>
+N2800は内蔵グラフィックのコアとして PowerVR SGX545 を採用していて、<BR>
+AtomのZシリーズの時もグラフィックに PowerVR 系を採用していたがドライバの更新が遅かった。<BR>
+Zシリーズの時はDirectX には対応したけど OpenGL はサポート外というヒドイ扱いだった。<BR>
+<BR>
+インテルのサイトで情報は更新されているが…延期通達とは。<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="580" BGCOLOR="#008888">
+Graphics driver for Innovation Series boards - Readme<BR>
+<BR>
+Currently, there is not a Windows XP* graphics driver available for the following boards:<BR>
+<FONT  COLOR="#0000ff">現在、次のボードに利用可能なWindows XP*グラフィックス・ドライバーはいません:</FONT><BR>
+<BR>
+Intelｮ Desktop Board DN2800MT<BR>
+Intelｮ Desktop Board D2700MUD<BR>
+Intelｮ Desktop Board D2700DC<BR>
+Intelｮ Desktop Board D2500HN<BR>
+Intelｮ Desktop Board D2500CC<BR>
+<BR>
+2012/05/16 (update2)<BR>
+We expect to make this driver available by June 2012. We apologize for the inconvenience.<BR>
+<FONT  COLOR="#0000ff">私たちはこのドライバーを2012年6月までに利用可能にするつもりです。<BR>
+私たちは不便をお詫びします。</FONT><BR>
+<BR>
+2012/06/29 (update3)<BR>
+We expect to make this driver available by August 2012. We apologize for the inconvenience.<BR>
+<FONT  COLOR="#0000ff">私たちはこのドライバーを2012年8月までに利用可能にするつもりです。<BR>
+私たちは不便をお詫びします。</FONT><BR>
+<BR>
+※エキサイト翻訳<BR>
+</TD>
+</TR>
+</TABLE>
+
+<BR><HR>
+2012/05/02 - ASROCK H61M-ITX のUEFI(BIOS)アップデート<BR>
+<BR>
+マザボの UEFI は version 1.00 だったのでファンコントロールに<BR>
+変化が無いか 1.60 にアップデートして見ることにした。<BR>
+<BR>
+とりあえずイメージをUSBメモリにコピーして UEFI の BIOS もどき画面から<BR>
+「Instant Flash」を実行して見る。<BR>
+あれ…「Serching...」から進まない。フリーズしてるっぽい。<BR>
+<BR>
+リセットして起動画面からF6で書き換えモードにしても「Serching...」から進まない。<BR>
+<BR>
+USBからイメージをHDDのFAT32領域にコピーして試したけど、これもダメ。<BR>
+<BR>
+仕方ないのでマザボのSATAからHDDとBDを外してUSBを指してチャンジ。<BR>
+この方法だと一瞬でイメージを発見してアップデートが可能だった。<BR>
+<BR>
+ハードディスクのパーティション構成が悪かったのかなぁ…<BR>
+<BR>
+
+<BR><HR>
+2012/02/25 - MATSHITA BD-MLT UJ230AS<BR>
+<BR>
+S-ATA接続の Blu-ray コンボドライブ。BD-R LTH も対応。<BR>
+<BR>
+スペックを確認してたら DVD+RW の記述が無い…。<BR>
+使わないから別に問題がないけど。<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=2 CELLPADDING=2>
+<TR>
+<TD COLSPAN=3>BD-MLT UJ230AS</TD>
+</TR>
+<TR>
+<TD>Type</TD>
+<TD>Write</TD>
+<TD>Read</TD>
+</TR>
+<TR>
+<TD>BD-ROM Single Layer</TD>
+<TD>-</TD>
+<TD>x4</TD>
+</TR>
+<TR>
+<TD>BD-ROM Dual Layer</TD>
+<TD>-</TD>
+<TD>x4</TD>
+</TR>
+<TR>
+<TD>BD-RE Single Layer</TD>
+<TD>x2</TD>
+<TD>x2</TD>
+</TR>
+<TR>
+<TD>BD-RE Dual Layer</TD>
+<TD>x2</TD>
+<TD>x2</TD>
+</TR>
+<TR>
+<TD>BD-R Single Layer</TD>
+<TD>x4</TD>
+<TD>x4</TD>
+</TR>
+<TR>
+<TD>BD-R Dual Layer</TD>
+<TD>x2</TD>
+<TD>x2</TD>
+</TR>
+<TR>
+<TD>DVD-RAM</TD>
+<TD>x5</TD>
+<TD>x5</TD>
+</TR>
+<TR>
+<TD>DVD-R</TD>
+<TD>x8</TD>
+<TD>x8</TD>
+</TR>
+<TR>
+<TD>DVD-R DL (Dual Layer)</TD>
+<TD>x4</TD>
+<TD>x4</TD>
+</TR>
+<TR>
+<TD>DVD-RW</TD>
+<TD>x6</TD>
+<TD>x6</TD>
+</TR>
+<TR>
+<TD>DVD+R</TD>
+<TD>x8</TD>
+<TD>x8</TD>
+</TR>
+<TR>
+<TD>DVD+R DL (Double Layer)</TD>
+<TD>x4</TD>
+<TD>x4</TD>
+</TR>
+<TR>
+<TD>DVD-ROM Single Layer</TD>
+<TD>-</TD>
+<TD>x8</TD>
+</TR>
+<TR>
+<TD>DVD-ROM Dual Layer</TD>
+<TD>-</TD>
+<TD>x8</TD>
+</TR>
+<TR>
+<TD>CD-R</TD>
+<TD>x16</TD>
+<TD>x24</TD>
+</TR>
+<TR>
+<TD>CD-RW</TD>
+<TD>x16</TD>
+<TD>x24</TD>
+</TR>
+<TR>
+<TD>CD-ROM</TD>
+<TD>-</TD>
+<TD>x24</TD>
+</TR>
+</TABLE>
+<BR>
+
+<BR><HR>
+2012/01/04 - ちょいテレ DH-ONE/U2<BR>
+<BR>
+数年、埋蔵されていた DH-ONE/U2 をノートPCで使おうと<BR>
+試して見たがドライバが正常にインストールできない…。<BR>
+<BR>
+どうやらファームウェアが古いと Vista で動作しないらしい。<BR>
+DH-ONE/U2 のプロパティでハードウェアＩＤを見ると 1.45 となっていたので<BR>
+最新 1.49 を入れる必要があるみたい。<BR>
+<BR>
+ところが困った事にファームウェアのアップデートには XP/2000 でしか出来ない。<BR>
+面倒なので VMWare の Win2000 で試すもドライバは入るがアップデータが<BR>
+デバイスを見つけることができず、アップデートができない。<BR>
+<BR>
+仕方ないので別の PC に XP が入っているのでそっちで試してみると<BR>
+ドライバは入るがアップデータを実行するとブルーバックと最悪の結果に。<BR>
+<BR>
+しばらく悩んで PC の USB ポートを確認すると 3.0 ポートに繋いでいたので<BR>
+これを 2.0 ポートに接続してドライバを再インストール…。<BR>
+さらにアップデータを実行するとみごとにアップデートが実行できた。<BR>
+<BR>
+アップデート後は Vista のノートPC でも簡単に認識して使用可能に。<BR>
+こんな事に２時間も使って非常にガッカリ。<BR>
+<BR>
+注意事項として必ず DH-ONE/U2 は抜いた状態で<BR>
+「起動、再起動、インストール」を行うこと。<BR>
+そうしないとドライバのインストールや動作が安定しない感じを受けた。<BR>
+
+<BR><HR><BR>
+
+<BR><BR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

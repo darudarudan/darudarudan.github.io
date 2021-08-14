@@ -1,0 +1,850 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<TITLE>PC Memo</TITLE>
+</HEAD>
+<BODY BGCOLOR="#90B0C0" TEXT="#101010" VLINK="#5050A0">
+<FONT SIZE=8>
+<I>PC Memo</I><BR>
+</FONT>
+
+<BR>
+<A HREF="s_m2006.html">2006年</A>　<A HREF="s_m2007.html">2007年</A>　<A HREF="s_m2008.html">2008年</A>　<A HREF="s_m2009.html">2009年</A><BR>
+<A HREF="s_m2010.html">2010年</A>　2011年
+　<A HREF="s_m2012.html">2012年</A>　<A HREF="s_m2013.html">2013年</A>　<A HREF="s_m2014.html">2014年</A>
+　<A HREF="s_m2015.html">2015年</A>　<A HREF="s_m2016.html">2016年</A>　<A HREF="s_m2017.html">2017年</A>
+　<A HREF="s_m2018.html">2018年</A>　<A HREF="s_m2019.html">2019年</A>
+<A HREF="s_m2020.html">2020年</A>　<A HREF="s_m2021.html">2021年</A>
+
+<BR><HR>
+2011/11/19 - A-DATA AD3U1333C2G9-2<BR>
+<BR>
+片面８チップの DDR3 667MHz(PC3-10600@9) の2GBメモリの２枚組み。<BR>
+<BR>
+なぜか 533MHz@7 で動作していたので CPU-Z で SPD を調べてみた。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width="170">項目名</td>
+<td width="240">値</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Manufacturer (ID)</td>
+<td bgcolor="#FFFFCC">A-Data Technology</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Part number</td>
+<td bgcolor="#FFFFCC">記載なし</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #2</td>
+<td bgcolor="#FFFFCC">6.0-6-6-17-23 @ 457 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #3</td>
+<td bgcolor="#FFFFCC">7.0-7-7-20-27 @ 533 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #4</td>
+<td bgcolor="#FFFFCC">8.0-8-8-22-30 @ 609 MHz 1.50v</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">JEDEC #5</td>
+<td bgcolor="#FFFFCC">9.0-9-9-25-34 @ 685 MHz 1.50v</td>
+</tr>
+</table>
+<BR>
+どこのメモリもこんな感じが普通なのかな…？<BR>
+<BR>
+
+<BR><HR>
+2011/10/29 - 拡張版インテル SpeedStep (EIST)<BR>
+<BR>
+インテルの SpeedStep が有効になる条件。<BR>
+・対応ＣＰＵであること。<BR>
+・対応チップセットであること。<BR>
+・対応ＢＩＯＳであること。<BR>
+・対応ＯＳであること。<BR>
+<BR>
+ＯＳは WindowsXP SP2 以降で対応。<BR>
+ただし、初期設定では有効になっていないので<BR>
+コントロール パネル → 電源オプション → 電源設定(タブ)の項目で<BR>
+<BR>
+[最小の電源管理] なら SpeedStep が有効。<BR>
+[常にオン] なら SpeedStep が無効。<BR>
+<BR>
+設定変更できる。<BR>
+<BR>
+
+<BR><HR>
+2011/10/27 - picoPSU シリーズ<BR>
+<BR>
+<TABLE id=Table1 borderColor=#bfbfbf cellSpacing=0 cellPadding=1 border=1>
+<TR vAlign=top>
+<TD BGCOLOR=#eeeff1 colSpan=9><B>電源 仕様</B></TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=#fef1de>Name</TD>
+<TD BGCOLOR=#fef1de>Watt</TD>
+<TD BGCOLOR=#fef1de>3.3V</TD>
+<TD BGCOLOR=#fef1de>5V</TD>
+<TD BGCOLOR=#fef1de>12V</TD>
+<TD BGCOLOR=#fef1de>5Vsb</TD>
+<TD BGCOLOR=#fef1de>-5V</TD>
+<TD BGCOLOR=#fef1de>-12V</TD>
+<TD BGCOLOR=#fef1de>Connecter</TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=white>picoPSU-60WI</TD>
+<TD BGCOLOR=white>60W(80W)</TD>
+<TD BGCOLOR=white>6A(8A)</TD>
+<TD BGCOLOR=white>6A(10A)</TD>
+<TD BGCOLOR=white>0.4A(0.45A)</TD>
+<TD BGCOLOR=white>1.5A(2A)</TD>
+<TD BGCOLOR=white>-</TD>
+<TD BGCOLOR=white>0.05A(0.05A)</TD>
+<TD BGCOLOR=#fef1de>20Pin</TD>
+</TR>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=#fef1de>picoPSU-80</TD>
+<TD BGCOLOR=#fef1de>80W</TD>
+<TD BGCOLOR=#fef1de>5A(7A)</TD>
+<TD BGCOLOR=#fef1de>6A(7A)</TD>
+<TD BGCOLOR=#fef1de>4A(7A)</TD>
+<TD BGCOLOR=#fef1de>1.5A(2A)</TD>
+<TD BGCOLOR=#fef1de>-</TD>
+<TD BGCOLOR=#fef1de>0.05A(0.1A)</TD>
+<TD BGCOLOR=#fef1de>20Pin</TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=white>picoPSU-90-XLP</TD>
+<TD BGCOLOR=white>90W</TD>
+<TD BGCOLOR=white>5A(8A)</TD>
+<TD BGCOLOR=white>5A(8A)</TD>
+<TD BGCOLOR=white>5A(8A)</TD>
+<TD BGCOLOR=white>1.5A(2A)</TD>
+<TD BGCOLOR=white>-</TD>
+<TD BGCOLOR=white>0.05A(0.1A)</TD>
+<TD BGCOLOR=#fef1de>20Pin + P4-4Pin</TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=white>picoPSU-90</TD>
+<TD BGCOLOR=white>90W</TD>
+<TD BGCOLOR=white>6A(7A)</TD>
+<TD BGCOLOR=white>6A(7A)</TD>
+<TD BGCOLOR=white>6A(8A)</TD>
+<TD BGCOLOR=white>1.5A(2A)</TD>
+<TD BGCOLOR=white>-</TD>
+<TD BGCOLOR=white>0.05A(0.1A)</TD>
+<TD BGCOLOR=#fef1de>20Pin + P4-4Pin</TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=#fef1de>picoPSU-120</TD>
+<TD BGCOLOR=#fef1de>120W</TD>
+<TD BGCOLOR=#fef1de>6A(8A)</TD>
+<TD BGCOLOR=#fef1de>6A(8A)</TD>
+<TD BGCOLOR=#fef1de>7A(10A)</TD>
+<TD BGCOLOR=#fef1de>1.5A(2A)</TD>
+<TD BGCOLOR=#fef1de>-</TD>
+<TD BGCOLOR=#fef1de>0.05A(0.1A)</TD>
+<TD BGCOLOR=#fef1de>20Pin</TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=#fef1de>picoPSU-150-XT</TD>
+<TD BGCOLOR=#fef1de>150W</TD>
+<TD BGCOLOR=#fef1de>6A(8A)</TD>
+<TD BGCOLOR=#fef1de>6A(8A)</TD>
+<TD BGCOLOR=#fef1de>8A(10A)</TD>
+<TD BGCOLOR=#fef1de>1.5A(2A)</TD>
+<TD BGCOLOR=#fef1de>-</TD>
+<TD BGCOLOR=#fef1de>0.05A(0.1A)</TD>
+<TD BGCOLOR=#fef1de>24Pin + P4-4Pin</TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=white>picoPSU-160-XT</TD>
+<TD BGCOLOR=white>160W</TD>
+<TD BGCOLOR=white>8A(10A)</TD>
+<TD BGCOLOR=white>8A(10A)</TD>
+<TD BGCOLOR=white>8A(15A)</TD>
+<TD BGCOLOR=#fef1de>1.5A(2A)</TD>
+<TD BGCOLOR=#fef1de>-</TD>
+<TD BGCOLOR=#fef1de>0.05A(0.1A)</TD>
+<TD BGCOLOR=#fef1de>24Pin + P4-4Pin</TD>
+</TABLE>
+<BR>
+
+<BR><HR>
+2011/09/17 - JETWAY JNF94-270-LF<BR>
+<BR>
+Atom N270 + 945GSE + ICH7M とノートPCのチップ構成にすることで<BR>
+低消費電力を実現した Mini-ITX マザーボード。<BR>
+<BR>
+背面の DVI-D 端子は専用の HDMI変換アダプタを使うことにより音声も<BR>
+HDMI経由で送信可能となる。<BR>
+<BR>
+本来 DVI-D は画像のみの転送しかできないので予約された信号線に<BR>
+音声を割り当てて実現していると思われる。<BR>
+<BR>
+
+<BR><HR>
+2011/08/28 - TFTEC CFIDE-402FB （シルク印刷 ADAPTER V:2.1）<BR>
+<BR>
+なんとなく興味があったので購入。<BR>
+CF-IDE変換アダプタで他の製品と違って基板だけではなく、<BR>
+ネジ穴部分があるので 2.5HDD として固定が可能。<BR>
+<BR>
+1026円と非常に安いが情報がまったくない。怪しいシロモノ。<BR>
+とりあえず設定関係を実際に動かしてチェック。(怖い)<BR>
+<BR>
+と、思ったけどケーブルが刺さらない…。<BR>
+設計的(ハンダ作業がヘタ？)な問題でピンが正しい間隔で並んでないヨ！<BR>
+仕方ないのでペンチでピン方向を修正して接続…まぁ、安いからね…<BR>
+<BR>
+●LED<BR>
+Power とシルク印刷があるLED → 電源が入っていると点灯。<BR>
+Active とシルク印刷があるLED → CFにアクセスすると点灯。<BR>
+（マスター接続だけだと Active は点灯しない。）<BR>
+<BR>
+●IDE 端子<BR>
+・ジャンパピンがある方がIDE44の１番ピン。(ActiveLED側)<BR>
+　(PowerLED側が IDE44 の電源ピンを接続。)<BR>
+<BR>
+●ジャンパピン<BR>
+a と b の２種類の設定で２個のCFスロットのマスター／スレーブを<BR>
+入れ替えるらしいが、何も印刷が無いのでどっちが基準かわからない…<BR>
+とりあえず試してみるしかないので接続実験…<BR>
+<BR>
+仮にIDE端子を下側に向けた状態で上スロットが１番、下スロットが２番とすると。<BR>
+<BR>
+a に設定 → １番がマスター、２番がスレーブになった。<BR>
+b に設定 → １番がスレーブ、２番がマスターになった。<BR>
+<BR>
+CFスロットの１番はCFを裏向きで差し込むが２番は表向きで差し込む。<BR>
+<BR>
+
+<BR><HR>
+2011/08/27 - コンパクトフラッシュ<BR>
+<BR>
+SDカードが大分普及して余り見なくなったような…。<BR>
+<BR>
+SSD も安くなった最近ではほとんど意味は無いけど「CF-IDE 変換」が気になる。<BR>
+<BR>
+・メディアさえあればバックアップが容易？<BR>
+・少容量に対応できる。(BIOSに制限があるPCとか。)<BR>
+<BR>
+でもCFと変換アダプタの相性には気を付けないとね…。<BR>
+<BR>
+古いノートPCのIDEではマスター決め打ちで設定されているモノもあるらしく、<BR>
+これにCF２スロットタイプ(マスター、スレーブ)のアダプタは鬼門らしい。<BR>
+ただし、RAIDタイプであればソフトからは１つに見えるので<BR>
+動作するとの話もある。<BR>
+<BR>
+
+<BR><HR>
+2011/07/18 - クラスタサイズ<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>パーティション サイズ</td>
+<td width="90"><div align="center">FAT16</div></td>
+<td width="90"><div align="center">FAT32</div></td>
+<td width="90"><div align="center">NTFS</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">16 MB ～ 31 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">512B</div></td>
+<td bgcolor="#FFFFCC"><div align="center">512B</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">32 MB ～ 63 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">1KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">512B</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">64 MB ～ 127 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">2KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">1KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">128 MB ～ 255 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">2KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">256 MB ～ 511 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">8KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">512 MB ～ 1023 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">16KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">1024 MB ～ 2047 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">32KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">2048 MB ～ 4095 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">64KB ※1</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">4096 MB ～ 8191 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">128KB ※1</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">8192 MB ～ 16383 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">8KB ※1</div></td>
+<td bgcolor="#FFFFCC"><div align="center">8KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">16384 MB ～ 32767 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">256KB ※1</div></td>
+<td bgcolor="#FFFFCC"><div align="center">16KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">32768 MB ～ 2 TB</td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">32KB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">2 TB ～ 16 TB</td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4KB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">16 TB ～ 32 TB</td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">8KB ※1</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">32 TB ～ 64 TB</td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">16KB ※1</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">64 TB ～ 128 TB</td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">32KB ※1</div></td>
+<tr>
+<td bgcolor="#fef1de">128 TB ～ 256 TB</td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">-</div></td>
+<td bgcolor="#FFFFCC"><div align="center">64KB ※1</div></td>
+</tr>
+</tr>
+</table>
+<BR>
+
+<BR><HR>
+2011/07/17 - OS の起動可能な位置<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width="90"><div align="center">OS</div></td>
+<td><div align="center">ファイルシステム</div></td>
+<td width="220"><div align="center">限界</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">MS-DOS 6.2</td>
+<td bgcolor="#FFFFCC"><div align="center">FAT16</div></td>
+<td bgcolor="#FFFFCC"><div align="center">8GB以降のパーティションからは起動不可</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows95</td>
+<td bgcolor="#FFFFCC"><div align="center">FAT16</div></td>
+<td bgcolor="#FFFFCC"><div align="center">8GB以降のパーティションからは起動不可</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows95 OSR2 以降<BR>Windows98 以降</td>
+<td bgcolor="#FFFFCC"><div align="center">FAT16,FAT32</div></td>
+<td bgcolor="#FFFFCC"><div align="center">8GB以降のパーティションからは起動不可</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows NT</td>
+<td bgcolor="#FFFFCC"><div align="center">FAT16,NTFS</div></td>
+<td bgcolor="#FFFFCC"><div align="center">8GB以降のパーティションからは起動不可</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows 2000<BR>Windows XP</td>
+<td bgcolor="#FFFFCC"><div align="center">FAT16,FAT32,NTFS</div></td>
+<td bgcolor="#FFFFCC"><div align="center">128GB以降のパーティションからは起動不可</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows 2000 SP3 以降<BR>Windows XP SP1以降</td>
+<td bgcolor="#FFFFCC"><div align="center">FAT16,FAT32,NTFS</div></td>
+<td bgcolor="#FFFFCC"><div align="center">2TB以降のパーティションからは起動不可？</div></td>
+</tr>
+</table>
+<BR><BR>
+
+<BR><HR>
+2011/07/16 - OS のメモリ限界<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width="90"><div align="center">OS</div></td>
+<td width="220"><div align="center">限界</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">MS-DOS 6.2</td>
+<td bgcolor="#FFFFCC"><div align="center">1MB + α</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows95</td>
+<td bgcolor="#FFFFCC"><div align="center">？</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows 98</td>
+<td bgcolor="#FFFFCC"><div align="center">1GB 未満 (<FONT COLOR="#ff0000">※</FONT>)</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows NT</td>
+<td bgcolor="#FFFFCC"><div align="center">2GB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows 2000</td>
+<td bgcolor="#FFFFCC"><div align="center">4GB<BR>Advanced Server 8GB(PAE)<BR>
+Datacenter Server 32GB(PAE)</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows XP (32bit)</td>
+<td bgcolor="#FFFFCC"><div align="center">4GB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows XP (64bit)</td>
+<td bgcolor="#FFFFCC"><div align="center">128GB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows Vista (32bit)</td>
+<td bgcolor="#FFFFCC"><div align="center">4GB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Windows Vista (64bit)</td>
+<td bgcolor="#FFFFCC"><div align="center">
+Home Basic 8GB<BR>
+Home Premium 16GB<BR>
+Business 128GB<BR>
+Enterprise 128GB<BR>
+Ultimate 128GB<BR>
+</div></td>
+</tr>
+</table>
+<BR>
+<FONT COLOR="#ff0000">※</FONT> 使用可能メモリが 1024MB に達すると正常に動作しなくなる。<BR>
+　SYSTEM.INI を編集して 944MB あたりを限界に設定すれば問題は回避できる。<BR>
+　（VRAMの共有メモリも考慮したサイズにする必要がある？）<BR>
+　また、ディスクキャッシュも 512MB 以上で不具合が発生するので<BR>
+　これも合わせて SYSTEM.INI を編集すると良い。<BR>
+<BR>
+●使用可能メモリの制限 （数値は16進でページ数を指定する。）<BR>
+例:20000 なら 512MB、40000 なら 1024MB、3B000 なら 944MB となる。<BR>
+[386Enh]<BR>
+MaxPhysPage=30000<BR>
+<BR>
+●ディスクキャッシュの制限 （単位はKBで1024の倍数にする。）<BR>
+[vcache]<BR>
+MinFileCache=16384<BR>
+MaxFileCache=32768<BR>
+<BR>
+
+<BR><HR>
+2011/06/29 - LED液晶 S221HQLbid<BR>
+<BR>
+VESAマウントを使ってディスプレイの位置を調整したかったので購入。<BR>
+<BR>
+LEDを採用したHD対応の低価格なコストパフォーマンスに優れたモデル。<BR>
+amazon で約 \15,000 で買えるので悪くない。<BR>
+<BR>
+●メリット<BR>
+・奥行きが短い!! (504(W)×370(H)×<FONT COLOR="#ff0000">145(D)</FONT>)<BR>
+・軽い。(2.8kg)<BR>
+・省電力。(21W)<BR>
+・HD対応。(1920×1080)<BR>
+・VESAマウント対応でスタンドも外せる。<BR>
+・入力端子が RGB,DVI-D,HDMI に対応している。<BR>
+<BR>
+●デメリット(気になったところ)<BR>
+・HDを楽しむなら 23" とか大きいモデルがお勧め。<BR>
+・明る過ぎ？（初期設定の明るさだと辛いので暗く設定している。）<BR>
+<BR>
+日本のメーカーでもこのくらいの製品を出して欲しいと思う。<BR>
+<BR>
+
+<BR><HR>
+2011/02/19 - USB 外付け2.5HDD ケース組み立て<BR>
+<BR>
+・ケース UNITCOM HDS251US-A03-BLACK  / 2.5" / SATA→USB2.0 / 980円<BR>
+・HDD HTS545025B9A300  / 2.5" SATA / 250GB / 5400rpm / 1プラッタ / 3980円<BR>
+<BR>
+ケースはさすがに安いだけあって作りがビミョウ。<BR>
+でも、980円にしては付属品がスゴイと思った。（あくまで値段に対して。）<BR>
+・ケース本体<BR>
+・Ｙ時ＵＳＢケーブル<BR>
+・ペラい説明紙２枚(まったく同じ日本語物が２枚って…)<BR>
+・ネジ４本 (２本しか使わないんだけど…)<BR>
+・ミニドライバー(ソフトウェアじゃなくてネジ止め用のドライバー)<BR>
+・専用ソフトケース<BR>
+<BR>
+このUSBケースはSATAだけじゃなくIDE版もあるけどパッケージが一緒で<BR>
+SATAとIDEの項目にシールがついているかどうかで判別する。<BR>
+<BR>
+
+<BR><HR>
+2011/02/12 - HDD の容量限界<BR>
+<BR>
+ハードウェアおよびファームウェアの限界。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width="90"><div align="center">容量の壁</div></td>
+<td><div align="center">理由</div></td>
+<td width="220"><div align="center">対策</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">528 MB</td>
+<td bgcolor="#FFFFCC"><div align="center">
+IDEがCHSで管理されていた時の上限。<BR>（シリンダ=10bit、ヘッド=8bit、セクタ=6bit）</div></td>
+<td bgcolor="#FFFFCC"><div align="center">E-IDE規格にて回避。</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">8.4 GB</td>
+<td bgcolor="#FFFFCC"><div align="center">
+E-IDEがCHSで管理されていた時の上限。<BR>
+（シリンダ=16bit、ヘッド=8bit、セクタ=4bit）<BR>
+INT13Hを使うMBRでは、8.4 GB以降の領域からは起動できない。</div></td>
+<td bgcolor="#FFFFCC"><div align="center">28bit LBAで回避<BR>（拡張INT13H）</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">137 GB</td>
+<td bgcolor="#FFFFCC"><div align="center">28bit LBAの場合の上限サイズ。<BR>
+（28(16+8+4)ビット全てをLBAに割り当てる）</div></td>
+<td bgcolor="#FFFFCC"><div align="center">48bit LBAで回避</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">2 TB</td>
+<td bgcolor="#FFFFCC"><div align="center">MBR の限界？<BR>2TBを超えるHDDを起動できない。そして扱えない。</div></td>
+<td bgcolor="#FFFFCC"><div align="center">BIOS → UEFI<BR>MBR → GPT<BR>OS は 64bit の３点で回避。</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">144 PB</td>
+<td bgcolor="#FFFFCC"><div align="center">48bit LBAの場合の上限サイズ。<BR>1TB の 144000倍の値</div></td>
+<td bgcolor="#FFFFCC"><div align="center">現状、問題なし。</div></td>
+</tr>
+</table>
+<BR><BR>
+
+<HR>
+2011/01/29 - HDD の接続規格<BR>
+<BR>
+転送速度。<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=2 CELLPADDING=2>
+<TR>
+<TD ROWSPAN=2 COLSPAN=2>転送モード</TD>
+<TD ROWSPAN=2 COLSPAN=1>転送速度<BR>MB/Sec</TD>
+<TD ROWSPAN=1 COLSPAN=8>規格</TD>
+</TR>
+<TR>
+<TD>IDE<BR>1986年</TD>
+<TD>E-IDE<BR>1993年</TD>
+<TD>ATA-1<BR>1994年</TD>
+<TD>ATA-2<BR>1996年</TD>
+<TD>ATA-3<BR>1997年</TD>
+<TD>ATA-4<BR>1999年</TD>
+<TD>ATA-5<BR>2001年</TD>
+<TD>ATA-6<BR>2002年</TD>
+</TR>
+<TR>
+<TD ROWSPAN=5>PIO転送</TD>
+<TD>モード0</TD>
+<TD>3.33 MB</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード1</TD>
+<TD>5.22 MB</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード2</TD>
+<TD>8.33 MB</TD>
+<TD>△</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード3</TD>
+<TD>11.1 MB</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード4</TD>
+<TD>16.6 MB</TD>
+<TD>-</TD>
+<TD>△</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+
+<TR>
+<TD ROWSPAN=3>シングルワード<BR>DMA転送</TD>
+<TD>モード0</TD>
+<TD>2.08 MB</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD>モード1</TD>
+<TD>4.16 MB</TD>
+<TD>△</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD>モード2</TD>
+<TD>8.33 MB</TD>
+<TD>△</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+</TR>
+
+<TR>
+<TD ROWSPAN=3>マルチワード<BR>DMA転送</TD>
+<TD>モード0</TD>
+<TD>4.16 MB</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード1</TD>
+<TD>13.3 MB</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード2</TD>
+<TD>16.6 MB</TD>
+<TD>-</TD>
+<TD>△</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+
+<TR>
+<TD ROWSPAN=7>UltraDMA</TD>
+<TD>モード0</TD>
+<TD>16.6 MB</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード1</TD>
+<TD>25.0 MB</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード2</TD>
+<TD>33.3 MB</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード3</TD>
+<TD>44.4 MB</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード4</TD>
+<TD>66.6 MB</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード5</TD>
+<TD>100 MB</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>モード6</TD>
+<TD>133 MB</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+</TR>
+</TABLE>
+△は規格に含まれないが対応製品が存在した。<BR>
+※ATAPI は ATA-4 に含まれる。<BR>
+※ATA-6 では BigDrive(48bitLBA) に対応し、120GB以上の容量にも対応した。<BR>
+<BR>
+<BR>
+
+<TABLE BORDER=1 CELLSPACING=2 CELLPADDING=2>
+<TR>
+<TD ROWSPAN=2 COLSPAN=2>転送モード</TD>
+<TD ROWSPAN=2 COLSPAN=1>転送速度<BR>MB/Sec</TD>
+<TD ROWSPAN=1 COLSPAN=3>規格</TD>
+</TR>
+<TR>
+<TD>SATA-1</TD>
+<TD>SATA-2</TD>
+<TD>SATA-3</TD>
+</TR>
+<TR>
+<TD ROWSPAN=5>8b/10b エンコード</TD>
+<TD>1.5 Gbps</TD>
+<TD>150 MB</TD>
+<TD>○</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>3.0 Gbps</TD>
+<TD>300 MB</TD>
+<TD>-</TD>
+<TD>○</TD>
+<TD>○</TD>
+</TR>
+<TR>
+<TD>6.0 Gbps</TD>
+<TD>600 MB</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>○</TD>
+</TR>
+</TABLE>
+<BR>
+
+<BR><HR><BR>
+
+<BR><BR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

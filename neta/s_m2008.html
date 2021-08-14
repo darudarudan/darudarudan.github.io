@@ -1,0 +1,559 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<TITLE>PC Memo</TITLE>
+</HEAD>
+<BODY BGCOLOR="#90B0C0" TEXT="#101010" VLINK="#5050A0">
+<FONT SIZE=8>
+<I>PC Memo</I><BR>
+</FONT>
+
+<BR>
+<A HREF="s_m2006.html">2006年</A>　<A HREF="s_m2007.html">2007年</A>　2008年　<A HREF="s_m2009.html">2009年</A><BR>
+<A HREF="s_m2010.html">2010年</A>　<A HREF="s_m2011.html">2011年</A>　<A HREF="s_m2012.html">2012年</A>
+　<A HREF="s_m2013.html">2013年</A>
+　<A HREF="s_m2014.html">2014年</A>　<A HREF="s_m2015.html">2015年</A>　<A HREF="s_m2016.html">2016年</A>
+　<A HREF="s_m2017.html">2017年</A>
+　<A HREF="s_m2018.html">2018年</A>　<A HREF="s_m2019.html">2019年</A>
+<A HREF="s_m2020.html">2020年</A>　<A HREF="s_m2021.html">2021年</A>
+
+<BR><HR>
+2008/12/28 - GA-MA78GPM-DS2H の BIOS 更新<BR>
+<BR>
+新バ～ジョン 2008/12/16 F2 が出ていたので更新してみた。<BR>
+<BR>
+内蔵グラフィックのメモリで SidePort のみが選択できるようになっていたので<BR>
+とりあえず設定してみた。<BR>
+<BR>
+リフレッシュレ～トの負荷がメインメモリに掛からなくなるので<BR>
+メモリ性能は数％向上するけど、それ以上に描画性能が落ちた。<BR>
+<BR>
+3D 描画だけでは無く 2D 描画の性能も落ちているのが不思議。<BR>
+もしかしたら SidePort のみに設定してもサイズ０の UMA にアクセスしてるのかも知れない。<BR>
+<BR>
+<FONT COLOR="#800000">AMD780G (SidePort Only) ≠ ビデオカ～ド</FONT><BR>
+<BR>
+後、気になったのは DCTs Mode が削除されて Unganged 固定になったみたい。<BR>
+<BR>
+<BR><HR>
+2008/12/21 - AMD780G OpenGL<BR>
+<BR>
+Catalyst 8.4 と 8.12 を比較した。<BR>
+<BR>
+●追加された拡張<BR>
+GL_ARB_color_buffer_float<BR>
+GL_ARB_depth_buffer_float<BR>
+GL_ARB_draw_instanced<BR>
+GL_ARB_fragment_program_shadow<BR>
+GL_ARB_half_float_pixel<BR>
+GL_ARB_half_float_vertex<BR>
+GL_ARB_instanced_arrays<BR>
+GL_ARB_shader_texture_lod<BR>
+GL_EXT_blend_equation_separate<BR>
+GL_EXT_draw_buffers2<BR>
+GL_EXT_framebuffer_blit<BR>
+GL_EXT_framebuffer_multisample<BR>
+GL_EXT_gpu_shader4<BR>
+GL_EXT_packed_float<BR>
+GL_EXT_texture_compression_latc<BR>
+GL_EXT_texture_compression_rgtc<BR>
+GL_EXT_texture_shared_exponent<BR>
+GL_EXT_transform_feedback<BR>
+<BR>
+●削除された拡張<BR>
+WGL_EXT_swap_control<BR>
+<BR>
+
+<BR><HR>
+2008/09/18 - GA-MA78GPM-DS2H ディスプレイドライバ３<BR>
+<BR>
+Catalyst 8.9 がリリ～スされたので試してみた。<BR>
+<BR>
+Direct3D 周りが改善されてゲームをしていても落ちなくなった。<BR>
+やっと安心して使える。<BR>
+<BR>
+<BR><HR>
+2008/09/15 - DirectX 10.1 系のＡＴＩビデオカード<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>ATI</td>
+<td><div align="center">HD 4850</div></td>
+<td><div align="center">HD 4650</div></td>
+<td><div align="center">HD 4550</div></td>
+<td><div align="center">HD 3850</div></td>
+<td><div align="center">HD 3650</div></td>
+<td><div align="center">HD 3450</div></td>
+</tr>
+<tr>
+<td " height="15" bgcolor="#fef1de">シェーダ数</td>
+<td bgcolor="#FFFFCC"><div align="center">800</div></td>
+<td bgcolor="#FFFFCC"><div align="center">320</div></td>
+<td bgcolor="#FFFFCC"><div align="center">80</div></td>
+<td bgcolor="#FFFFCC"><div align="center">320</div></td>
+<td bgcolor="#FFFFCC"><div align="center">120</div></td>
+<td bgcolor="#FFFFCC"><div align="center">40</div></td>
+</tr>
+<tr>
+<td " height="15" bgcolor="#fef1de">コア</td>
+<td bgcolor="#FFFFCC"><div align="center">625[MHz]～</div></td>
+<td bgcolor="#FFFFCC"><div align="center">600[MHZ]～</div></td>
+<td bgcolor="#FFFFCC"><div align="center">600[MHz]～</div></td>
+<td bgcolor="#FFFFCC"><div align="center">668[MHz]～</div></td>
+<td bgcolor="#FFFFCC"><div align="center">725[MHz]～</div></td>
+<td bgcolor="#FFFFCC"><div align="center">600[MHz]～</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">メモリ</td>
+<td bgcolor="#FFFFCC"><div align="center">1143[MHz]～</div></td>
+<td bgcolor="#FFFFCC"><div align="center">1000[MHz]～</div></td>
+<td bgcolor="#FFFFCC"><div align="center">800[MHz]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">950[MHz]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">1000[MHz]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">500[MHz]～</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">メモリ接続</td>
+<td bgcolor="#FFFFCC"><div align="center">DDR5 256[Bit]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">DDR3 128[Bit]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">DDR3 64[Bit]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">DDR3 256[Bit]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">DDR3 128[Bit]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">DDR3 64[Bit]</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">TDP</td>
+<td bgcolor="#FFFFCC"><div align="center">110[W]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">59[W]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">25[W]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">95[W]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">67[W]</div></td>
+<td bgcolor="#FFFFCC"><div align="center">25[W] ?</div></td>
+</tr>
+</table>
+<BR>
+<BR>
+<BR><HR>
+2008/08/21 - GA-MA78GPM-DS2H ディスプレイドライバ２<BR>
+<BR>
+Catalyst 8.8 がリリ～スされたので試してみた。<BR>
+<BR>
+インストール後、正常に起動できた。<BR>
+大丈夫かと思っていたが Direct3D 使用中で簡単に落ちる。<BR>
+古いのに戻した方がいいのかな…<BR>
+<BR>
+<BR><HR>
+2008/08/14 - GA-MA78GPM-DS2H ディスプレイドライバ<BR>
+<BR>
+最新の Catalyst 8.7 を入れると再起動を繰り返す。<BR>
+前回、通常起動した状態を選択して起動すると復帰する。<BR>
+<BR>
+Catalyst 8.7 - 正常起動できない。<BR>
+Catalyst 8.6 - ダウンロードできない。<BR>
+Catalyst 8.5 - 起動できる。<BR>
+Catalyst 8.4 - 標準付属ドライバ。<BR>
+<BR>
+後で 8.6 がダウンロードできたら試してみようか...<BR>
+<BR>
+<BR><HR>
+2008/08/10 - W2U1066DQ-1GLZJ<BR>
+<BR>
+PC2-8500(DDR2 1066) / 1GB x 2枚 / CL6 / 1.8v<BR>
+<BR>
+永久保証、 240pin DDR2 SDRAM、Dual Channelに最適な２枚組みセット,<BR>
+こちらはオ～バ～クロック製品ではなく、NativeDRAMを使用した製品。<BR>
+<BR>
+SPD 見てビックリ。PC2-8900 555MHz ってもしかして選別落ち？<BR>
+GA-MA78GPM-DS2H のBIOSモニタで見ると電圧が 1.8v になってないよ…。<BR>
+なぜか電圧が高いんですけど。<BR>
+<BR>
+<BR><HR>
+2008/05/24 - 3DLabs Wildcat Realizm<BR>
+<BR>
+2005年発売で今更だけど気になってるので。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>3DLabs</td>
+<td><div align="center">REALiZM 100</div></td>
+<td><div align="center">REALiZM 200</div></td>
+<td><div align="center">REALiZM 500</div></td>
+<td><div align="center">REALiZM 800</div></td>
+</tr>
+<tr>
+<td " height="15" bgcolor="#fef1de">Chip</td>
+<td bgcolor="#FFFFCC"><div align="center">VPU</div></td>
+<td bgcolor="#FFFFCC"><div align="center">VPU</div></td>
+<td bgcolor="#FFFFCC"><div align="center">VPU ＋ VSU</div></td>
+<td bgcolor="#FFFFCC"><div align="center">VPU×２ ＋ VSU</div></td>
+</tr>
+<tr>
+<td " height="15" bgcolor="#fef1de">I/F</td>
+<td bgcolor="#FFFFCC"><div align="center">AGP x8</div></td>
+<td bgcolor="#FFFFCC"><div align="center">AGP x8</div></td>
+<td bgcolor="#FFFFCC"><div align="center">PCI-Ex x16</div></td>
+<td bgcolor="#FFFFCC"><div align="center">PCI-Ex x16</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">GPU Clock</td>
+<td bgcolor="#FFFFCC"><div align="center">MHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">MHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">MHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">MHz</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Shader</td>
+<td bgcolor="#FFFFCC"><div align="center">VS 2.0<BR>PS 3.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">VS 2.0<BR>PS 3.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">VS 2.0<BR>PS 3.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">VS 2.0<BR>PS 3.0</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Memory I/F</td>
+<td bgcolor="#FFFFCC"><div align="center">GDDR3 256Bit 接続</div></td>
+<td bgcolor="#FFFFCC"><div align="center">GDDR3 512Bit 接続</div></td>
+<td bgcolor="#FFFFCC"><div align="center">GDDR3 256Bit 接続</div></td>
+<td bgcolor="#FFFFCC"><div align="center">GDDR3 512Bit 接続<BR>GDDR3 128Bit 接続</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Memory</td>
+<td bgcolor="#FFFFCC"><div align="center">256MB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">512MB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">256MB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">512MB + 128MB</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Framelock/Genlock</td>
+<td bgcolor="#FFFFCC"><div align="center">無効</div></td>
+<td bgcolor="#FFFFCC"><div align="center">有効</div></td>
+<td bgcolor="#FFFFCC"><div align="center">無効？</div></td>
+<td bgcolor="#FFFFCC"><div align="center">有効</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">消費電力</td>
+<td bgcolor="#FFFFCC"><div align="center">75w</div></td>
+<td bgcolor="#FFFFCC"><div align="center">85w</div></td>
+<td bgcolor="#FFFFCC"><div align="center">71w</div></td>
+<td bgcolor="#FFFFCC"><div align="center">150w</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">価格</td>
+<td bgcolor="#FFFFCC"><div align="center">1249ドル<BR>約140,000円</div></td>
+<td bgcolor="#FFFFCC"><div align="center">1599ドル<BR>約210,000円</div></td>
+<td bgcolor="#FFFFCC"><div align="center">899.99ドル</div></td>
+<td bgcolor="#FFFFCC"><div align="center">2799ドル<BR>298,000円</div></td>
+</tr>
+</table>
+<BR>
+Wildcat Realizm 800は、VPU(Visual Processor Unit)を2つ搭載するほか、<BR>
+VSU (Vertex/Scalability Unit) も搭載する。<BR>
+<BR>
+VSU はバ～テックス処理、VPU のロ～ドバランシングだけでなく<BR>
+PCI Expressブリッジとしても機能する。<BR>
+<BR>
+なお、VSU を接続すると VPU のバ～テックスユニットは無効化される。<BR>
+<BR>
+※① 頂点シェーダエンジンユニット16基を4基ずつ束ねて、Vertex Shader 2.0ユニット4基として動作。 <BR>
+※② ピクセルレンダリングパイプライン48基を4基ずつ束ねて、Pixel Shader 3.0ユニット12基として動作。<BR>
+※③ VSU と各 VPU は AGP 16X 相当の、双方向ト～タルで4.2Gバイト/秒の内部バスで接続される。<BR>
+<BR>
+<BR><HR>
+2008/04/12 - メモリ 4GB を Memtest86 Ver 3.4a でテスト<BR>
+<BR>
+4GB のメモリをテストすると以下のアドレス順でテストされることが判明。<BR>
+●120 ～ 2048MB 空間をチェックする。<BR>
+●2048 ～ 3300 MB 空間をチェックする。<BR>
+●4096 ～ 4800 MB 空間をチェックする。<BR>
+<BR>
+3GB 後半のアドレスをテストしないのはハ～ドウェア I/O がその領域に<BR>
+マッピングされていてメモリ用アドレスとして使用できないからと思われる。<BR>
+<BR>
+ハ～ドウェア I/O を 4GB 以降にマッピングしないのはデバイスのアドレスビットが<BR>
+32ビットなので動作しなくなってしまうからではないかと推測される。<BR>
+（ISA バスの時の 16MB 空間とかも同様？）<BR>
+<BR>
+物理メモリの 3GB 後半の空間は 4GB 以降の空間に再配置されたと思われる。<BR>
+<BR>
+32ビットモ～ドでもＣＰＵの PAE 機能を使えば 4GB 以降にもアクセスできるので<BR>
+WinodwsXP でも 4GB フルに扱えそうな気がするけど、使うことができない。<BR>
+多分、PAE をサポ～トしていない。<BR>
+<BR>
+ただしサ～バ～用の Windows2000以降の Server 系 SKU は PAE がサポ～トされていて<BR>
+4GB 超のメモリを扱う事ができる。<BR>
+しかし32ビットＯＳなので１つのアプリで扱えるメモリは4GBを超えることができない。<BR>
+<BR>
+
+<BR><HR>
+2008/04/07 - FireMV 2260<BR>
+<BR>
+<A HREF="http://pc.watch.impress.co.jp/docs/2008/0407/acube.htm">
+FireMV 2260</A><BR>
+<BR>
+DisplayPort×２<BR>
+DirectX 10.1 対応<BR>
+動作クロック 非公開<BR>
+消費電力 23W 以下<BR>
+<BR>
+
+<BR><HR>
+2008/04/06 - K8N-DL で4GBメモリ<BR>
+<BR>
+I/O のマッピング関係上、32ビットＯＳでは約 3.3GB までしか<BR>
+使えないのは知ってるけど、なぜか WindowsXP で 2GB までしか認識しない。<BR>
+調べてみると BIOS の Software Memory Remapping が有効になってるとダメらしい。<BR>
+<BR>
+ついでなのでBIOSのバ～ジョンを 1007 → 1010 にアップデ～トして<BR>
+BIOS設定画面に入ってみた。<BR>
+<BR>
+「あれ？」… Software Memory Remapping がなくなってるゾ。<BR>
+でも Hardware Memory Remapping がデフォルトで Enable になってる。<BR>
+<BR>
+仕方ないので設定を変えずに WindowsXP を起動したら 3.3GB を認識してた。<BR>
+めでたし、めでたし。<BR>
+<BR>
+
+<BR><HR>
+2008/02/29 - ENS-0748A　電源(2U)<BR>
+<BR>
+
+<TABLE id=Table1 borderColor=#bfbfbf cellSpacing=0 cellPadding=1 border=1 width=400>
+<TR vAlign=top>
+<TD BGCOLOR=#eeeff1 colSpan=8><B>電源 仕様</B></TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=#fef1de>Watt</TD>
+<TD BGCOLOR=#fef1de>3.3V</TD>
+<TD BGCOLOR=#fef1de>5V</TD>
+<TD BGCOLOR=#fef1de>12V1</TD>
+<TD BGCOLOR=#fef1de>12V2</TD>
+<TD BGCOLOR=#fef1de>5Vsb</TD>
+<TD BGCOLOR=#fef1de>-5V</TD>
+<TD BGCOLOR=#fef1de>-12V</TD>
+</TR>
+<TR vAlign=top>
+<TD BGCOLOR=white>400W</TD>
+<TD BGCOLOR=white>28A</TD>
+<TD BGCOLOR=white>20A</TD>
+<TD BGCOLOR=white>15A</TD>
+<TD BGCOLOR=white>15A</TD>
+<TD BGCOLOR=white>2.0A</TD>
+<TD BGCOLOR=white>0.5A</TD>
+<TD BGCOLOR=white>1.0A</TD>
+</TR>
+</TABLE>
+<BR>
+2U用 SSI-EPS<BR>
+100(W) x 200(D) x 69(H)mm<BR>
+過電圧・過負荷プロテクト<BR>
+各チャンネルに漏電プロテクト<BR>
+最大負荷で高効率65%<BR>
+最大負荷で力率改善96%<BR>
+<BR>
+電源内部には接続が２ピンのファンが２つ、とてもウルサイ。<BR>
+ケース内部排気が 60×60×15 の ADDA AD0612UB-D70GL 12V 0.15A<BR>
+ケース外部吸気が 60×60×20 の SUPERRED CHD6012EB 12V 0.3A<BR>
+<BR>
+
+<BR><HR>
+2008/02/29 - HD DVD<BR>
+<BR>
+<A HREF="http://www.watch.impress.co.jp/av/docs/20080219/avt019.htm">
+次世代光ディスクフォーマット戦争の軌跡【前編】</A><BR>
+～ なぜ2つの規格が生まれたのか? ～<BR>
+<BR>
+<A HREF="http://www.watch.impress.co.jp/av/docs/20080222/avt020.htm">
+次世代光ディスクフォーマット戦争の軌跡【後編】</A><BR>
+～ 東芝の意図とハリウッドの選択 ～<BR>
+<BR>
+
+<BR><HR>
+2008/02/20 - nx6125 に PC3200 メモリを搭載する<BR>
+<BR>
+Turion64 は PC3200(DDR400) に対応しているのに</A><BR>
+nx6125 はなぜPC2700メモリを搭載しているのか？<BR>
+考えられる理由は消費電力くらいか…？<BR>
+<BR>
+試しに PC2700(256MB) のメモリを PC3200(512MB) に交換してみたら<BR>
+PC2700(166MHz) から PC3200(200MHz) に変化しない。<BR>
+ガ～ン、PC3200メモリを搭載する意味はナイネ。<BR>
+<BR>
+ちなみに Athlon64 系のＣＰＵはコアクロックを 800MHz に落とすと<BR>
+メモリクロックが 800MHz ÷ 5 で 166MHz になる仕様があるので<BR>
+負荷をかけて 1600MHz に上がってから CPU-Z で確認した。<BR>
+（Turion64 + GeForce6100[市販M/B] だと 200MHz に切り替わる。）<BR>
+<BR>
+でもビビったのがメモリが 256MB → 512MB に増えたら<BR>
+結合グラフィック用のメモリが 32MB → 128MB に増えてた。<BR>
+残り 384MB しかないんですけど…。<BR>
+<BR>
+結局、512MB+256MB-32MB = 736MB@PC2700 で使用中。<BR>
+<BR>
+
+<BR><HR>
+2008/02/15 - ATI 結合グラフィック<BR>
+<BR>
+
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td width=160></td>
+<td width=100><div align="center">Xpress 200</div></td>
+<td width=100><div align="center">Xpress 1100<BR>Xpress 1150</div></td>
+<td width=100><div align="center">Xpress 1250a<BR>Xpress 1250i</div></td>
+<td width=100><div align="center">?</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Graphics Engine</td>
+<td bgcolor="#FFFFCC"><div align="center">X300</div></td>
+<td bgcolor="#FFFFCC"><div align="center">X300</div></td>
+<td bgcolor="#FFFFCC"><div align="center">X700</div></td>
+<td bgcolor="#FFFFCC"><div align="center">HD 3200</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">N Bridge</td>
+<td bgcolor="#FFFFCC"><div align="center">RS480</div></td>
+<td bgcolor="#FFFFCC"><div align="center">RS485</div></td>
+<td bgcolor="#FFFFCC"><div align="center">AMD690G<BR>RS600</div></td>
+<td bgcolor="#FFFFCC"><div align="center">AMD780G</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">South Bridge</td>
+<td bgcolor="#FFFFCC"><div align="center">IXP400</div></td>
+<td bgcolor="#FFFFCC"><div align="center">SB600</div></td>
+<td bgcolor="#FFFFCC"><div align="center">SB600</div></td>
+<td bgcolor="#FFFFCC"><div align="center">SB700</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">HyperTransport</td>
+<td bgcolor="#FFFFCC"><div align="center">v1.0 / 1GHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">v1.0 / 1GHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">v1.0 / 1GHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">v3.0 / 2.6GHz</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">GPU Clock</td>
+<td bgcolor="#FFFFCC"><div align="center">300MHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">300MHz<BR>400MHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">400MHz<BR>500MHz</div></td>
+<td bgcolor="#FFFFCC"><div align="center">-MHz</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Pixel Shader</td>
+<td bgcolor="#FFFFCC"><div align="center">2.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">2.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">2.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4.0</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Vertex Shader</td>
+<td bgcolor="#FFFFCC"><div align="center">2.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">2.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">2.0</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4.0</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">SATA/PATA Drives</td>
+<td bgcolor="#FFFFCC"><div align="center">4/2</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4/2</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4/2</div></td>
+<td bgcolor="#FFFFCC"><div align="center">4/2</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">SATA Mode</td>
+<td bgcolor="#FFFFCC"><div align="center">1.5GB</div></td>
+<td bgcolor="#FFFFCC"><div align="center">3GB (NCQ ?)</div></td>
+<td bgcolor="#FFFFCC"><div align="center">3GB (NCQ ?)</div></td>
+<td bgcolor="#FFFFCC"><div align="center">?</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">RAID</td>
+<td bgcolor="#FFFFCC"><div align="center">?</div></td>
+<td bgcolor="#FFFFCC"><div align="center">0/1/0+1</div></td>
+<td bgcolor="#FFFFCC"><div align="center">0/1/0+1</div></td>
+<td bgcolor="#FFFFCC"><div align="center">0/1/0+1</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">Ethernet</td>
+<td bgcolor="#FFFFCC"><div align="center">10/100</div></td>
+<td bgcolor="#FFFFCC"><div align="center">10/100</div></td>
+<td bgcolor="#FFFFCC"><div align="center">10/100</div></td>
+<td bgcolor="#FFFFCC"><div align="center">10/100</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">USB Ports</td>
+<td bgcolor="#FFFFCC"><div align="center">8</div></td>
+<td bgcolor="#FFFFCC"><div align="center">10</div></td>
+<td bgcolor="#FFFFCC"><div align="center">10</div></td>
+<td bgcolor="#FFFFCC"><div align="center">?</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">idle</td>
+<td bgcolor="#FFFFCC"><div align="center">2.00W</div></td>
+<td bgcolor="#FFFFCC"><div align="center">1.80W</div></td>
+<td bgcolor="#FFFFCC"><div align="center">1.40W</div></td>
+<td bgcolor="#FFFFCC"><div align="center">0.95W</div></td>
+</tr>
+</table>
+<BR>
+
+<BR><HR>
+2008/02/12 - HP Compaq nx6125 (Used)購入<BR>
+<BR>
+nx6125</A><BR>
+・Turion64 ML-28 1.6GHz , 512KB , Single Core , TDP 35W<BR>
+・ATI RADEON Xpress 200M<BR>
+・PC2700 256MB<BR>
+・HDD 40GB<BR>
+<BR>
+液晶が暗く感じるけど慣れるかな。<BR>
+WindowsXP を使うにはメモリが足りなさすぎ。<BR>
+結合グラフィックがさらに32MBも取ってるし。<BR>
+<BR>
+
+<BR><HR>
+2008/02/16 - Chrome400 シリーズ発表<BR>
+<BR>
+●<A HREF="http://www.s3graphics.com/en/products/chrome_400/" TARGET="_top">
+Chrome 400</A><BR>
+・DirectX 10.1 / Shader Moderl 4.1 / OpenGL 2.1対応<BR>
+・Unified Shader architecture<BR>
+・64-bit memory interface<BR>
+・Chromotion HD 2.0<BR>
+・H.264 and VC-1 and MPEG2 Hardware Acceleration<BR>
+・PCI-Express 2.0<BR>
+・Dual-link DVI, HDMI（HDCP対応）<BR>
+・AcceleRAM Graphics Memory Support<BR>
+・Advanced Power Management<BR>
+<BR>
+OpenGL 2.1 対応って事はついにGLSLに対応か…。<BR>
+でも、MultiChrome の記述が無いね。消滅？<BR>
+<BR>
+
+<BR><HR>
+2008/01/27 - RADEON HD ローエンド<BR>
+<BR>
+・Radeon HD 3470(RV620/55nm)・・・<BR>
+800MHz/1800MHz/64bit/256MB/GDDR3/40sp<BR>
+・Radeon HD 3450(RV620/55nm)・・・<BR>
+600MHz/1000MHz/64bit/256MB/DDR2/40sp<BR>
+<BR>
+・Radeon HD 2400 XT(RV610/65nm)・・・<BR>
+700MHz/1600MHz/64bit/256MB/GDDR3/40sp/4ROPs/30W<BR>
+・Radeon HD 2400 Pro(RV610/65nm)・・・<BR>
+525MHz/800MHz/64bit/128MB/DDR2/40sp/4ROPs/25W<BR>
+
+<BR><HR>
+2008/01/12 - Millennium P690 発売<BR>
+<BR>
+<A HREF="http://pc.watch.impress.co.jp/docs/2007/1017/matrox.htm" TARGET="_top">
+発表</A>から３ヶ月たって登場。<BR>
+消費電力が 12W 以下と言うのは素晴らしいが描画性能はほぼ変化なし。<BR>
+DirectX 8.1 ＆ OpenGL 1.3 どまりか？<BR>
+当然ながら Windows Vista の Aero Glass は動作しない。<BR>
+
+<BR><HR><BR>
+
+<BR><BR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

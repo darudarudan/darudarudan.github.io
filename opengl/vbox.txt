@@ -1,0 +1,167 @@
+WindowsXP SP1 in VirtualBox 4.3.12
+VirtualBox Graphics Adapter (2014/05/16 ver 4.3.12.0)
+Guest Additions
+
+gl_caps.exe : 2014/02/08
+GL Vender : Humper
+GL Renderer : Chromium
+GL Version : 2.1 Chromium 1.9
+GLSL Version : 3.30 - Intel Build 8.15.10.2752
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 800 x 600 : color 32 bits
+# 1, RGBA 8/8/8/8, db, Z 32, S 8, WIN, GL, CPOS
+# 2, RGBA 8/8/8/0, Z 16, S 8, WIN, GL
+# 3, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+# 4, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+# 5, RGBA 8/8/8/0, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+# 6, RGBA 8/8/8/0, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+# 7, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+# 8, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+# 9, RGBA 8/8/8/8, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#10, RGBA 8/8/8/8, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#11, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#12, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#13, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#14, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#15, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#16, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#17, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#18, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#19, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#20, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#21, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#22, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#23, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#24, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#25, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#26, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#27, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#28, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#29, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#30, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#31, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#32, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#33, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#34, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#35, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#36, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#37, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#38, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_EXT_texture_compression_s3tc
+GL_EXT_draw_range_elements
+GL_EXT_framebuffer_object
+GL_EXT_compiled_vertex_array
+GL_ARB_depth_texture
+GL_ARB_fragment_program
+GL_ARB_multisample
+GL_ARB_multitexture
+GL_ARB_occlusion_query
+GL_ARB_point_parameters
+GL_ARB_point_sprite
+GL_ARB_shadow
+GL_ARB_texture_border_clamp
+GL_ARB_texture_compression
+GL_ARB_texture_cube_map
+GL_ARB_texture_env_add
+GL_ARB_texture_env_combine
+GL_EXT_texture_env_combine
+GL_ARB_texture_env_crossbar
+GL_ARB_texture_env_dot3
+GL_IBM_texture_mirrored_repeat
+GL_ARB_texture_non_power_of_two
+GL_ARB_transpose_matrix
+GL_ARB_vertex_buffer_object
+GL_ARB_pixel_buffer_object
+GL_ARB_vertex_program
+GL_ARB_window_pos
+GL_EXT_blend_color
+GL_EXT_blend_minmax
+GL_EXT_blend_func_separate
+GL_EXT_clip_volume_hint
+GL_EXT_blend_subtract
+GL_EXT_texture_env_add
+GL_EXT_fog_coord
+GL_EXT_multi_draw_arrays
+GL_EXT_secondary_color
+GL_EXT_shadow_funcs
+GL_EXT_stencil_wrap
+GL_EXT_texture_edge_clamp
+GL_EXT_texture_filter_anisotropic
+GL_EXT_texture_lod_bias
+GL_EXT_texture3D
+GL_NV_texgen_reflection
+GL_EXT_texture_rectangle
+GL_ARB_texture_rectangle
+GL_SGIS_generate_mipmap
+GL_SGIS_texture_edge_clamp
+GL_ARB_shading_language_100
+GL_ARB_shader_objects
+GL_ARB_vertex_shader
+GL_ARB_fragment_shader
+GL_EXT_texture_sRGB
+GL_EXT_framebuffer_blit
+GL_EXT_blend_equation_separate
+GL_EXT_stencil_two_side
+GL_CR_state_parameter
+GL_CR_cursor_position
+GL_CR_bounding_box
+GL_CR_print_string
+GL_CR_tilesort_info
+GL_CR_synchronization
+GL_CR_head_spu_name
+GL_CR_performance_info
+GL_CR_window_size
+GL_CR_tile_info
+GL_CR_saveframe
+GL_CR_readback_barrier_size
+GL_CR_server_id_sharing
+GL_CR_server_matrix
+WGL_EXT_pixel_format
+WGL_ARB_pixel_format
+
+
+GL_ARB_shader_objects
+　GL_ARB_vertex_shader : Supported
+　GL_ARB_fragment_shader : Supported
+　GL_ARB_geometry_shader4 : Not Found
+　GL_ARB_tessellation_shader : Not Found
+　GL_ARB_gpu_shader5 : Not Found
+　GL_ARB_gpu_shader_fp64 : Not Found
+　GL_ARB_shader_subroutine : Not Found
+　GL_ATI_fragment_shader : Not Found
+　GL_ATI_text_fragment_shader : Not Found
+　GL_EXT_vertex_shader : Not Found
+　GL_EXT_geometry_shader4 : Not Found
+　GL_EXT_gpu_shader4 : Not Found
+　GL_EXT_gpu_shader5 : Not Found
+　GL_EXT_Cg_shader : Not Found
+　GL_NV_texture_shader : Not Found
+　GL_NV_texture_shader2 : Not Found
+　GL_NV_texture_shader3 : Not Found
+　GL_NV_geometry_shader4 : Not Found
+　GL_NV_gpu_shader5 : Not Found
+
+
+Shader (Low Level)
+　GL_ARB_vertex_program : Supported
+　GL_ARB_fragment_program : Supported
+　GL_EXT_gpu_program_parameters : Not Found
+　GL_NV_vertex_program : Not Found
+　GL_NV_vertex_program1_1 : Not Found
+　GL_NV_vertex_program2 : Not Found
+　GL_NV_vertex_program2_option : Not Found
+　GL_NV_vertex_program3 : Not Found
+　GL_NV_vertex_program4 : Not Found
+　GL_NV_fragment_program : Not Found
+　GL_NV_fragment_program_option : Not Found
+　GL_NV_fragment_program2 : Not Found
+　GL_NV_fragment_program4 : Not Found
+　GL_NV_gpu_program4 : Not Found
+　GL_NV_gpu_program5 : Not Found
+　GL_NV_geometry_program4 : Not Found
+　GL_NV_fragment_program4 : Not Found
+　GL_NV_tessellation_program5 : Not Found

@@ -1,0 +1,113 @@
+***ForceWare 71.84
+
+GL Vender : NVIDIA Corporation
+GL Renderer : RIVA TNT2/AGP
+GL Version : 1.5.3
+GLSL Version : Not Supported
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 800 x 600 : color 16 bits
+# 1, RGBA 5/6/5/0, aux 4, Z 16, WIN, GDI, GL
+# 2, RGBA 5/6/5/0, aux 4, Z 16, S 8, WIN, GDI, GL
+# 4, RGBA 5/6/5/0, db, aux 4, Z 16, WIN, GL, SWEX
+# 5, RGBA 5/6/5/0, db, aux 4, Z 16, S 8, WIN, GL, SWEX
+#10, RGBA 5/6/5/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#11, RGBA 5/6/5/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#14, CI 16, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#15, CI 16, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#16, CI 16, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#17, CI 16, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#18, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#19, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#20, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#21, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#22, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#23, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#24, CI 32, Z 32, S 8, BMP, GDI, GL, GFMT
+#25, CI 32, Z 16, S 8, BMP, GDI, GL, GFMT
+#26, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#27, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#28, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#29, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#30, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#31, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#32, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#33, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+Display 800 x 600 : color 32 bits
+# 1, RGBA 8/8/8/0, aux 4, Z 24, WIN, GDI, GL
+# 2, RGBA 8/8/8/8, aux 4, Z 24, WIN, GDI, GL
+# 3, RGBA 8/8/8/0, aux 4, Z 24, S 8, WIN, GDI, GL
+# 4, RGBA 8/8/8/8, aux 4, Z 24, S 8, WIN, GDI, GL
+# 7, RGBA 8/8/8/0, db, aux 4, Z 24, WIN, GL, SWEX
+# 8, RGBA 8/8/8/8, db, aux 4, Z 24, WIN, GL, SWEX
+# 9, RGBA 8/8/8/0, db, aux 4, Z 24, S 8, WIN, GL, SWEX
+#10, RGBA 8/8/8/8, db, aux 4, Z 24, S 8, WIN, GL, SWEX
+#19, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#20, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#23, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#24, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#25, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#26, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#27, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#28, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#29, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#30, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#31, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#32, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#33, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#34, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#35, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#36, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#37, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#38, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#39, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#40, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#41, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#42, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_ARB_imaging
+GL_ARB_multitexture
+GL_ARB_point_parameters
+GL_ARB_texture_env_add
+GL_ARB_texture_mirrored_repeat
+GL_ARB_transpose_matrix
+GL_ARB_vertex_buffer_object
+GL_ARB_window_pos
+GL_EXT_texture_env_add
+GL_EXT_abgr
+GL_EXT_bgra
+GL_EXT_compiled_vertex_array
+GL_EXT_draw_range_elements
+GL_EXT_fog_coord
+GL_EXT_multi_draw_arrays
+GL_EXT_packed_pixels
+GL_EXT_pixel_buffer_object
+GL_EXT_point_parameters
+GL_EXT_rescale_normal
+GL_EXT_secondary_color
+GL_EXT_separate_specular_color
+GL_EXT_stencil_wrap
+GL_EXT_texture_edge_clamp
+GL_EXT_texture_env_combine
+GL_EXT_texture_lod_bias
+GL_EXT_texture_object
+GL_EXT_vertex_array
+GL_IBM_rasterpos_clip
+GL_IBM_texture_mirrored_repeat
+GL_KTX_buffer_region
+GL_NV_blend_square
+GL_NV_fog_distance
+GL_NV_light_max_exponent
+GL_NV_packed_depth_stencil
+GL_NV_texgen_reflection
+GL_NV_texture_env_combine4
+GL_SGIS_multitexture
+GL_SUN_slice_accum
+GL_WIN_swap_hint
+WGL_EXT_swap_control
+
+

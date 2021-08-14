@@ -1,0 +1,122 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<TITLE>PC Memo</TITLE>
+</HEAD>
+<BODY BGCOLOR="#90B0C0" TEXT="#101010" VLINK="#5050A0">
+<FONT SIZE=8>
+<I>PC Memo</I><BR>
+</FONT>
+
+<BR>
+<A HREF="s_m2006.html">2006年</A>　<A HREF="s_m2007.html">2007年</A>　<A HREF="s_m2008.html">2008年</A>　<A HREF="s_m2009.html">2009年</A><BR>
+<A HREF="s_m2010.html">2010年</A>　<A HREF="s_m2011.html">2011年</A>
+　<A HREF="s_m2012.html">2012年</A>　<A HREF="s_m2013.html">2013年</A>　<A HREF="s_m2014.html">2014年</A>
+　<A HREF="s_m2015.html">2015年</A>　<A HREF="s_m2016.html">2016年</A>　2017年
+　<A HREF="s_m2018.html">2018年</A>　<A HREF="s_m2019.html">2019年</A>
+<A HREF="s_m2020.html">2020年</A>　<A HREF="s_m2021.html">2021年</A>
+
+<!--
+<BR><HR>
+2017/04/xx - <BR>
+<BR>
+<BR>
+-->
+<BR><HR>
+2017/10/07 - <BR>
+<BR>
+
+<BR><HR>
+2017/06/04 - Intel のグラフィックドライバが更新できない<BR>
+<BR>
+Windows 7(64 bit) でノートPCの CPU 内蔵のグラフィック機能を<BR>
+使うためにインテルからドライバをダウンロードして<BR>
+インストールしようとしたら CPU も OS も間違っていないのに<BR>
+<BR>
+「システム要件を満たしていません」<BR>
+<BR>
+のエラーが出てインストールできない…<BR>
+<BR>
+とりあえずメーカーのドライバだとインストールできるが古い。<BR>
+<BR>
+いろいろ試して無理やりインストールできたのでその方法。<BR>
+<BR>
+1.インテルから zip 版のドライバをダウンロードして解凍しておく。<BR>
+2.メーカードライバをアンインストールする。<BR>
+　→ VGA標準ドライバが入る。<BR>
+3.デバイスマネージャのVGA標準ドライバのプロパティを開いて、<BR>
+　「ドライバの更新」から解凍したインテルドライバの<BR>
+　「graphics」フォルダを指定する。<BR>
+4.ドライバがインストールされる。<BR>
+<BR>
+setup.exe の判定に問題があるんじゃないかなぁ…<BR>
+<BR>
+<BR><HR>
+2017/05/20 - カーオーディオの AAC 対応<BR>
+<BR>
+クルマのＵＳＢメモリ音楽再生環境ってどうなってるのかなと検索。<BR>
+CD/DVD には対応しないUSBメモリ、ラジオのみモデルだとで１万円以下で買えるのを発見。<BR>
+<BR>
+パイオニア、スマホから選曲や音質設定できる1DINカーオーディオ - AV Watch<BR>
+http://av.watch.impress.co.jp/docs/news/1022612.html<BR>
+<BR>
+全機種 AAC 対応って書いてあるんだけど…<BR>
+MVH-3300 取扱説明書 発売順現在～ AVメインユニット カーAV パイオニア株式会社<BR>
+http://pioneer.jp/support/s-manual.php?product_no=00009213&disp=s-year.php&sort=1<BR>
+<BR>
+製造元のマニュアルを見ると MVH-3300 は AAC に対応していない。<BR>
+上位機種の MVH-5300 なら Bluetooth と AAC に対応していて約1.5万円くらい。<BR>
+他のメーカーも Bluetooth 対応モデルは AAC に対応しているっぽい。<BR>
+<BR>
+各製品の仕様を見ると AAC と書いてあっても m4a 形式にしか<BR>
+対応していないようなので注意が必要。<BR>
+<BR>
+
+<BR><HR>
+2017/01/01 - Matrox G550<BR>
+<BR>
+AGP/PCI 接続の古いグラフィックチップ。<BR>
+製品としてはブリッヂを搭載して PCIe x1 版も存在する。<BR>
+<BR>
+DirectX 6 世代のチップで今では使えるレベルではない。<BR>
+<BR>
+一応、Windows7 のドライバもリリースされているが、<BR>
+Vista 以降は 32bit ですら DirectX(HAL)、OpenGL(ICD) もサポートしていない。<BR>
+アクセラレーションが効くのは XP まで…？<BR>
+<BR>
+解像度の選択が少ないので調べてみると、<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR BGCOLOR="#eeeff1">
+<TD>出力先</TD>
+<TD>解像度</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">アナログ(プライマリ)</TD>
+<TD>2048 x 1536</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">アナログ(セカンダリ)</TD>
+<TD>1600 x 1200</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">デジタル(DVI)</TD>
+<TD>1280 x 1024</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">TV</TD>
+<TD>2048 x 1536</TD>
+</TR>
+</TABLE>
+<BR>
+デジタル出力が HD(1920x1080) に対応していないゾ…。<BR>
+マルチディスプレイ用の追加グラフィックカードにも使えない。<BR>
+<BR>
+
+<BR><HR><BR>
+
+<BR><BR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

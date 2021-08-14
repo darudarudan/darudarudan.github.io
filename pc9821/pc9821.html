@@ -1,0 +1,673 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="Keywords" content="PC-9821,PC-9801,FM音源,118,SB16,Sound BLASTER,GD5440">
+<HEAD>
+<TITLE>Laboratory for PC-9821</TITLE>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#00CC88" VLINK="#0088CC">
+<BR>[ Laboratory for PC-9821 ]<BR>
+<BR>
+<HR><BR>
+ここではPC-98x1のハードウェアを制御するプログラムを公開しています。<BR><BR>
+開発者向きな情報ばかりです。<BR><BR>
+・ターゲットのＯＳは MS-DOS です。<BR><BR>
+・特に記述がない場合は Turbo C++ Ver 1.01 で作成しています。<BR><BR>
+・暫定版（ソースの無い物）は公開までお待ちください。<BR><BR>
+・公開しているプログラムによって、障害が発生しても<BR>
+　一切の責任を問わないものとします。<BR><BR>
+以上、実行は自己責任でお願いします。<BR><BR>
+<HR>
+menu<BR><BR>
+2002/09/24 <A HREF="#e256L">9821-256色モードのリニアアクセス</A> jump<BR>
+2011/09/11 <A HREF="#VSYNC">VSync の監視</A> jump<BR>
+2012/04/01 <A HREF="#GD54xx">GD5428/5430/5440を使う</A> jump<BR>
+2012/08/14 <A HREF="#GA1024">GA-1024A/1280A を使う</A> jump<BR>
+2012/02/26 <A HREF="#MYSTIQUE">Mystique 相当品の解析</A> jump<BR>
+2011/10/16 <A HREF="#CALENDER">カレンダ割り込み</A> jump<BR>
+2011/02/26 <A HREF="#MOUSE">マウス制御</A> jump<BR>
+2003/01/15 <A HREF="#KEY_IO">キーボード I/O 制御</A> jump<BR>
+2002/09/12 <A HREF="#INIT118">118音源のMIDIを初期化する</A> jump<BR>
+2011/02/27 <A HREF="#CBUS-PNP">ＣバスのＰｎＰ検出</A> jump<BR>
+2011/08/20 <A HREF="#MoveIO">MM 関連機能の I/O の再配置</A> jump<BR>
+2011/05/04 <A HREF="#WSS-PCM">MATE-X PCM で再生</A> jump<BR>
+2011/09/04 <A HREF="#B86-PCM">86音源 PCM で再生</A> jump<BR>
+2011/08/28 <A HREF="#SB16-PCM">SB16/98 PCM で再生</A> jump<BR>
+2011/04/29 <A HREF="#CanBe">CanBe リモコンを使う</A> jump<BR>
+2002/09/14 <A HREF="#FM-CHK">ＦＭ音源の存在チェック</A> jump<BR>
+2011/07/17 <A HREF="#FM-OPL3">ＦＭ音源の OPL3 を使う</A> jump<BR>
+2011/06/01 <A HREF="#SOUND-IO">音源チップのI/O Port表</A> jump<BR>
+2002/09/14 <A HREF="#BEEP-PCM">BEEP音でＰＣＭ再生</A> jump<BR>
+2002/09/14 <A HREF="#PC98AT">PC-98x1 とＡＴ互換機の判別方法</A> jump<BR>
+2002/12/05 <A HREF="#RESET98">Reset for PC-98x1</A> jump<BR>
+2002/09/24 <A HREF="#WAIT98">Wait for PC-9821</A> jump<BR>
+2002/09/14 <A HREF="#WIN-CHK">Windows の存在チェック</A> jump<BR>
+2011/06/04 <A HREF="#IF-SEGA">IF-SEGA/98 を制御する</A> jump<BR>
+2011/12/21 <A HREF="#PCI-BIOS">98 de PCI-BIOS</A> jump<BR>
+2002/10/29 <A HREF="#JOYPAD">ゲームポートの制御</A> jump<BR>
+2002/10/05 <A HREF="#YOTEI">予定</A> jump<BR><BR>
+<BR>
+●テスト環境<BR>
+・PC-9821Ls150<BR>
+　@Mate-X PCM<BR>
+・Anex86 Ver 2.78<BR>
+<BR>
+●旧テスト環境（いくつかのプログラムは旧ＰＣでテストしています。）<BR>
+・PC-9821Xt16 /R16（売却済み）<BR>
+・PC-9821Xa7e /S15（売却済み）<BR>
+　@PC-9801-118 ( YMF297-F + CS4232 ) + MIDI Ster/GS（売却済み）<BR>
+・PC-9821Cx3 /S7A（売却済み）<BR>
+<BR>
+ソフトウェア：<BR>
+・MS-DOS 6.2 + VEM486 Ver 1.31<BR>
+・Turbo C++ Ver 1.01<BR>
+・Turbo Assembler Ver 2.0<BR>
+・Watcom C++ Ver 11.0J<BR>
+・Open Watcom C++ Ver 1.9<BR>
+<BR>
+
+<A NAME="e256L"><HR></A>
+9821-256色モードのリニアアクセス<BR>
+<BR><BR>
+「PC-9821初代」以降に搭載された 256色モードですが、<BR>
+VRAMバンク切り替え方式なのでプログラムが面倒です。<BR>
+これには実はリニアなＶＲＡＭアクセス方法があるのです。<BR>
+非常に単純なのですが実現は困難です。<BR><BR>
+メモリアドレス 0xE0102 に 0x01 を書き込む事により、<BR>
+「16MBシステム空間」にリニアなＶＲＡＭが出現します。<BR>
+そこにアクセスするのです。<BR><BR>
+8086なＣＰＵで1[MB]の壁を超えなくては使用できません・・・よって<BR>
+・プロテクトモード（32ビット）に移行する必要がある。<BR>
+　プロテクトモード（16ビット）では64[KB]制限があるので意味が無い。<BR>
+・仮想記憶が働いているので物理アドレスをマップしなくてはいけない。<BR><BR>
+これは DPMI に対応したプログラムで対処できます。がっ、<BR>
+・DPMI + プロテクトモード＜32ビット＞をアセンブラで記述する。<BR>
+・ＤＯＳエクステンダに対応したＣコンパイラを使う。<BR>
+386 の知識も（少し）必要なので初心者お断りな状態です。<BR>
+<BR>
+Watcom C++ 専用（動作可）とDJGPP用（超作りかけ）。<BR>
+<A HREF="vram9821.lzh">vram9821.lzh</A> 2002/09/24<BR>
+<BR>
+
+<A NAME="VSYNC"><HR></A>
+VSync の監視<BR>
+<BR><BR>
+CRTC(グラフィックGDC) の垂直同期(VSync)周波数を使用します。<BR>
+<BR>
+サンプルは VSync を利用して一定のウエイトを取ります。<BR>
+(常に監視するタイプと割り込みを使用するタイプの２つ。)<BR>
+<BR>
+VSync はいろいろな使い方が出来るので知っていれば便利だと思います。<BR>
+<BR>
+<A HREF="vsync98.lzh">vsync98.lzh</A> 2011/09/11<BR>
+<BR>
+
+<A NAME="GD54xx"><HR></A>
+GD5428/5430/5440を使う<BR>
+<BR><BR>
+Cirrus Logic の低速と言われたグラフィックチップ GD5440 を使用します。<BR>
+（ただし、ビデオ・アクセラレーションは ViRGE を超える性能を持つ。）<BR>
+世代の遅れたチップをいつまでも使い続けたＮＥＣは何を考えているのやら。<BR>
+<BR>
+対応機種は BX4,Bp,Bs,Be,Bf,Cb2以降,Cx2以降,Xe10,Xa7e,V7以降等。<BR>
+(EPSON PC-486/586 で GD5428/GD5429 を搭載した機種も仮対応。)<BR>
+また拡張ボード PC-9801-96,GA_98NB,WAB,WSN_A も動作可能なハズ。<BR>
+解像度は 640x480 および 800x600 に対応、(1024x768は調整中)<BR>
+色深度は256色およびハイカラー(16bit)に対応しています。<BR>
+<BR>
+低解像度の周波数の調整が甘いかも知れない。<BR>
+(水平同期が 31.4KHz になってるのを 31.5KHz にすべきか。)<BR>
+<BR>
+<A HREF="gd54xx.lzh">gd54xx.lzh</A> 2012/04/01<BR>
+<BR>
+
+<A NAME="GA1024"><HR></A>
+GA-1024A/1280A を使う<BR>
+<BR><BR>
+I/O DATA の自社開発チップを搭載した GA-1024A もしくは GA-1280 を<BR>
+制御します。<BR>
+<BR>
+I/O DATA よりダウンロードできるWindows用ドライバに同封されている<BR>
+開発者向けライブラリは使用しませんが、GAINIT.EXE は必要です。<BR>
+<BR>
+まだ、解析途中な部分もあります。<BR>
+<BR>
+<A HREF="ga1024.lzh">ga1024.lzh</A> 2012/08/14<BR>
+参考：<A HREF="http://www.iodata.jp/lib/product/g/169.htm">I/O DATA - DL</A>
+ GA-1024A<BR>
+<BR>
+
+<A NAME="MYSTIQUE"><HR></A>
+Mystique 相当品の解析<BR>
+<BR><BR>
+V166,V200,V233 用の作りかけソース。<BR>
+動作せず。<BR>
+1MB を超えるメモリにアクセスする必要があるのでDOSエクステンダ仕様。<BR>
+<BR>
+<A HREF="mga98_32.lzh">mga98_32.lzh</A> 2012/02/26<BR><BR>
+
+
+
+<A NAME="CALENDER"><HR></A>
+カレンダ割り込み<BR>
+<BR><BR>
+PC-9821 の高解像度タイマーを使って10秒間待ちます。<BR>
+対応機種は An,As3,Ap3,MATE-X,CanBe2(Cb,Cx,Cf),ValueStar 以降です。<BR>
+(後期のPC-9801やAs2,Ap2の一部ロットも対応しているらしいですが未確認。)<BR>
+<BR>
+<A HREF="calend98.lzh">calend98.lzh</A> 2011/10/16<BR><BR>
+
+
+<A NAME="MOUSE"><HR></A>
+マウス制御<BR>
+<BR><BR>
+mouse.com (INT 33h) と直接 I/O を使った２つのサンプルソースです。<BR>
+<BR>
+<A HREF="mouse98.lzh">mouse98.lzh</A> 2011/02/26<BR><BR>
+
+<A NAME="KEY_IO"><HR></A>
+キーボード I/O 制御<BR>
+<BR><BR>
+BIOS を使わずにキーボードを制御します。<BR>
+そのため、システム共通域のキーバッファは変化しません。<BR>
+よってバッファ・オーバーのビープ音も鳴りません。<BR>
+<BR>
+32ビット動作時にBIOS(16ビット)が使用できない時や、<BR>
+高速にキーボードを使用したい時に使います。<BR>
+<A HREF="key_io.lzh">key_io.lzh</A> 2003/01/15<BR><BR>
+
+<A NAME="INIT118"><HR></A>
+118音源のMIDIを初期化する<BR>
+<BR><BR>
+悪名高い１１８音源（PC-9801-118）の初期化をします。<BR>
+えらー１５ さんの作成した init118.com のアセンブラソースを<BR>
+Ｃ言語で書き直したものです。<BR>
+(FreeBSD/98 で使われているかも？)<BR>
+<BR>
+なお、118音源を PnP モードで使用している場合は<BR>
+ISA PnP Tolls 1.27 for PC-9821 で初期化後に<BR>
+MIDI 初期化が出来るようになります。<BR>
+<BR>
+ソースのみ。<BR>
+<A HREF="init118c.lzh">init118c.lzh</A> 2002/09/12<BR><BR>
+参考：<A HREF="http://hp.vector.co.jp/authors/VA000363/">えらー１５の小屋</A>
+ init118 ソース＆資料<BR>
+関連：<A HREF="soft98.htm" TARGET="RIGHT">ISA PnP Tolls 1.27 for PC-9821</A><BR>
+<BR>
+
+<A NAME="CBUS-PNP"><HR></A>
+ＣバスのＰｎＰ検出<BR>
+<BR><BR>
+
+いろいろ調査中・・・<BR>
+<BR>
+<A HREF="pnp98.lzh">pnp98.lzh</A> 2011/02/27<BR>
+関連：<A HREF="soft98.htm" TARGET="RIGHT">ISA PnP Tolls 1.27 for PC-9821</A><BR>
+<BR>
+
+<A NAME="MoveIO"><HR></A>
+MM 関連機能の I/O の再配置<BR>
+<BR><BR>
+CanBe あたりから追加された機能でマルチメディア機能の<BR>
+FM音源、WSS-PCM 等の再配置可能な I/O を検索します。<BR>
+<BR>
+I/O Port 0x0c24 で機能インデックス(FM,PCM,Remocon)を指定して<BR>
+I/O Port 0x0c2b / 0x0c2d で I/O アドレスの読み出し、書き込みを行います。<BR>
+<BR>
+<A HREF="move_io.lzh">move_io.lzh</A> 2011/04/22<BR>
+<BR>
+
+<A NAME="WSS-PCM"><HR></A>
+MATE-X PCM で再生<BR>
+<BR><BR>
+WSS-PCM と呼ばれる機能を使用します。<BR>
+PC-9821では MATE-X PCM や CanBe Sound などが該当します。<BR>
+(CS4231,CS4232,YMF701,YMF715 等)<BR>
+<BR>
+KAJAさんの資料を参考にすべてＣ言語で書きました。<BR>
+ＰＩＯモードとＤＭＡモードの二つが入っています。<BR>
+しかも希少なフルＣ言語ソース !!<BR>
+<BR>
+ＤＭＡモードが正しく動作しない時は強制リソース指定に<BR>
+変更してからコンパイルしてね。<BR>
+<A HREF="wss_test.lzh">wss_test.lzh</A> 2011/05/04<BR><BR>
+参考：<A HREF="http://www5.airnet.ne.jp/kajapon/">[かぢゃぽんのお部屋]</A>
+ WP ソース＆資料<BR><BR>
+感謝：sfish さん、reiria さん<BR>
+ →不具合の指摘、修正コードは非常に助かりました。<BR>
+<BR>
+
+<A NAME="B86-PCM"><HR></A>
+86音源 PCM で再生<BR>
+<BR><BR>
+DOS時代は標準だった PC-9801-86 の PCM 機能を使用します。<BR>
+PC-9821Aシリーズや初期PC-9821Cシリーズなどが該当します。<BR>
+(YM2608,WaveStar,WaveSMIT,WaveMaster,Card86等)<BR>
+<BR>
+割り込み使用版と未使用版の二つが入っています。<BR>
+しかも希少なフルＣ言語ソース !!<BR>
+<BR>
+割り込みは INT5 固定ですがコード自体は変更できるように作っています。<BR>
+<BR>
+実際の86音源で確認していないので注意が必要です。<BR>
+<BR>
+<A HREF="p86_test.lzh">p86_test.lzh</A> 2011/09/04<BR>
+<BR>
+
+<A NAME="SB16-PCM"><HR></A>
+SB16/98 PCM で再生<BR>
+<BR><BR>
+SoundBLASTER16 の98版。<BR>
+<BR>
+海外サイトでゲットしたＣ言語ソースを98に移植。<BR>
+PIO 転送版、DMA 転送版の２つが入っています。<BR>
+しかも希少なフルＣ言語ソース !!<BR>
+<BR>
+環境変数 SET BLASTER A20D2 I12 D3 とするのが面倒なので<BR>
+自力でハードウェアのリソースを検索するツールも含めました。<BR>
+(DMAは検索できないけど。)<BR>
+<BR>
+さらに EPSON PC-486MU以降の内蔵音源 ES688 (SB Pro互換)でも<BR>
+動くように SB Pro 用のコードを追加しました。<BR>
+<BR>
+<A HREF="sb16_98.lzh">sb16_98.lzh</A> 2011/08/28<BR>
+<BR>
+
+<A NAME="CanBe"><HR></A>
+CanBe リモコンを使う<BR>
+<BR><BR>
+資料はあるので作ってみた。<BR>
+<BR>
+第１世代 CanBe Cb / Cx / Cf は不明。<BR>
+第２世代 CanBe Cx3 / Cx13 / Cb10 は動作する？<BR>
+第３世代 CanBe Cu10 / Ct16 は動作せず。<BR>
+<BR>
+<A HREF="canbe.lzh">canbe.lzh</A> 2011/04/29<BR>
+<BR>
+
+<A NAME="FM-CHK"><HR></A>
+ＦＭ音源の存在チェック<BR>
+<BR><BR>
+Sound ID に対応していない２６音源とかスピークボードとか。<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="400" BGCOLOR="#008888">
+#include < stdio.h ><BR>
+#include < dos.h ><BR><BR>
+void main(void)<BR>
+{
+<blockquote>
+// YM2203,YM2608,YMF288,YMF297<BR>
+int i,x;<BR><BR>
+for(i=0;i<100;i++){<BR>
+x = inportb(0x0188);<BR>
+if(x == 0x00ff)<BR>
+break;<BR>
+}<BR>
+if(x == 0x00ff)<BR>
+printf("OPNがありません。\n");<BR>
+else<BR>
+printf("OPNがあります。\n");<BR>
+</blockquote>
+}<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+
+<A NAME="FM-OPL3"><HR></A>
+ＦＭ音源の OPL3 を使う<BR>
+<BR><BR>
+SB16/98 のＦＭ音源 OPL3(YMF262) を使います。<BR>
+<BR>
+CanBe の OPL3 はまだ音が出ません。<BR>
+<BR>
+<A HREF="fm_opl3.lzh">fm_opl3.lzh</A> 2011/07/17<BR>
+<BR>
+
+<A NAME="SOUND-IO"><HR></A>
+音源チップのI/O Port表<BR>
+<BR><BR>
+
+<TABLE BORDER=1 CELLSPACING=2 CELLPADDING=2>
+<TR>
+<TD ROWSPAN=2 COLSPAN=1>I/O Port</TD>
+<TD ROWSPAN=1 COLSPAN=2>AT互換機</TD>
+<TD ROWSPAN=1 COLSPAN=4>PC-9821/9801</TD>
+</TR>
+<TR>
+<TD>WSS</TD>
+<TD>SA/2/3/x</TD>
+<TD>WSS</TD>
+<TD>86</TD>
+<TD>118</TD>
+<TD>YMF715</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>SB16</TD>
+<TD>-</TD>
+<TD>0x0220-0x022F</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>OPL3</TD>
+<TD>-</TD>
+<TD>0x0388-0x038B</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>0x1488-0x148B</TD>
+<TD>0x1488-0x148B</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>OPN</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>0x0188-0x018B</TD>
+<TD>0x0188-0x018B</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>Board<BR>Control</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>0x0480-0x048F</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>OPL3SA<BR>Control</TD>
+<TD>-</TD>
+<TD>0x0370-0x0371<BR>(0x0310)<BR>(0x0538)</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>0x0480-0x0481</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>MIDI</TD>
+<TD>-</TD>
+<TD>0x0330</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>0x148C-0x148D</TD>
+<TD>0x148C-0x148D</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>WSS</TD>
+<TD>0x0530-0x0537<BR>(0x0e80)<BR>(0x0f40)<BR>(0x0604)</TD>
+<TD>0x0530-0x0537</TD>
+<TD>0x0f40-0x0f47</TD>
+<TD>-</TD>
+<TD>0x0f40-0x0f47</TD>
+<TD>0x0f40-0x0f47</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>Joy port</TD>
+<TD>-</TD>
+<TD>0x0200</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>0x1480-0x1487</TD>
+<TD>0x1480-0x1487</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+
+<TABLE BORDER=1 CELLSPACING=2 CELLPADDING=2>
+<TR>
+<TD ROWSPAN=2 COLSPAN=1>I/O Port</TD>
+<TD ROWSPAN=1 COLSPAN=2>AT互換機</TD>
+<TD ROWSPAN=1 COLSPAN=3>PC-9821/9801</TD>
+</TR>
+<TR>
+<TD>SB16</TD>
+<TD>SB AWE32</TD>
+<TD>SB16/98</TD>
+<TD>SB AWE32/98</TD>
+<TD>MPU/98</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>SB16</TD>
+<TD>0x0220 - 0x022F</TD>
+<TD>0x0220 - 0x022F</TD>
+<TD>0x20D2,2?D2</TD>
+<TD>0xC000 - 0xC00F</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>OPL3</TD>
+<TD>0x0388 - 0x038B</TD>
+<TD>0x0388 - 0x038B</TD>
+<TD>0xC8D2,C?D2</TD>
+<TD>0xC000 - 0xC003</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>MIDI</TD>
+<TD>0x0330,0x0331</TD>
+<TD>0x0330,0x0331</TD>
+<TD>0x80D2,0x81D2</TD>
+<TD>0xC010,0xC011</TD>
+<TD>0xE0D0,0xE0D2</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>AWE32<BR>WaveTable</TD>
+<TD>-</TD>
+<TD>0x0620 - 0x0623<BR>
+0x0A20 - 0x0A23<BR>
+0x0E20 - 0x0E23<BR></TD>
+<TD>-</TD>
+<TD>0xC014 - 0xC017<BR>
+0xD008 - 0xD00B<BR>
+0xE00C - 0xE00F<BR>
+</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>3D Stereo</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>0xC020 - 0xC020<BR>
+0xC012 - 0xC012</TD>
+<TD>-</TD>
+</TR>
+<TR>
+<TD ROWSPAN=1>Joy port</TD>
+<TD>0x0200 - 0x0207</TD>
+<TD>0x0200 - 0x0207</TD>
+<TD>0x04D2</TD>
+<TD>0xC200 - 0xC207</TD>
+<TD>-</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+
+<A NAME="BEEP-PCM"><HR></A>
+BEEP音でＰＣＭ再生<BR>
+<BR><BR>
+昔のソースをあさってたらこんなのがっ。<BR>
+いろいろ作（パク）っていたんだなぁ～・・・<BR>
+タイトルどおりです。ソースのみ。<BR>
+<A HREF="beep_ply.lzh">beep_ply.lzh</A> 2002/09/14<BR><BR>
+
+<A NAME="PC98AT"><HR></A>
+PC-98x1 とＡＴ互換機の判別方法<BR>
+<BR>
+<BR>
+INT 10h を使って調べる事ができます。<BR>
+PC-98x1 では NDP 割り込み。<BR>
+ＡＴ互換機ではビデオ・ＢＩＯＳです。<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="400" BGCOLOR="#008888">
+#include < stdio.h ><BR>
+#include < dos.h ><BR><BR>
+void main(void)<BR>
+{
+<blockquote>
+union REGS reg;<BR><BR>
+reg.h.ah = 0x0f;<BR>
+int86(0x10,& reg,& reg);<BR><BR>
+if(reg.h.ah == 0x0f){<BR>
+if(peek(0xfd80,0x0002) == 0x2a27)<BR>
+printf("EPSON PC-9801 互換機です。\n");<BR>
+else<BR>
+printf("NEC PC-98x1 Series です。\n");<BR>
+}<BR>
+else<BR>
+printf("IBM PC/AT 互換機です。\n");
+</blockquote>
+}<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+これで機種判別できますが、誤動作する可能性がゼロとは言えません。<BR>
+（今のところ、誤動作したと言う報告はありません。）<BR>
+<BR>
+
+<A NAME="RESET98"><HR></A>
+Reset for PC-98x1<BR>
+<BR><BR>
+↓のサンプルプログラムは完全リセットですが、<BR>
+復帰再開アドレス（？）を指定するようにすれば<BR>
+HSB みたいなソフトが作れます。多分・・・<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="400" BGCOLOR="#008888">
+#include < stdio.h ><BR>
+#include < dos.h ><BR><BR>
+void main(void)<BR>
+{
+<blockquote>
+outportb(0x37,0x0b);	// SHUT1 = 1<BR>
+outportb(0x37,0x0f);	// SHUT0 = 1<BR>
+<BR>
+outportb(0xf0,0x00);	// CPU RESET<BR>
+</blockquote>
+}<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+
+<A NAME="WAIT98"><HR></A>
+Wait for PC-9821<BR>
+<BR><BR>
+デバイス制御のプログラムをしていると、<BR>
+デバイスに対してウエイトが必要になる事があります。<BR>
+現在のＣＰＵは高速化が激しく、過去に作られたＬＳＩ（ＦＭ音源等）が<BR>
+その高速化された速度について行けずに誤動作することがあるからです。<BR>
+<BR>
+空ループなどでウエイトを取っていれば、将来性に不安があります。<BR>
+（新規開発の無い PC-9821 の将来性は無いに等しいですが・・・）<BR>
+その為には一定間隔のウエイトが必要です。<BR>
+<BR>
+対処方法として、本来の使用目的は不明ですが、<BR>
+ウエイトに良く使われる I/O Port 0x5f があります。<BR>
+<BR>
+I/O Port 0x5f に出力（値は任意）すると、<BR>
+PC-9821 において、0.6 μ秒のウエイトが取る事ができます。<BR>
+仮想86モードでは 1.8 μ秒のウエイトになるらしいです。<BR>
+<BR>
+PC-9801 でも使用可能ですが、ウエイトの時間が機種ごとに異なります。<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="400" BGCOLOR="#008888">
+#include < stdio.h ><BR>
+#include < dos.h ><BR><BR>
+void main(void)<BR>
+{
+<blockquote>
+// real mode 0.6usec / v86 mode 1.8usec 
+outportb(0x005f,0x00);
+</blockquote>
+}<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+
+<A NAME="WIN-CHK"><HR></A>
+Windows の存在チェック<BR>
+<BR><BR>
+Ｗｉｎｄｏｗｓ９５のＤＯＳ窓の設定で”Windowsを検出させない”に<BR>
+チェックをつけていると、このプログラムは意味を持ちません。<BR>
+多分、ＤＯＳ汎用。<BR><BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="400" BGCOLOR="#008888">
+#include < stdio.h ><BR>
+#include < dos.h ><BR><BR>
+void main(void)<BR>
+{
+<blockquote>
+union REGS reg;<BR><BR>
+reg.x.ax = 0x1600;<BR>
+int86(0x2f,& reg,& reg);<BR><BR>
+if((reg.h.al & 0x7f) == 0x00)<BR>
+printf("Windows が存在しません。\n");<BR>
+else<BR>
+printf("Windows が存在します。\n");<BR>
+</blockquote>
+}<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+
+<A NAME="IF-SEGA"><HR></A>
+IF-SEGA/98 を制御する<BR>
+<BR><BR>
+IF-SEGA/98 からコントローラ情報を読み出します。<BR>
+<BR>
+ただし、PnP でハードウェアが初期化されている必要があります。<BR>
+<BR>
+<A HREF="ifsega.lzh">ifsega.lzh</A> 2011/06/04<BR>
+関連：<A HREF="soft98.htm" TARGET="RIGHT">ISA PnP Tolls 1.27 for PC-9821</A><BR>
+<BR>
+
+<A NAME="PCI-BIOS"><HR></A>
+98 de PCI-BIOS<BR>
+<BR><BR>
+PC-9821 とＡＴ互換機のPCI-BIOS (INT 1Ah) は共通仕様です。<BR>
+BIOSコールのみであればＤＯＳ汎用ソフトになります。<BR>
+いろいろ調査中・・・<BR>
+<BR>
+簡単な「ＢＩＯＳ実装状況の取得」プログラム。<BR>
+ＡＴ互換機でも動作可。<BR>
+<A HREF="pci_bios.lzh">pci_bios.lzh</A> 2011/12/21<BR>
+<BR>
+
+<A NAME="JOYPAD"><HR></A>
+ゲームポートの制御<BR>
+<BR><BR>
+D-SUB15ピンのゲームポートに接続されたゲームパッドを制御します。<BR>
+アナログゲームパッドとＭＳ サイドワインダーゲームパッド用です。<BR>
+ＡＴ互換機のゲームポートとは共通仕様なので I/O Port の<BR>
+変更だけで移植できます。<BR>
+ＣＰＵ速度によってはループ回数を増やす必要があるかもしれません。<BR>
+<BR>
+<A HREF="joypad.lzh">joypad.lzh</A> 2002/10/29<BR><BR>
+
+<A NAME="YOTEI"><HR></A>
+予定<BR><BR><BR>
+・<S>「98 de PCI-BIOS」研究中。</S><BR>
+<BR>
+
+<BR><HR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

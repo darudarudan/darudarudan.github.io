@@ -1,0 +1,308 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<TITLE>PC Memo</TITLE>
+</HEAD>
+<BODY BGCOLOR="#90B0C0" TEXT="#101010" VLINK="#5050A0">
+<FONT SIZE=8>
+<I>PC Memo</I><BR>
+</FONT>
+
+<BR>
+<A HREF="s_m2006.html">2006年</A>　<A HREF="s_m2007.html">2007年</A>　<A HREF="s_m2008.html">2008年</A>　<A HREF="s_m2009.html">2009年</A><BR>
+<A HREF="s_m2010.html">2010年</A>　<A HREF="s_m2011.html">2011年</A>
+　<A HREF="s_m2012.html">2012年</A>　<A HREF="s_m2013.html">2013年</A>　<A HREF="s_m2014.html">2014年</A>
+　2015年　<A HREF="s_m2016.html">2016年</A>　<A HREF="s_m2017.html">2017年</A>
+　<A HREF="s_m2018.html">2018年</A>　<A HREF="s_m2019.html">2019年</A>
+<A HREF="s_m2020.html">2020年</A>　<A HREF="s_m2021.html">2021年</A>
+
+<BR><HR>
+2015/12/04 - Vista の初回インストール<BR>
+<BR>
+Windows Vista をインストールした後に Windows Update に任せたら、<BR>
+英語版 IE9 がインストールされていた。<BR>
+<BR>
+ググると IE をアンインストールして IE をインストールし直せとか<BR>
+書いてあるけど「プログラムと機能」に IE9 が無い。<BR>
+<BR>
+Windows Update で IE9 を入れると更新扱いになるようで<BR>
+「プログラムと機能」の「インストールされた更新プログラムを表示」を<BR>
+選択すると「Windows Internet Explorer 9」が表示される。<BR>
+<BR>
+後は「Windows Internet Explorer 9」をアンインストールして<BR>
+オフライン版の日本語 IE9 をインストールして問題解決。<BR>
+IE9-WindowsVista-x86-jpn.exe (17.8MB)<BR>
+<BR>
+
+<BR><HR>
+2015/08/29 - WD5000LPLX<BR>
+<BR>
+WD5000LPLX のスペック。<BR>
+WD Black 2.5inch 7mm厚 7,200rpm 500GB 32MBキャッシュ SATA3.0<BR>
+<BR>
+価格が7000円を超えるので容量的にコストパフォーマンスは高いとは言えない。<BR>
+<BR>
+WD5000LPLX は AFT 対応なのでセクタ位置調整でどのくらい性能が変わるか<BR>
+ベンチマークを取ってみた。<BR>
+おまけで HTS545025B9A300 (250GB)も追加。<BR>
+<BR>
+CrystalDiskMark 3.0.1 @ 100MB<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR BGCOLOR="#eeeff1">
+<TD>-</TD>
+<TD>WD5000LPLX (調整 無)</TD>
+<TD>WD5000LPLX (調整 有)</TD>
+<TD>HTS545025B9A300</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">Sequential Read</TD>
+<TD>153.251 MB/s</TD>
+<TD>157.103 MB/s</TD>
+<TD>72.246 MB/s</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">Sequential Write</TD>
+<TD>140.497 MB/s</TD>
+<TD>148.430 MB/s</TD>
+<TD>72.486 MB/s</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">Random Read 512KB</TD>
+<TD>36.851 MB/s</TD>
+<TD>63.260 MB/s</TD>
+<TD>27.030 MB/s</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">Random Write 512KB</TD>
+<TD>46.359 MB/s</TD>
+<TD>116.277 MB/s</TD>
+<TD>29.406 MB/s</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">Random Read 4KB (QD=1)</TD>
+<TD>0.832 MB/s [   203.0 IOPS]</TD>
+<TD>0.834 MB/s [   203.7 IOPS]</TD>
+<TD>0.327 MB/s [    79.9 IOPS]</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">Random Write 4KB (QD=1)</TD>
+<TD>0.460 MB/s [   112.3 IOPS]</TD>
+<TD>2.599 MB/s [   634.6 IOPS]</TD>
+<TD>0.894 MB/s [   218.3 IOPS]</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">Random Read 4KB (QD=32)</TD>
+<TD>2.354 MB/s [   574.7 IOPS]</TD>
+<TD>2.344 MB/s [   572.4 IOPS]</TD>
+<TD>0.738 MB/s [   180.2 IOPS]</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">Random Write 4KB (QD=32)</TD>
+<TD>0.454 MB/s [   110.9 IOPS]</TD>
+<TD>2.607 MB/s [   636.6 IOPS]</TD>
+<TD>0.869 MB/s [   212.1 IOPS]</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+セクタ調整無しだと「サイズが小さい書き込み速度」が落ちているのがわかる。<BR>
+さすがに HTS545025B9A300 とは２倍以上の値が出ているので体感できるレベルで速い。<BR>
+<BR>
+セクタ調整の有無は使い方によってはあまり差が無いかもしれない。<BR>
+<BR>
+
+<BR><HR>
+2015/06/02 - TDK MicroSD 16GB<BR>
+<BR>
+なんとなく TDK の MicroSD 16GB ×２を購入。<BR>
+パッケージにも名前があるので中身はイメーションのOEMっぽい。<BR>
+<BR>
+カードリーダーと付属のSDカードアダプタを使って動作確認。２枚とも問題なし。<BR>
+アダプタを外してタブレットに装着、１枚目の認識問題なし。<BR>
+２枚目の MicroSD 装着……あれ？、ロックしないし抜けない…。<BR>
+<BR>
+とりあえず、MicroSDを極細ペンチで強制的に抜き取って、<BR>
+側面をヤスリでホントに少～し削って清掃。<BR>
+再度装着すると、ロックが動作してタブレットでも正常認識。<BR>
+<BR>
+こういう精度の問題って不良品になるのかね？<BR>
+<BR>
+
+<BR><HR>
+2015/05/02 - MIDIポート-USB変換アダプタ<BR>
+<BR>
+800 円くらいの安物MIDIポート-USB変換アダプタを購入。<BR>
+<BR>
+とりあえず MU50 をアダプタを介して接続。<BR>
+機器によって in と out の接続したり、in と in 、out と out を<BR>
+接続するケースがあるので試してみるといい。<BR>
+間違って接続しても壊れる事はないハズ。<BR>
+<BR>
+普通に認識。<BR>
+Vista 以降では複数のMIDI機器があっても選択する事ができないので<BR>
+OS側の設定を変更できるソフトを使うか、ソフト自体がMIDI機器を<BR>
+選択可能な物を使う必要がある。<BR>
+<BR>
+
+<BR><HR>
+2015/04/17 - ACPI ATK0100<BR>
+<BR>
+WinFlash で BIOS を更新しようとすると<BR>
+「Can't open ACPI ATK0100 kernel mode driver.」<BR>
+とエラーが出て WinFlash が起動しない。<BR>
+<BR>
+とりあえずデバイスマネージャを見てみると、<BR>
+認識していないデバイス「その他のデバイス」があった。<BR>
+プロパティのハードウェアIDを確認。やっぱりコレっぽい。<BR>
+ACPI\ATK0100<BR>
+*ATK0100<BR>
+<BR>
+ACPI 関連でドライバを探してもみつからない。<BR>
+<BR>
+いろいろ試してみるとタッチ(?)関係のドライバを入れた時に<BR>
+「ATK0100ACPI Utility」と認識してドライバが入った。<BR>
+<BR>
+ATK0100ACPI Utility が認識されると BIOS も更新できた。<BR>
+<BR>
+
+
+<BR><HR>
+2015/02/01 - 格安 SIM を PC で使う<BR>
+<BR>
+ノートPCでも SIM を挿して通信可能な機種があるらしい。<BR>
+ただし、WWAN 対応カードが装備されている必要がある。<BR>
+<BR>
+PC本体内部に WWAN 用のアンテナ線があるなら後付けも無理じゃないハズ。<BR>
+ただし、DELL の OEM 版はドライバのインストーラに機種チェックがあるので<BR>
+DELL のドライバDLページの「Compitible Systems」で対応機種を確認すること。<BR>
+（対応機種外だとハードウェア的に取り付け出来てもドライバがインストールできない。）<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR BGCOLOR="#eeeff1">
+<TD>-</TD>
+<TD>Novatel EU870D</TD>
+<TD>Ericsson F3607gw</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">OEM</TD>
+<TD>Dell Wireless 5520</TD>
+<TD>Dell Wireless 5540</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">形状</TD>
+<TD>mini PCI-Eカード</TD>
+<TD>mini PCI-Eカード</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">通信</TD>
+<TD>Mobile Broadband 3G HSDPA WWAN</TD>
+<TD>Mobile Broadband 3G HSDPA WWAN</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">GPS</TD>
+<TD>無し?</TD>
+<TD>有り</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">サイズ</TD>
+<TD>51 x 30 x 4.2 mm</TD>
+<TD>51 x 30 x 4.2 mm</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">スピード</TD>
+<TD>HSDPA DL 7.2 Mbps up to 384 Kbps</TD>
+<TD>HSDPA DL 7.2 Mbps up to 2.0 Mbps</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">帯域</TD>
+<TD>HSDPA/UMTS - 850**/1900/2100 MHz<BR>
+EDGE/GPRS - 850/900/1800/1900 MHz<BR>
+** 850, Band 5, includes 800, Band 6 - Japan.<BR>
+</TD>
+<TD>HSDPA/WCDMA at 850/1900/2100 MHz<BR>
+EDGE/GPRS at 850/900/1800/1900 MHz<BR>
+</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">海外SIM</TD>
+<TD>利用可能</TD>
+<TD>利用可能</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+通信に使用する周波数帯域。<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR BGCOLOR="#eeeff1">
+<TD>-</TD>
+<TD>3G</TD>
+<TD>LTE</TD>
+<TD>備考</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">2GHz帯 (※2.1GHz帯)</TD>
+<TD>Band1</TD>
+<TD>Band1</TD>
+<TD>ドコモのメイン帯域。エリアが広い。</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">1.7GHz帯 (※1.8GHz帯)</TD>
+<TD>Band9</TD>
+<TD>Band3</TD>
+<TD>一部の限定エリアのみ。</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">1.5GHz帯</TD>
+<TD>-</TD>
+<TD>Band21</TD>
+<TD>北海道、東北、四国、北陸エリア</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">800MHz帯</TD>
+<TD>Band6<BR>Band19</TD>
+<TD>Band19</TD>
+<TD>電波が届きにくい山間部エリア等で展開。<BR>
+2013年以降のLTE端末でほぼすべて対応。<BR>
+3G のBand19はあまり使われず、Band6が使われる。</TD>
+</TR>
+</TABLE>
+<BR>
+※日本では2.1GHz帯を2GHz帯、1.8GHz帯を1.7GHz帯と呼んでいるらしく、扱いは同じらしい。<BR>
+<BR>
+
+
+<BR><HR>
+2015/01/02 - VT1708S のライン入力の音量<BR>
+<BR>
+録音しようと思ってオンボードのステレオミニ（水色）を使ってみた。<BR>
+<BR>
+なぜか端子を差してもポート認識しない。あれ？<BR>
+マイクとライン出力に端子を指すとソフト側から認識するから端子故障？<BR>
+端子の接触が怪しいので何度も抜き差ししてたら認識するようになった。<BR>
+（購入してから１度も使ってなかったからかなぁ。）<BR>
+<BR>
+録音テストをすると、今度はスピーカーに出力されていない。<BR>
+コントロールパネルのサウンドや VIA HD Audio でミュートを<BR>
+解除しても音が出ない。<BR>
+<BR>
+ドライバを調べてみると 2012-Nov 10.1200A から更新されてない…<BR>
+<BR>
+とりあえずサウンドレコーダーを使ってみるとメーターも変化するし、<BR>
+録音も出来てる。どうやらステレオミックスがうまく動作してないようだ。<BR>
+<BR>
+いろいろ試した結果、Windows のメイン出力音量が７以下だと<BR>
+ライン入力がまったくステレオミックスで出力されない事がわかった。<BR>
+８以上にすればライン入力の音がスピーカーから出てくる。<BR>
+<BR>
+これってハードウェアのレベル設定がソフトに対して 1/8 しか<BR>
+無いってことだよね。もう少しうまくプログラムを組めなかったのかな。<BR>
+<BR>
+
+<BR><HR><BR>
+
+<BR><BR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

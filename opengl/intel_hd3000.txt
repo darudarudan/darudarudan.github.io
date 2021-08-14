@@ -1,0 +1,177 @@
+i5-2500 Windows7 Ver 8.15.10.2509
+
+GL Vender : Intel
+GL Renderer : Intel(R) HD Graphics Family
+GL Version : 3.1.0 - Build 8.15.10.2509
+GLSL Version : 1.40  - Intel Build 8.15.10.2509
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+Display 1920 x 1080 : color 32 bits
+# 3, RGBA 8/8/8/8, Z 24, S 8, WIN, GL, CPOS
+# 4, RGBA 8/8/8/8, db, Z 24, S 8, WIN, GL, SWEX, CPOS
+# 5, RGBA 8/8/8/8, Z 16, WIN, GL, CPOS
+# 6, RGBA 8/8/8/8, db, Z 16, WIN, GL, SWEX, CPOS
+#16, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT, CPOS
+#17, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT, CPOS
+#20, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT, CPOS
+#21, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT, CPOS
+#24, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT, CPOS
+#25, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT, CPOS
+#26, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP, CPOS
+#27, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP, CPOS
+#28, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#29, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#30, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#31, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#32, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#33, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#34, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#35, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#36, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#37, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#38, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#39, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#40, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#41, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#42, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#43, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#44, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#45, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#46, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#47, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#48, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#49, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#50, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#51, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_EXT_blend_minmax
+GL_EXT_blend_subtract
+GL_EXT_blend_color
+GL_EXT_abgr
+GL_EXT_texture3D
+GL_EXT_clip_volume_hint
+GL_EXT_compiled_vertex_array
+GL_SGIS_texture_edge_clamp
+GL_SGIS_generate_mipmap
+GL_EXT_draw_range_elements
+GL_SGIS_texture_lod
+GL_EXT_rescale_normal
+GL_EXT_packed_pixels
+GL_EXT_texture_edge_clamp
+GL_EXT_separate_specular_color
+GL_ARB_multitexture
+GL_EXT_texture_env_combine
+GL_EXT_bgra
+GL_EXT_blend_func_separate
+GL_EXT_secondary_color
+GL_EXT_fog_coord
+GL_EXT_texture_env_add
+GL_ARB_texture_cube_map
+GL_ARB_transpose_matrix
+GL_ARB_texture_env_add
+GL_IBM_texture_mirrored_repeat
+GL_EXT_multi_draw_arrays
+GL_NV_blend_square
+GL_ARB_texture_compression
+GL_3DFX_texture_compression_FXT1
+GL_EXT_texture_filter_anisotropic
+GL_ARB_texture_border_clamp
+GL_ARB_point_parameters
+GL_ARB_texture_env_combine
+GL_ARB_texture_env_dot3
+GL_ARB_texture_env_crossbar
+GL_EXT_texture_compression_s3tc
+GL_ARB_shadow
+GL_ARB_window_pos
+GL_EXT_shadow_funcs
+GL_EXT_stencil_wrap
+GL_ARB_vertex_program
+GL_EXT_texture_rectangle
+GL_ARB_fragment_program
+GL_EXT_stencil_two_side
+GL_ATI_separate_stencil
+GL_ARB_vertex_buffer_object
+GL_EXT_texture_lod_bias
+GL_ARB_occlusion_query
+GL_ARB_fragment_shader
+GL_ARB_shader_objects
+GL_ARB_shading_language_100
+GL_ARB_texture_non_power_of_two
+GL_ARB_vertex_shader
+GL_NV_texgen_reflection
+GL_ARB_point_sprite
+GL_ARB_fragment_program_shadow
+GL_EXT_blend_equation_separate
+GL_ARB_depth_texture
+GL_ARB_texture_rectangle
+GL_ARB_draw_buffers
+GL_ARB_color_buffer_float
+GL_ARB_half_float_pixel
+GL_ARB_texture_float
+GL_ARB_pixel_buffer_object
+GL_EXT_framebuffer_object
+GL_ARB_draw_instanced
+GL_ARB_half_float_vertex
+GL_EXT_draw_buffers2
+GL_WIN_swap_hint
+GL_EXT_texture_sRGB
+GL_ARB_multisample
+GL_EXT_packed_float
+GL_EXT_texture_shared_exponent
+GL_ARB_texture_rg
+GL_ARB_texture_compression_rgtc
+GL_NV_conditional_render
+GL_EXT_texture_swizzle
+GL_ARB_sync
+GL_ARB_framebuffer_sRGB
+GL_EXT_packed_depth_stencil
+GL_ARB_depth_buffer_float
+GL_EXT_transform_feedback
+GL_EXT_framebuffer_blit
+GL_EXT_framebuffer_multisample
+GL_ARB_framebuffer_object
+GL_EXT_texture_array
+GL_EXT_texture_integer
+GL_ARB_map_buffer_range
+GL_EXT_texture_snorm
+GL_INTEL_performance_queries
+GL_ARB_copy_buffer
+GL_ARB_sampler_objects
+GL_NV_primitive_restart
+GL_ARB_seamless_cube_map
+GL_ARB_uniform_buffer_object
+GL_ARB_depth_clamp
+GL_ARB_vertex_array_bgra
+GL_ARB_draw_elements_base_vertex
+GL_ARB_fragment_coord_conventions
+GL_EXT_gpu_program_parameters
+GL_ARB_compatibility
+GL_ARB_vertex_array_object
+WGL_EXT_depth_float
+WGL_ARB_buffer_region
+WGL_ARB_extensions_string
+WGL_ARB_make_current_read
+WGL_ARB_pixel_format
+WGL_ARB_pbuffer
+WGL_EXT_extensions_string
+WGL_EXT_swap_control
+WGL_ARB_multisample
+WGL_ARB_pixel_format_float
+WGL_ARB_framebuffer_sRGB
+WGL_ARB_create_context
+WGL_EXT_pixel_format_packed_float
+WGL_EXT_depth_float
+WGL_ARB_buffer_region
+WGL_ARB_extensions_string
+WGL_ARB_make_current_read
+WGL_ARB_pixel_format
+WGL_ARB_pbuffer
+WGL_EXT_extensions_string
+WGL_EXT_swap_control
+WGL_ARB_multisample
+WGL_ARB_pixel_format_float
+WGL_ARB_framebuffer_sRGB
+WGL_ARB_create_context
+WGL_EXT_pixel_format_packed_float
+

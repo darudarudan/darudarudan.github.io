@@ -1,0 +1,549 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="Keywords" content="OpenGL,OpenGL ES,GLSL,Mesh,Skin,ODE,メッシュ,スキン,モデル">
+<TITLE>だるだる団 DaruDaruDan OpenGL</TITLE>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#FFFFFF"LINK="#00CC88" VLINK="#0088CC">
+<FONT SIZE="5">だるだる団の OpenGL</FONT><BR>
+<BR>
+<FONT SIZE="2">適当な理由で OpenGL に興味が出たから作ってみた。</FONT>
+<BR><HR>
+[ Information ]<BR>
+<BR>
+OpenGL もしくは OpenGL ES で動くプログラムの開発中に<BR>
+作成したサンプルのバイナリ＆ソースを置いてみた。<BR>
+<BR>
+
+<BR><HR>
+[ Platform ]<BR>
+<BR>
+ここで公開しているサンプルは VC6 用のプロジェクトを入れているので<BR>
+VC 系ならビルド出来るハズ。<BR>
+<BR>
+VC6 以外でも OpenGL SDK はほとんどの開発環境で標準で入ってるので<BR>
+別途 SDK を用意しなくても普通にビルドできる。<BR>
+<BR>
+さらに GUI と OpenGL のコードを分けているので Windows 以外への<BR>
+移植も比較的簡単。(Android NDK とか。)<BR>
+<BR>
+
+<BR><HR>
+[ Update ]<BR><BR>
+2019/0x/xx gl_caps の結果を追加。<BR>
+2017/10/07 gl_caps の結果を更新。<BR>
+2016/09/06 gl_caps の結果を追加。<BR>
+2016/06/20 gl_caps の結果を追加。<BR>
+<BR>
+
+<BR><HR>
+[ Software ]<BR><BR>
+<BR>
+
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5 WIDTH="600">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#333388">
+<FONT COLOR="#00AAFF"><I>敵を知るには己から</I></FONT></TD>
+</TR>
+<TR>
+<TD BGCOLOR="#222288" WIDTH="180">Download</TD>
+<TD BGCOLOR="#222288">Document</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL Capability</FONT><BR>
+<A HREF="gl_caps.lzh">gl_caps.lzh</A> 2014/02/08</TD>
+<TD BGCOLOR="#000088">
+GPU の OpenGL バージョンとサポート機能を表示します。<BR>
+バイナリのみ。<BR>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN=3 BGCOLOR="#000088">
+<FONT COLOR="#00AAFF"><I>※エクステンションの取得結果</I></FONT><BR>
+<A HREF="xpres200.txt">XPRESS 200M</A>
+<A HREF="amd780g.txt">AMD 780G</A>
+<A HREF="via_cx700.txt">VIA CX700</A>
+<A HREF="via_vx800.txt">VIA VX800</A>
+<A HREF="ch430gt.txt">Chrome430GT</A> <BR>
+<A HREF="m672_1.txt">SiS M672</A>
+<A HREF="xgi_v3xt.txt">XGI V3XT</A> <BR>
+<A HREF="intel_865.txt">Intel 865G</A>
+<A HREF="intel_Q33.txt">Intel Q33</A>
+<A HREF="intel_hd3000.txt">Intel HD3000</A>
+<A HREF="intel_hd2500.txt">Intel HD2500</A>
+<A HREF="intel_hd_graphics630.txt">Intel HD Graphics630</A><BR>
+<A HREF="gf6100.txt">GeForce6100</A>
+<A HREF="gf8200.txt">GeForce8200</A>
+<A HREF="riva_tnt.txt">RIVA TNT</A>
+<A HREF="q_nvs285.txt">Quadro NVS 285</A>
+<A HREF="nvs4200m.txt"> NVS 4200M</A><BR>
+<A HREF="mesa.txt">Mesa3D</A>
+<A HREF="vmware.txt">VMware</A>
+<A HREF="vbox.txt">VirtualBox</A>
+<A HREF="ReactOS.txt">ReactOS</A>
+<A HREF="ms.txt">Microsoft</A>
+</TD>
+</TR>
+</TABLE>
+<BR><BR>
+
+<BR><HR>
+[ Program ]<BR><BR>
+責任は一切、負わないので自由に使ってください。<BR>
+<BR>
+
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5 WIDTH="832">
+<TR>
+<TD COLSPAN=4 BGCOLOR="#333388">
+<FONT COLOR="#00AAFF"><I>OpenGL Test サンプルを作った</I></FONT></TD>
+</TR>
+<TR>
+<TD BGCOLOR="#222288">Download</TD>
+<TD BGCOLOR="#222288">Document</TD>
+<TD BGCOLOR="#222288">Function</TD>
+<TD BGCOLOR="#222288">ES</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest01.lzh">gltest01.lzh</A> 2006/07/01<BR>
+Update ----/--/--</TD>
+<TD BGCOLOR="#000088">
+立方体を作って回転させるサンプル。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.1</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest02.lzh">gltest02.lzh</A> 2006/07/01<BR>
+Update <FONT COLOR="#40a040">2006/07/29</FONT></TD>
+<TD>
+立方体にテクスチャマッピング。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.1</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest03.lzh">gltest03.lzh</A> 2006/10/07<BR>
+Update ----/--/--</TD></TD>
+<TD>
+3Dオブジェクトと2Dフォント(glBitmap)を合成描画する。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.1</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest04.lzh">gltest04.lzh</A> 2007/01/04<BR>
+Update ----/--/--</TD></TD>
+<TD>
+wglUseFontOutlines を使って3Dフォントを描画する。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.1<BR>wglUseFontOutlines</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest05.lzh">gltest05.lzh</A> 2008/01/14<BR>
+Update <FONT COLOR="#40a040">2010/11/16</FONT></TD>
+<TD BGCOLOR="#000088">
+Windows GUI と OpenGL が共存したウインドウを作る。<BR>
+バイナリ、ソース付き。 <BR>
+</TD>
+<TD>・OpenGL 1.1</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest06.lzh">gltest06.lzh</A> 2010/09/10<BR>
+Update <FONT COLOR="#40a040">2010/11/16</FONT></TD>
+<TD>
+垂直同期の制御。新旧対応 (OpenGL 3.0 未満、以降)<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・WGL_EXT_extensions_string<BR>・WGL_EXT_swap_control</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest07.lzh">gltest07.lzh</A> 2010/11/09<BR>
+Update <FONT COLOR="#40a040">2010/11/09</FONT></TD>
+<TD>
+ポリゴンをマウスで選択するピッキング処理。(未完成)<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.1<BR>
+glSelectBuffer , glRenderMode<BR>glInitNames , gluPickMatrix</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest08.lzh">gltest08.lzh</A> 2011/01/05<BR>
+Update <FONT COLOR="#40a040">2014/01/02</FONT></TD>
+<TD>
+ポリゴン描画方法いろいろ。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.2<BR>
+glBegin , glVertex , glEnd<BR>glDrawArrays , glDrawElements
+</TD>
+<TD>○</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest09.lzh">gltest09.lzh</A> 2012/01/07<BR>
+Update <FONT COLOR="#40a040">2014/01/02</FONT></TD>
+<TD>
+ビルボードの生成。（ポリゴン）<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.1 ?</TD>
+<TD>○</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest10.lzh">gltest10.lzh</A> 2012/01/16<BR>
+Update <FONT COLOR="#40a040">2014/01/02</FONT></TD>
+<TD>
+ポイントスプライトによるビルボードの生成。<BR>
+バイナリ、ソース付き。<BR>
+<FONT COLOR="#ff0000">※古い ATI RADEON 9000 系を使っている場合は必ず<BR>
+ドライバを最新（最終）にアップデートしてください。</FONT><BR>
+AMDサイト：<A HREF="http://support.amd.com/ja-jp/download">AMD Graphics Drivers and Software</A>
+</TD>
+<TD>・OpenGL 1.4 or<BR> GL_ARB_point_sprite<BR><BR>
+GL_POINT_SPRITE_ARB ,<BR>
+GL_COORD_REPLACE_ARB<BR>
+</TD>
+<TD>○</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest11.lzh">gltest11.lzh</A> 2013/10/22<BR>
+Update <FONT COLOR="#40a040">2014/01/02</FONT></TD>
+<TD>
+クリック位置(2D)をZバッファを使って3D位置に変換。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.1 ?<BR>
+glReadPixels , gluUnProject<BR>
+</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest12.lzh">gltest12.lzh</A> 2014/01/02<BR>
+Update <FONT COLOR="#40a040">2014/02/05</FONT></TD>
+<TD>
+ポリゴンの半透明合成（アルファブレディング）。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.1 ?<BR>
+GL_BLEND , glBlendFunc<BR>
+</TD>
+<TD>○</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest13.lzh">gltest13.lzh</A> 2014/01/26<BR>
+Update ----/--/--</TD>
+<TD>
+デバッグ用の文字列受け取り。<BR>
+OpenGL 4.x 世代のドライバで対応している。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>GL_ARB_debug_output or<BR>
+GL_AMD_debug_output<BR>
+</TD>
+<TD>×</TD>
+</TR>
+<TR BGCOLOR="#000088">
+<TD>
+<A HREF="gltest14.lzh">gltest14.lzh</A> 2014/02/05<BR>
+Update ----/--/--</TD>
+<TD>
+DDS 形式と圧縮テクスチャ（S3TC）の使用。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD>・OpenGL 1.3 or<BR>
+GL_ARB_texture_compression ,<BR>
+GL_EXT_texture_compression_s3tc<BR>
+</TD>
+<TD>△</TD>
+</TR>
+
+</TABLE>
+<BR><BR>
+
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5 WIDTH="832">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#333388">
+<FONT COLOR="#00AAFF"><I>理解してないけど難しそうなのを移植した</I></FONT></TD>
+</TR>
+<TR>
+<TD BGCOLOR="#222288" WIDTH="180">Download</TD>
+<TD BGCOLOR="#222288" WIDTH="392">Document</TD>
+<TD BGCOLOR="#222288">Function</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL for Nurbs</FONT><BR>
+<A HREF="gl_nurbs.lzh">gl_nurbs.lzh</A> 2006/09/09</TD>
+<TD BGCOLOR="#000088">
+Bスプライン曲線 (NURBS) サンプル。<BR>
+バイナリ、ソース付き。[<A HREF="gl_nurbs.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1<BR>
+gluBeginSurface<BR>
+gluNurbsSurface<BR>
+gluEndSurface</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088"><FONT COLOR="#40a040" SIZE="4">
+OpenGL for 波紋</FONT><BR>
+<A HREF="gl_hamon.lzh">gl_hamon.lzh</A> 2006/09/09</TD>
+<TD BGCOLOR="#000088">
+2次元波動方程式を差分法で解く。<BR>
+バイナリ、ソース付き。[<A HREF="gl_hamon.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088"><FONT COLOR="#40a040" SIZE="4">
+OpenGL for メタボール</FONT><BR>
+<A HREF="gl_meta.lzh">gl_meta.lzh</A> 2006/09/17</TD>
+<TD BGCOLOR="#000088">
+Ｃマガ記事の Direct3D から移植。<BR>
+バイナリ、ソース付き。[<A HREF="gl_meta.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088"><FONT COLOR="#40a040" SIZE="4">
+OpenGL for Water</FONT><BR>
+<A HREF="gl_water.lzh">gl_water.lzh</A> 2006/10/01</TD>
+<TD BGCOLOR="#000088">
+Ｃマガ記事の Direct3D から移植。<BR>
+バイナリ、ソース付き。[<A HREF="gl_water.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088"><FONT COLOR="#40a040" SIZE="4">
+OpenGL for ATI</FONT><BR>
+gl_ati.lzh 2007/01/01<BR>欲しい人は掲示板へ。</TD>
+<TD BGCOLOR="#000088">
+海外で見つけたスキニングのサンプル。(頂点ブレンド)<BR>
+（RADEON 8500 以外だとソフトウェア処理）<BR>
+サイズの都合でソースのみ。[<A HREF="gl_ati.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">
+・GL_ARB_vertex_blend<BR>
+・GL_EXT_compiled_vertex_array</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL for Trackball</FONT><BR>
+<A HREF="gl_track.lzh">gl_track.lzh</A> 2008/01/04<BR>
+Update <FONT COLOR="#40a040">2010/10/29</FONT>
+</TD>
+<TD BGCOLOR="#000088">
+マウスのドラッグで立方体を回転させる。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL for Shadow</FONT><BR>
+<A HREF="gl_shadow.lzh">gl_shadow.lzh</A> 2008/01/18</TD>
+<TD BGCOLOR="#000088">
+ステンシルを使って立方体の影を床に描画する。<BR>
+バイナリ、ソース付き。[<A HREF="gl_shadow.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1<BR>glStencilFunc<BR>glStencilOp</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL for Buggy</FONT><BR>
+gl_buggy.lzh 2008/02/24<BR>欲しい人は掲示板へ。</TD>
+<TD BGCOLOR="#000088">
+ODE (Open Dynamics Engine) のサンプルを改良。<BR>
+ただし、曲がろうとするとすぐに吹っ飛んでしまう…。<BR>
+バイナリ、ソース（別途ＯＤＥが必要）付き。<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1<BR>・ODE Ver 0.7 API</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL for MQO</FONT><BR>
+<A HREF="gl_mqo.lzh">gl_mqo.lzh</A> 2012/02/01<BR>
+Update <FONT COLOR="#40a040">2014/01/20</FONT>
+</TD>
+<TD BGCOLOR="#000088">
+Metasequoia v2.4 で出力された MQO ファイルを<BR>
+GLMetaseq で読み込んで VBO で描画する。<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1<BR>・GL_ARB_vertex_buffer_object</TD>
+</TR>
+
+</TABLE>
+<BR><BR>
+
+
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5 WIDTH="832">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#333388">
+<FONT COLOR="#00AAFF"><I>とりあえず作った</I></FONT></TD>
+</TR>
+<TR>
+<TD BGCOLOR="#222288" WIDTH="180">Download</TD>
+<TD BGCOLOR="#222288" WIDTH="392">Document</TD>
+<TD BGCOLOR="#222288">Function</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088"><FONT COLOR="#40a040" SIZE="4">
+D3DX互換ライブラリ</FONT><BR>
+<A HREF="dx8_matx.lzh">dx8_matx.lzh</A> 06/11/04</TD>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#00AAFF"><I>行列＆ベクトル計算関数を作ってみた。</I></FONT><BR>
+D3DXライブラリの関数となんとなく互換。<BR>
+ソース付き。</TD>
+<TD BGCOLOR="#000088">なし</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL for Movie</FONT><BR>
+<A HREF="gl_movie.lzh">gl_movie.lzh</A> 2008/02/10<BR>
+Update <FONT COLOR="#40a040">2010/11/01</FONT></TD>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#00AAFF"><I>立方体のテクスチャとして動画を貼り付けてみた。</I></FONT><BR>
+DirectShow グラバフィルタを使用。非常に重い。<BR>
+音声なし、通常再生時の10倍以上の負荷がかかる。<BR>
+バイナリ、ソース付き。 [<A HREF="gl_movie.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1<BR>・DIB (Win32)<BR>・DirectShow (DX8)</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL for Movie2</FONT><BR>
+<A HREF="gl_movie2.lzh">gl_movie2.lzh</A> 2010/11/01</TD>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#00AAFF"><I>立方体のテクスチャとして動画を貼り付けてみた。</I></FONT><BR>
+DirectShow レンダラフィルタを作成。少し重い。<BR>
+音声あり、通常再生時の２倍くらいの負荷がかかる。<BR>
+バイナリ、ソース付き。[<A HREF="gl_movie.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1<BR>・DIB (Win32)<BR>・DirectShow (DX8)</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">GLSL Build Checker</FONT><BR>
+<A HREF="glsl_bld.lzh">glsl_bld.lzh</A> 2010/11/11</TD>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#00AAFF"><I>GLSL のコンパイルとリンクをチェックしたかった。</I></FONT><BR>
+文法などのエラーがある場合にそれを表示する。<BR>
+バイナリ、ソース付き。<BR>
+</TD>
+<TD BGCOLOR="#000088">
+・GL_ARB_shader_objects<BR>
+・GL_ARB_vertex_shader<BR>
+・GL_ARB_fragment_shader<BR>
+・GL_ARB_geometry_shader4</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL Mesh</FONT> R16<BR>
+<A HREF="glm32.lzh">glm32.lzh</A> 2013/10/20</TD>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#00AAFF"><I>OpenGL でモデルデータを使いたかった</I></FONT><BR>
+OpenGL でメッシュの標準的なファイル形式が<BR>
+存在しないのでライブラリを作ってみた。<BR>
+コンバータとサンプルソース付き。　[<A HREF="glm.png">こんな感じ</A>]<BR>
+</TD>
+<TD BGCOLOR="#000088">-</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL Mesh</FONT> for ES<BR>
+<FONT COLOR="#ff0000">希望者のみ。（要許可）</FONT></TD>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#00AAFF"><I>WindowsCE や Android でモデルデータを使いたかった</I></FONT><BR>
+ベースには OpenGL ES 1.x を使用。<BR>
+Android 版は Java を使わず NDK (JNI) で開発。<BR>
+制限事項：フォント機能が使えない。<BR>
+</TD>
+<TD BGCOLOR="#000088">-</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">Mesa Ver 7.0.2 for VC6</FONT><BR>
+<A HREF="m702vc6.lzh">m702vc6.lzh</A> 2008/01/26</TD>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#00AAFF"><I>Mesa 3D を VC6 で使いたかった</I></FONT><BR>
+Mesa 7.0.2 には VC6 のプロジェクトが無いので作った。<BR>
+</TD>
+<TD BGCOLOR="#000088">なし</TD>
+</TR>
+</TABLE>
+<BR><BR>
+
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5 WIDTH="832">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#333388">
+<FONT COLOR="#00AAFF"><I>でも GLUT だった</I></FONT></TD>
+</TR>
+<TR>
+<TD BGCOLOR="#222288" WIDTH="180">Download</TD>
+<TD BGCOLOR="#222288" WIDTH="392">Document</TD>
+<TD BGCOLOR="#222288">Function</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#000088">
+<FONT COLOR="#40a040" SIZE="4">OpenGL on GLUT</FONT><BR>
+<A HREF="glut_ko.lzh">glut_ko.lzh</A> 2006/07/01</TD>
+<TD BGCOLOR="#000088">
+<A HREF="http://www.komoto.org/">www.komoto.org</A>
+ で公開されているサンプルプログラムの<BR>
+ソースコードの文字コードを EUC から SJIS に変更して<BR>
+VCプロジェクトを追加したパッケージ。<BR>
+</TD>
+<TD BGCOLOR="#000088">・OpenGL 1.1</TD>
+</TR>
+</TABLE>
+<BR><BR>
+
+
+<BR><HR>
+ OpenGL とは？<BR>
+<BR>
+ＳＧＩ (Silicon Graphics) 社が中心となって開発された<BR>
+3Dグラフィックス処理のためのＡＰＩ。<BR>
+<BR>
+仕様の策定を行う団体は SGI → ARB → Khronos と変わっている。<BR>
+(ARB → Architecture Review Board)<BR>
+<BR>
+[ Link ]<BR>
+<A HREF="http://www.opengl.org/" TARGET="_top">www.opengl.org</A><BR>
+　<A HREF="http://www.opengl.org/registry/" TARGET="_top">Extension Registry</A><BR>
+　<A HREF="http://www.opengl.org/code/" TARGET="_top">Tutorial Listings</A><BR>
+<BR>
+<A HREF="http://www.khronos.org/" TARGET="_top">khronos</A><BR>
+　<A HREF="http://www.khronos.org/opengles/documentation/opengles1_1/gl_egl_ref_1_1_20041110/index.html" TARGET="_top">OpenGL ES Reference Manual</A><BR>
+　<A HREF="http://www.khronos.org/developers/resources/opengles/" TARGET="_top">OpenGL ES Implementations</A><BR>
+<BR>
+<A HREF="http://www.mesa3d.org/">Mesa 3D</A><BR>
+<A HREF="http://www.ode.org/">ODE</A> - Open Dynamics Engine<BR>
+<BR>
+
+<BR><HR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A> (だるだる団)<BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

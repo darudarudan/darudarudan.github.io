@@ -1,0 +1,106 @@
+GFX_XP32_14.37.4.5218_PV_Intel.exe  2010/02/01
+
+GL Vender : Intel
+GL Renderer : Intel Bear Lake B
+GL Version : 1.4.0 - Build 7.15.10.5218
+GLSL Version : Not Supported
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 1280 x 1024 : color 32 bits
+# 3, RGBA 8/8/8/8, Z 16, WIN, GL
+# 4, RGBA 8/8/8/8, db, Z 16, WIN, GL
+# 5, RGBA 8/8/8/8, Z 24, S 8, WIN, GL
+# 6, RGBA 8/8/8/8, db, Z 24, S 8, WIN, GL
+# 7, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+# 8, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#11, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#12, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#15, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#16, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#17, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#18, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#19, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#20, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#21, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#22, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#23, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#24, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#25, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#26, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#27, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#28, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#29, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#30, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#31, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#32, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#33, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#34, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#35, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#36, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#37, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#38, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#39, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#40, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#41, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#42, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_ARB_depth_texture
+GL_ARB_fragment_program
+GL_ARB_multitexture
+GL_ARB_point_parameters
+GL_ARB_shadow
+GL_ARB_texture_border_clamp
+GL_ARB_texture_compression
+GL_ARB_texture_cube_map
+GL_ARB_texture_env_add
+GL_ARB_texture_env_combine
+GL_ARB_texture_env_dot3
+GL_ARB_texture_env_crossbar
+GL_ARB_transpose_matrix
+GL_ARB_vertex_buffer_object
+GL_ARB_vertex_program
+GL_ARB_window_pos
+GL_EXT_abgr
+GL_EXT_bgra
+GL_EXT_blend_color
+GL_EXT_blend_func_separate
+GL_EXT_blend_minmax
+GL_EXT_blend_subtract
+GL_EXT_clip_volume_hint
+GL_EXT_compiled_vertex_array
+GL_EXT_cull_vertex
+GL_EXT_draw_range_elements
+GL_EXT_fog_coord
+GL_EXT_multi_draw_arrays
+GL_EXT_packed_pixels
+GL_EXT_rescale_normal
+GL_EXT_secondary_color
+GL_EXT_separate_specular_color
+GL_EXT_shadow_funcs
+GL_EXT_stencil_two_side
+GL_EXT_stencil_wrap
+GL_EXT_texture_compression_s3tc
+GL_EXT_texture_env_add
+GL_EXT_texture_env_combine
+GL_EXT_texture_lod_bias
+GL_EXT_texture_filter_anisotropic
+GL_EXT_texture3D
+GL_3DFX_texture_compression_FXT1
+GL_IBM_texture_mirrored_repeat
+GL_NV_blend_square
+GL_NV_texgen_reflection
+GL_SGIS_generate_mipmap
+GL_SGIS_texture_edge_clamp
+GL_SGIS_texture_lod
+GL_WIN_swap_hint
+WGL_ARB_buffer_region
+WGL_ARB_extensions_string
+WGL_ARB_make_current_read
+WGL_ARB_pixel_format
+WGL_ARB_pbuffer
+WGL_EXT_extensions_string
+WGL_EXT_swap_control
+
+

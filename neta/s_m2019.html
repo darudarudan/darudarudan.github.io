@@ -1,0 +1,94 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<TITLE>PC Memo</TITLE>
+</HEAD>
+<BODY BGCOLOR="#90B0C0" TEXT="#101010" VLINK="#5050A0">
+<FONT SIZE=8>
+<I>PC Memo</I><BR>
+</FONT>
+
+<BR>
+<A HREF="s_m2006.html">2006年</A>　<A HREF="s_m2007.html">2007年</A>　<A HREF="s_m2008.html">2008年</A>　<A HREF="s_m2009.html">2009年</A><BR>
+<A HREF="s_m2010.html">2010年</A>　<A HREF="s_m2011.html">2011年</A>
+　<A HREF="s_m2012.html">2012年</A>　<A HREF="s_m2013.html">2013年</A>　<A HREF="s_m2014.html">2014年</A>
+　<A HREF="s_m2015.html">2015年</A>　<A HREF="s_m2016.html">2016年</A>　<A HREF="s_m2017.html">2017年</A>
+　<A HREF="s_m2018.html">2018年</A>　2019年
+<A HREF="s_m2020.html">2020年</A>　<A HREF="s_m2021.html">2021年</A>
+
+<!--
+<BR><HR>
+2019/04/xx - <BR>
+<BR>
+<BR>
+-->
+
+<BR><HR>
+2019/01/13 - SMR 方式の HDD<BR>
+<BR>
+最近の HDD のキャッシュは 128MB、256MB と随分でかくなっているのに驚いた。<BR>
+キャッシュが多くなって速くなってるのかと思ったら、そんな事はなかった。<BR>
+<BR>
+現在の HDD は技術的に限界が来ていて容量をそれほど大きくできない。<BR>
+ディスクに保存する方法を改良し、SSD と同じブロック読み出し書き込みの<BR>
+SMR と呼ばれる方式を採用していた。<BR>
+<BR>
+SMR の採用によって効率を改善して容量は増やせたけど、<BR>
+余計な処理が増えたので処理速度自体は遅くなっている。<BR>
+それを補うためにキャッシュが大きくなっているのでした。<BR>
+<BR>
+シーケンシャルは昔の HDD 並だが、ランダムは速度が落ちるので<BR>
+メインは SSD 、保存用は SMR HDD とした方がいいのかも知れない。<BR>
+<BR>
+
+<BR><HR>
+2019/01/12 - HDD の 4K Sector<BR>
+<BR>
+HDD の購入をしようかと調べていたら、<BR>
+いつのまにか物理セクターに変化があったらしい。<BR>
+<BR>
+1. 昔からの 512 バイトセクターHDD<BR>
+2. 4096 バイトを 512バイト×８に見せかける AFT HDD<BR>
+3. いつのまにか存在した 4K Sector (Native 4K)<BR>
+<BR>
+4K Sector は物理も論理も完全に 4096 バイトなので過去の HDD と互換性がない。<BR>
+Windows8 で使うことが前提となる。<BR>
+<BR>
+
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR BGCOLOR="#eeeff1">
+<TD>種類</TD>
+<TD>物理</TD>
+<TD>論理</TD>
+<TD>備考</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">512 セクター</TD>
+<TD>512</TD>
+<TD>512</TD>
+<TD>容量の限界が小さい。</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">AFT</TD>
+<TD>4096</TD>
+<TD>512</TD>
+<TD>セクターズレでパフォーマンスが低下するのでアライメントが必要。<BR>
+過去の OS でも扱えるが、Windows Vista で正式対応。</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">4K Sector</TD>
+<TD>4096</TD>
+<TD>4096</TD>
+<TD>過去の HDD と互換性が無く、Windows8 で正式対応。<BR>
+GPT で使うのが普通だが、MBR にすると容量限界が 16TB で使える。</TD>
+</TR>
+</TABLE>
+<BR>
+
+<BR><HR><BR>
+
+<BR><BR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

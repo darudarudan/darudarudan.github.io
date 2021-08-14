@@ -1,0 +1,976 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<TITLE>PC Memo</TITLE>
+</HEAD>
+<BODY BGCOLOR="#90B0C0" TEXT="#101010" VLINK="#5050A0">
+<FONT SIZE=8>
+<I>PC Memo</I><BR>
+</FONT>
+
+<BR>
+<A HREF="s_m2006.html">2006年</A>　<A HREF="s_m2007.html">2007年</A>　<A HREF="s_m2008.html">2008年</A>　<A HREF="s_m2009.html">2009年</A><BR>
+<A HREF="s_m2010.html">2010年</A>　<A HREF="s_m2011.html">2011年</A>
+　<A HREF="s_m2012.html">2012年</A>　2013年　<A HREF="s_m2014.html">2014年</A>　<A HREF="s_m2015.html">2015年</A>　<A HREF="s_m2016.html">2016年</A>　<A HREF="s_m2017.html">2017年</A>
+　<A HREF="s_m2018.html">2018年</A>　<A HREF="s_m2019.html">2019年</A>
+<A HREF="s_m2020.html">2020年</A>　<A HREF="s_m2021.html">2021年</A>
+
+<BR><HR>
+2013/12/28 - Intel CPU Socket<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>コア</td>
+<td>ソケット</td>
+<td>チップセット</td>
+<td>備考</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Arrandale</td>
+<td>LGA1156</td>
+<td>5シリーズ</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">SandyBridge<BR>IvyBridge</td>
+<td>LGA1155</td>
+<td>6シリーズ<BR>7シリーズ</td>
+<td>SandyBridge 用の M/B で IvyBridge を<BR>使う場合は BIOS アップデートが必要。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Haswell</td>
+<td>LGA1150</td>
+<td>8シリーズ</td>
+<td>-</td>
+</tr>
+</table>
+<BR>
+
+<BR><HR>
+2013/12/15 - GeForce<BR>
+<BR>
+NVIDIA GeForce の DirectX 対応バージョン。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>項目</td>
+<td>DirectX</td>
+<td>OpenGL</td>
+<td>備考</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 6 Series</td>
+<td>9.0c</td>
+<td>2.1</td>
+<td>GeForce 6800 等。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 7 Series</td>
+<td>9.0c</td>
+<td>2.1</td>
+<td>GeForce 7800 等。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 8 Series</td>
+<td>10.0</td>
+<td>3.3</td>
+<td>GeForce 8800 等。<BR>GeForce 8400 GS のみ DirectX 10.1 対応。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 9 Series</td>
+<td>10.0</td>
+<td>3.3</td>
+<td>GeForce 9800 等。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 200 Series</td>
+<td>10.0</td>
+<td>3.3</td>
+<td>GeForce 280 等。<BR>GeForce GTS 250 等。<BR>
+GeForce GT 200 系は DirectX 10.1 対応。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 300 Series</td>
+<td>10.1</td>
+<td>3.3</td>
+<td>GeForce 330 等。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 400 Series</td>
+<td>11.0</td>
+<td>4.3</td>
+<td>GeForce 430 等。<BR>GeForce GTS 450 等。<BR>GeForce GT 480 等。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 500 Series</td>
+<td>11.0<BR>11.1</td>
+<td>4.3</td>
+<td>GeForce GTX 590 等。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 600 Series</td>
+<td>11.0<BR>11.1</td>
+<td>4.3</td>
+<td>GeForce GTX 690 等。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GeForce 700 Series</td>
+<td>11.1<BR>11.2</td>
+<td>4.4</td>
+<td>GeForce GTX 780 等。</td>
+</tr>
+</table>
+<BR>
+
+<BR><HR>
+2013/11/17 - Kaveri (Steamroller) の詳細<BR>
+<BR>
+Kaveri (CPUコアがSteamroller) の詳細が発表された。<BR> 
+<BR>
+Bulldozer 系のシングルスレッド性能が高くない理由の1つとして<BR>
+命令のデコード部が問題の1つと言われていた。<BR>
+<BR>
+K10では1クロックで最大3命令のデコードが可能だが Bulldozer では<BR>
+２系統2命令のデコードとなり、実質1クロック2命令のデコード性能と<BR>
+なっていたが、Steamroller この部分が改良され２系統4命令になった。<BR>
+これにより K10 並みのシングルスレッド性能が期待出来るかも知れない。<BR>
+<BR>
+
+<BR><HR>
+2013/11/04 - Windows 8.1 64bit は初期64bitプロセッサ非対応<BR>
+<BR>
+Windows 8.1 64bit では CMPXCHG16B、PrefetchW、LAHF/SAHF 命令を<BR>
+サポートしているプロセッサが必要になる。<BR>
+<BR>
+Socket 754/939 のAMDプロセッサは CMPXCHG16B 命令が実装されていない。<BR>
+また Pentium D8xx 以前は LAHF/SAHF 命令が実装されていない。<BR>
+<BR>
+AMD は Rev.F (DDR2 に対応した Socket940)から対応し、<BR>
+Intel は G1 ステッピング(Pentium D9xx)から対応している。<BR>
+<BR>
+Windows 8.1 32bit では実装が異なるようでセキュリティのNXビットが<BR>
+必要になる程度で制限は少ないらしい。<BR>
+<BR>
+
+<BR><HR>
+2013/10/24 - MIPS の最新CPU<BR>
+<BR>
+PowerVR の英Imagination Technologies が新しいMIPSアーキテクチャの<BR>
+「MIPS P5600」発表。<BR>
+<BR>
+32bitのMIPS32 Release 5コアに SIMD や仮想化の高速化の機能を追加して<BR>
+最大6コアまで対応する。<BR>
+<BR>
+あれ？いつのまにMIPSを？と思って調べてみたら<BR>
+2012年11月5日に6000万米ドルで MIPS が事業を売却して<BR>
+エンジニアと特許が Imagination に移管されていた。<BR>
+<BR>
+ただし、この時 MIPS から得た特許は580件の内82件だけ。<BR>
+(この82件があればMIPSアーキテクチャ的には問題無いらしい。)<BR>
+<BR>
+残りの492件は Bridge Crossing が3億5000万米ドルを支払って<BR>
+MIPS から買収していた。<BR>
+<BR>
+Bridge Crossing は ARM、HP、IBM、Intel、Motorola 等の<BR>
+企業が参加する業界コンソーシアム。<BR>
+買収額の 3億5000万米ドルのうち1億6750万米ドル(約48%)は<BR>
+ARM が支払っている。大きな影響力を持ってるのかね。<BR>
+<BR>
+
+<BR><HR>
+2013/09/15 - ARM 命令<BR>
+<BR>
+ARM プロセッサ(32bit)の使える命令セット。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>項目</td>
+<td>詳細</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">ARM v5</td>
+<td>ARM 5/7/9 で使われる基本的な命令セット。<BR>
+Android ではHW浮動少数点演算ができない。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">ARM v7-A</td>
+<td>A はアプリケーション用途。<BR>
+ほとんどのSoCでVFP-V3、NEONなどの拡張機能が搭載されている。<BR>
+Android 2.3.x を採用したあたりの機種であれば使える。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">ARM v7-R</td>
+<td>R はリアルタイム処理用途。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">ARM v7-M</td>
+<td>M は組み込み向け用途。<BR>Thumb-2命令のみをサポートする。</td>
+</tr>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">NEON</td>
+<td>浮動少数点演算の SIMD 命令。専用レジスタを持ち、<BR>
+128ビット16本もしくは64ビット32本として使用できる。<BR>
+IEEE754に準拠していない。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">NEONv2</td>
+<td>Fused Multiply-Add 等の命令が追加されている。<BR>
+IEEE754に準拠している。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Thumb</td>
+<td>16bitの命令セット。（基本のARM 命令は32bit固定長）<BR>
+プログラムサイズが小さくなり、消費電力の効率が良くなる。<BR>
+また、バス幅の小さいSoC等で速度が向上する。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Thumb-2</td>
+<td>Thumbにビットフィールド操作等の命令が追加されている。</td>
+</tr>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">VFPv3<BR>(VFPv3-D32)</td>
+<td>半精度、単精度、倍精度の浮動小数点演算が可能。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">VFPv3-D16</td>
+<td>VFPv3 のレジスタを32本から16本に減らした簡易版。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">VFPv4<BR>(VFPv4-D32)</td>
+<td>VFPv3 にfp16演算、FMA(融合型積和算)命令を追加した拡張版。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">VFPv4-D16</td>
+<td>VFPv4 のレジスタを32本から16本に減らした簡易版。</td>
+</tr>
+</table>
+<BR>
+VFP (Vector Floating-point Architecture)<BR>
+FMA (Fused Multiply Add)<BR>
+<BR>
+
+<BR><HR>
+2013/09/14 - ARM プロセッサ<BR>
+<BR>
+ARM プロセッサの比較。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>項目</td>
+<td>ARM</td>
+<td>Tegra 2</td>
+<td>Snapdragon S2</td>
+<td>Snapdragon S3</td>
+<td>Snapdragon S4</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">メーカー</td>
+<td>ARM</td>
+<td>nVidia</td>
+<td>Qualcomm</td>
+<td>Qualcomm</td>
+<td>Qualcomm</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">CPUベース</td>
+<td>Cortex-A8</td>
+<td>Cortex-A9</td>
+<td>Scorpion</td>
+<td>Krait</td>
+<td>Krait</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">コア数</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2,4</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">クロック</td>
+<td>-</td>
+<td>1.0 GHz</td>
+<td>1.0 ～ 1.4 GHz</td>
+<td>1.2 ～ 1.7 GHz</td>
+<td>1.5 ～ 1.7 GHz</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">L1 キャッシュ</td>
+<td>?</td>
+<td>32KB×2</td>
+<td>32KB×2 ?</td>
+<td>32KB×2</td>
+<td>32KB×2</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">L2 キャッシュ</td>
+<td>?</td>
+<td>1MB</td>
+<td>1MB ?</td>
+<td>1MB</td>
+<td>1MB,2MB</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">命令セット</td>
+<td>ARM v7-a</td>
+<td>ARM v7-a</td>
+<td>ARM v7-a</td>
+<td>ARM v7-a</td>
+<td>ARM v7-a</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">拡張命令</td>
+<td>Thumb-2,<BR>VFPv3(VFP Lite),<BR>NEON</td>
+<td>Thumb-2,<BR>VFPv3-D16</td>
+<td>Thumb-2,<BR>VFPv3,<BR>NEON</td>
+<td>Thumb-2,<BR>VFPv3,<BR>NEON</td>
+<td>Thumb-2,<BR>VFPv3,<BR>NEON</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GPU</td>
+<td>-</td>
+<td>ULP GeForce<BR>(GeForce 6,7)</td>
+<td>Adreno 205</td>
+<td>Adreno 220</td>
+<td>Adreno 320</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">製造プロセス</td>
+<td>-</td>
+<td>40nm</td>
+<td>45nm</td>
+<td>45nm</td>
+<td>28nm</td>
+</tr>
+</table>
+<BR>
+Cortex-A8 は VFPv3(VFP Lite)、NEON は標準実装。<BR>
+VFP Lite はパイプライン化されていないので処理速度は速くない。<BR>
+VFP 命令よりも NEON 命令を使った方が処理速度は速くなる。<BR>
+<BR>
+Cortex-A9 は VFPv3、NEON 共にオプション実装扱い。<BR>
+Cortex-A9 で NEON を実装せず、VFPv3 を実装する場合には<BR>
+浮動小数演算用のレジスタが16本の VFPv3-D16 になる。（Tegra2 等）<BR>
+<BR>
+Cortex-A9 の VFP は VFP Lite ではないのでレジスタ32本をフルに扱うような<BR>
+プログラムで無ければ VFPv3-D16 でも Cortex-A9 の方が処理速度は速い。<BR>
+<BR>
+Snapdragon の VFP は Cortex-A8 より高速。NEON は128bit化されている。<BR>
+<BR>
+
+<BR><HR>
+2013/09/01 - Android 用の Flash Player<BR>
+<BR>
+Android 向けの Flash Player は開発終了している。<BR>
+（現在の PC 版の最新は Ver 11.8 だが Android 版は Ver 11.1）<BR>
+<BR>
+緊急性の高いセキュリティ問題などが発生した場合は<BR>
+Android 版にもアップデートが配布される。<BR>
+<BR>
+本体に標準インストールされている場合や、2012年8月15日より前に<BR>
+Google Play からダウンロードしている場合は、Google Play 経由で<BR>
+アップデートが手に入るらしい。<BR>
+<BR>
+それ以外の機種ではアドビから直接ダウンロードして<BR>
+野良アプリと同じ方法でインストールできる。<BR>
+Android 4.x 版も提供されている。（公式サポートは無い）<BR>
+<BR>
+ただし、野良アプリ・インストールだと Google Play からの<BR>
+アップデートは出来ないらしいので常に手動の更新が必要。<BR>
+<BR>
+Android 用の Flash の要求スペック。<BR>
+・OS は Android 2.2 以降<BR>
+・CPU は ARMv7-A 相当が必須。<BR>
+(Cortex A8 550MHz 以上と VFPv3、NEON命令が実装されていること。)<BR>
+<BR>
+
+<BR><HR>
+2013/08/10 - AMD プロセッサ<BR>
+<BR>
+1コア（1モジュール）の比較。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>項目</td>
+<td>Phenom II</td>
+<td>Bulldozer</td>
+<td>Piledriver</td>
+<td>Steamroller</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">設計</td>
+<td>K10 系</td>
+<td>Bulldozer 系</td>
+<td>Bulldozer 系</td>
+<td>Bulldozer 系</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">L2キャッシュ</td>
+<td>512KB<BR>独立</td>
+<td>2MB<BR>モジュール内共有</td>
+<td>2MB<BR>モジュール内共有</td>
+<td>2MB<BR>モジュール内共有</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">L3キャッシュ</td>
+<td>各コア共有</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">コア数</td>
+<td>物理1、論理1</td>
+<td>物理1、論理2</td>
+<td>物理1、論理2</td>
+<td>物理1、論理2</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">ALU</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">FPU</td>
+<td>1</td>
+<td>1<BR>モジュール内共有</td>
+<td>1<BR>モジュール内共有</td>
+<td>1<BR>モジュール内共有</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Decoder</td>
+<td>1(3op/clock)</td>
+<td>1(4op/clock)<BR>モジュール内共有</td>
+<td>1(4op/clock)<BR>モジュール内共有</td>
+<td>2(4op?/clock)</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">製造プロセス</td>
+<td>45nm</td>
+<td>SOI 32nm</td>
+<td>SOI 32nm</td>
+<td>28nm</td>
+</tr>
+</table>
+<BR>
+Bulldozer 系のCPUは1モジュール内で浮動少数ユニットを共有しているので<BR>
+浮動少数演算を行うスレッドが複数ある場合はモジュールが異なる論理コアに<BR>
+スレッドを割り当てないと性能低下が発生する。<BR>
+（演算ユニットに対してデコーダユニットの性能が低いとも言われていた。）<BR>
+<BR>
+パッチ無しの Windows では Bulldozer 系の1モジュールを物理2コアと<BR>
+認識していたが、性能低下が大きかったようでパッチにより<BR>
+Pentium4(HTT) 1コアと同じように物理1、論理2コアで認識するようになった。<BR>
+<BR>
+
+<BR><HR>
+2013/07/28 - OSの必要スペック<BR>
+<BR>
+古いPCに WindowsXP の SP3 統合型をインストールしたら<BR>
+新機能広告が文字化けし始めて最終的にブルースクリーンが発生した。<BR>
+<BR>
+SP3 統合していない WindowsXP をインストールした後に<BR>
+別途 SP3 をインストールすれば問題は発生しなかった。<BR>
+<BR>
+どうやらメモリが 512MB では不足らしい。<BR>
+<BR>
+※正確には統合グラフィックのVRAMとして 64MB が強制的に<BR>
+使用されていたので実際の空きメモリは 448MB だったと思われる。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>項目</td>
+<td>WindowsXP</td>
+<td>WindowsXP SP2</td>
+<td>WindowsXP SP3</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">CPU</td>
+<td>300 MHz 以上</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">メモリ</td>
+<td>128 MB 以上</td>
+<td>256MB ?</td>
+<td>512MB ?</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">HDD</td>
+<td>1.5 GB の空き容量</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GPU</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">その他</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</table>
+<BR>
+<BR>
+ついでに調べてみた。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>項目</td>
+<td>Windows7</td>
+<td>Windows8</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">CPU</td>
+<td>1 GHz 以上の 32 ビット (x86) プロセッサ<BR>
+または 64 ビット (x64) プロセッサ</td>
+<td>PAE、NX、SSE2 をサポートする<BR>1 GHz 以上のプロセッサ</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">メモリ</td>
+<td> 1 GB の RAM (32 ビット) <BR>
+または 2 GB の RAM (64 ビット) </td>
+<td> 1 GB の RAM (32 ビット) <BR>
+または 2 GB の RAM (64 ビット) </td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">HDD</td>
+<td>16 GB (32 ビット) 空き容量<BR>または 20 GB (64 ビット)</td>
+<td>16 GB (32 ビット) 空き容量<BR>または 20 GB (64 ビット)</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">GPU</td>
+<td>DirectX 9 以降の機能と<BR>
+WDDM 1.0 以降に対応したドライバ</td>
+<td>DirectX 9 以降の機能と<BR>
+WDDM 1.0 以降に対応したドライバ</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">その他</td>
+<td>XP Mode は、1 GB の追加 RAM および<BR>
+15 GB の追加空きディスク領域が必要</td>
+<td>Windows ストアにアクセスし、アプリを<BR>
+ダウンロードして実行する場合は、<BR>
+インターネット接続と 1024 x 768 以上の画面解像度<BR>
+アプリをスナップする場合は、1366 x 768 以上の画面解像度</td>
+</tr>
+</table>
+<BR>
+
+<BR><HR>
+2013/06/05 - ASP-2035K<BR>
+<BR>
+オーム電機のポータブルメディアスピーカー。<BR>
+<BR>
+USB電源、もしくは単４電池で動くポータブルスピーカー。<BR>
+さらにSDカードスロットもあって、MP3の再生が可能。<BR>
+<BR>
+ただし、USBコネクタは電源しか使用していないので下記の注意。<BR>
+<BR>
+・USBオーディオと認識しない → ミニプラグでライン出力を繋ぐ必要がある。<BR>
+・リムーバブルメディア(SDカード)と認識しない → SDカードへの書き込み不可。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>項目</td>
+<td>説明</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">最大出力</td>
+<td>2.5W ×２(ステレオ、パッシブユニット有り)</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">スピーカー</td>
+<td>口径38mm、インピーダンス４Ω×２</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">再生周波数</td>
+<td>20 ～ 20000Hz</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">電源</td>
+<td>DC6V 単4型乾電池LR03×４本</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">連続使用時間</td>
+<td>約３時間（アルカリ電池、音量「中」程度）</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">外部電源</td>
+<td>USB 5V</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">操作</td>
+<td>電源ON/OFF、再生/一時停止、スキップ（次、前）、音量ツマミ</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">SDカードスロット</td>
+<td>SDHC 16GB 対応。</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">SDカード再生機能</td>
+<td>MP3、WMA（WMAの記載は無いが対応）</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">端子</td>
+<td>USB（Ｂ型、電源のみ使用）、Φ3.5ミニプラグ</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">付属品</td>
+<td>Φ3.5ミニプラグケーブル(76cm)、USBケーブルA-B(76cm)</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">寸法</td>
+<td>幅225mm×高さ70mm×奥行40mm</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">重量</td>
+<td>263g（乾電池含まず）</td>
+</tr>
+</table>
+<BR>
+別途、「USBコネクタ→コンセント」の変換アダプタがあれば<BR>
+単体でも MP3 の再生が可能になる。<BR>
+WAVファイルも再生可能かと試してみたが再生不可だった。<BR>
+<BR>
+価格とサイズを考えるとまぁまぁの音質ではないかと思う。<BR>
+音量ツマミが付いてるが、ちょっと動かしただけで音量が<BR>
+大きく変わるのは気になった。<BR>
+後は電源ランプが付いているので電源の消し忘れ対策になるのが嬉しい。<BR>
+<BR>
+MP3の単体再生では「次の曲」、「前の曲」をスキップボタンで行えるが、<BR>
+曲のシークには対応しない。当然ながら曲順の変更は不可。<BR>
+<BR>
+SDカードに２階層のフォルダを作ってその中にMP3を置いても認識した。<BR>
+(３階層以上は試していない。)<BR>
+
+
+<BR><HR>
+2013/05/05 - PCI Express の転送速度<BR>
+<BR>
+PCI Express 1.1（Gen1)<BR>
+PCI Express 2（Gen2)<BR>
+PCI Express 3（Gen3)<BR>
+PCI Express 4（Gen4)<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>項目</td>
+<td>PCI Express 1.1</td>
+<td>PCI Express 2</td>
+<td>PCI Express 3</td>
+<td>PCI Express 4</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">転送方式</td>
+<td>双方向シリアル</td>
+<td>双方向シリアル</td>
+<td>双方向シリアル</td>
+<td>双方向シリアル</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">エンコード方式</td>
+<td>8b/10b</td>
+<td>8b/10b</td>
+<td>128b/130b</td>
+<td>128b/130b</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">最大リンク数</td>
+<td>32レーン</td>
+<td>32レーン</td>
+<td>32レーン</td>
+<td>64レーン</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">１レーンの速度</td>
+<td>250 MB</td>
+<td>500 MB</td>
+<td>1000 MB</td>
+<td>2000 MB</td>
+</tr>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">16レーンの速度</td>
+<td>4000 MB</td>
+<td>8000 MB</td>
+<td>16000 MB</td>
+<td>32000 MB</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">最大供給電力</td>
+<td>75W</td>
+<td>75W</td>
+<td>75W</td>
+<td>75W</td>
+</tr>
+</table>
+<BR>
+※「1レーンの速度」は片方向の速度。<BR>
+※最大リンク数は32も可能だが、x16を超える製品は無い？<BR>
+<BR>
+
+<BR><HR>
+2013/04/21 - DVD メディア容量<BR>
+<BR>
+DVD-R および DVD-RW 非パケットライトのサイズ。<BR>
+<BR>
+DVD-RW sectors 2,298,496<BR>
+<BR>
+2,298,496 * 2,048 = 4,707,319,808<BR>
+4,707,319,808 = 4489KiB<BR>
+<BR>
+
+<BR><HR>
+2013/04/01 - BD-R LTH<BR>
+<BR>
+従来の Blu-ray メディアは、記録層の素材に無機素材が使われているが、<BR>
+BD-R LTH には有機素材が使われる。<BR>
+<BR>
+メリットは素材コスト低下と有機素材が使われる CD/DVD の製造ラインを<BR>
+転用してのさらなる製造コストの低下である。<BR>
+<BR>
+デメリットは書き込み速度と寿命の低下がある。<BR>
+また、非LTH の従来メディアと互換性は無いが2008年以降の製品では<BR>
+対応しているので現在ではデメリットになっていない。<BR>
+（2007年製の製品でもフォームウェアのアップデートで対応できる物もある。）<BR>
+<BR>
+
+<BR><HR>
+2013/03/20 - Blu-ray メディア容量<BR>
+<BR>
+Blu-ray 1層だと25GBと言われているけど、実際の容量を確認してみた。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>種別/規格</td>
+<td>メーカー</td>
+<td>フォーマット</td>
+<td>Windows<BR>表示容量</td>
+<td>最大容量</td>
+<td>使用済み</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">BD-RE Ver 2.1</td>
+<td bgcolor="#FFFFCC">SONY</td>
+<td bgcolor="#fef1de">UDF 2.5</td>
+<td bgcolor="#FFFFCC">22.5GB</td>
+<td bgcolor="#fef1de">24,218,828,800</td>
+<td bgcolor="#FFFFCC">2,533,376</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">BD-R Ver 1.0</td>
+<td bgcolor="#FFFFCC">SONY</td>
+<td bgcolor="#fef1de">UDF 1.02 ?</td>
+<td bgcolor="#FFFFCC">22.5GB ?</td>
+<td bgcolor="#fef1de">25,025,314,816</td>
+<td bgcolor="#FFFFCC">?</td>
+</tr>
+</table>
+<BR>
+
+<BR><HR>
+2013/02/22 - Intel Graphics HD4000/2500 for vista<BR>
+<BR>
+Vista 用のドライバが無い…。<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+<TD WIDTH="580" BGCOLOR="#008888">
+Intel HD Graphics 4000/2500 Drivers for Vista ?<BR>
+<BR>
+When are drivers for Vista to be released ?<BR>
+Tried Win 7 drivers, works but system unstable.<BR>
+Reinstalled XP and it works but performance was better on Vista.<BR>
+<BR>
+<FONT  COLOR="#0000ff">
+ビスタのためのドライバーはいつ解放されることになっていますか。<BR>
+勝利7ドライバーを試みて、不安定なシステム以外に働きます。<BR>
+再インストールされたXPおよびそれは働きます。しかし、実行の方がビスタでよかった。<BR>
+</FONT>
+<BR>
+※エキサイト翻訳<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+Win7 用のドライバにトライして正常動作を祈れってことかな。<BR>
+でも OS を XP に再インストールした方がいいよ…と。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>対象</td>
+<td>OS</td>
+<td>Download</td>
+<td>Version</td>
+<td>日付</td>
+<td>結果</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">2g/3g HD Graphics</td>
+<td bgcolor="#FFFFCC">Windows7/8 (32bit)</td>
+<td bgcolor="#fef1de">Intel</td>
+<td bgcolor="#FFFFCC">15.28.12.2932</td>
+<td bgcolor="#FFFFCC">2012/12/18</td>
+<td bgcolor="#FFFFCC">△</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">2g/3g HD Graphics</td>
+<td bgcolor="#FFFFCC">Windows7/8 (32bit)</td>
+<td bgcolor="#fef1de">Intel</td>
+<td bgcolor="#FFFFCC">15.28.8.2875</td>
+<td bgcolor="#FFFFCC">2012/10/23</td>
+<td bgcolor="#FFFFCC">△</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">2g/3g HD Graphics</td>
+<td bgcolor="#FFFFCC">Windows7/8 (32bit)</td>
+<td bgcolor="#fef1de">ASUS</td>
+<td bgcolor="#FFFFCC">17.10.2828</td>
+<td bgcolor="#FFFFCC">2012/08/30</td>
+<td bgcolor="#FFFFCC">△</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">2g/3g HD Graphics</td>
+<td bgcolor="#FFFFCC">Windows7 (32bit)</td>
+<td bgcolor="#fef1de">ASUS</td>
+<td bgcolor="#FFFFCC">15.10.2752</td>
+<td bgcolor="#FFFFCC">2012/07/10</td>
+<td bgcolor="#FFFFCC">○</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">2g/3g HD Graphics</td>
+<td bgcolor="#FFFFCC">Windows7/Vista (32bit)</td>
+<td bgcolor="#fef1de">ASUS</td>
+<td bgcolor="#FFFFCC">15.10.2618</td>
+<td bgcolor="#FFFFCC">2012/05/16</td>
+<td bgcolor="#FFFFCC">○</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">2g HD Graphics</td>
+<td bgcolor="#FFFFCC">Windows7/Vista (32bit)</td>
+<td bgcolor="#fef1de">Intel</td>
+<td bgcolor="#FFFFCC">15.22.58.2993</td>
+<td bgcolor="#FFFFCC">2013/02/19</td>
+<td bgcolor="#FFFFCC">×</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">2g/3g HD Graphics</td>
+<td bgcolor="#FFFFCC">WindowsXP (32bit)</td>
+<td bgcolor="#fef1de">Intel</td>
+<td bgcolor="#FFFFCC">14.10.5421</td>
+<td bgcolor="#FFFFCC">2012/08/03</td>
+<td bgcolor="#FFFFCC">×</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFCC">2g/3g HD Graphics</td>
+<td bgcolor="#FFFFCC">WindowsXP (32bit)</td>
+<td bgcolor="#fef1de">Intel</td>
+<td bgcolor="#FFFFCC">14.10.5415</td>
+<td bgcolor="#FFFFCC">2012/06/08</td>
+<td bgcolor="#FFFFCC">×</td>
+</tr>
+</table>
+<BR>
+○ ＝ インストール可能。正常動作する。<BR>
+△ ＝ インストールは出来るがデバイスマネージャで異常になる。<BR>
+× ＝ セットアップで拒否されインストール出来ない。<BR>
+<BR>
+Win7 用の 2012/05 および 2012/07 ドライバが Vista で正常動作した。<BR>
+でも、3g の新機能は使えないように見える。<BR>
+<BR>
+
+<BR><HR>
+2013/02/20 - PCCOOLER S85<BR>
+<BR>
+CORE i3-3220T の純正ファンがうるさくは無いが静かでもないので<BR>
+PCCOOLER S85 に交換してみた。<BR>
+<BR>
+全高さ 27mm のロープロCPUファンクーラー。<BR>
+バックプレート固定型でLGA 775、1156、1155 に対応。<BR>
+ヒートパイプ２本、静音8cmファンを搭載。<BR>
+PWM対応で 1000～2700rpm、16～25db、12～35CFM。<BR>
+<BR>
+バックプレートに挟まれる本体側足のゴムパッキンの1つが<BR>
+外れやすくなっていて取り付けに苦労した。<BR>
+値段は非常に安いけど、質が良くないかも…<BR>
+<BR>
+さらにファン部分にガードが無いので空き空間が少ない MiniITX ケースで<BR>
+使用する場合にはケーブルが巻き込まれないように注意する必要がある。<BR>
+<BR>
+交換後は純正ファンよりも静かになったがCPU温度が30度から35度になった。<BR>
+<BR>
+
+<BR><HR>
+2013/01/10 - 小文字の i が入る単位 <BR>
+<BR>
+コンピュータの世界では 1024 バイトを 1K バイトと表記するが、<BR>
+一般的に使われる 1K は 1000 なので値が多きければ大きいほど、<BR>
+誤差が大きくなる。<BR>
+<BR>
+例えば 1TB であれば 1024 の 4 乗で 1,099,511,627,776 になり、<BR>
+約 9.9% (99.5 GB) の誤差が発生してしまう事になる。<BR>
+<BR>
+この問題を避けるために i を追加して区別する表記が使われる場合がある。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>一般単位</td>
+<td>一般単位(値)</td>
+<td>i 単位</td>
+<td>i 単位(値)</td>
+<td>誤差</td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">KB (キロバイト)</td>
+<td bgcolor="#FFFFCC"><div align="right">1,000</div></td>
+<td bgcolor="#fef1de">KiB (キビバイト)</td>
+<td bgcolor="#FFFFCC"><div align="right">1,024</div></td>
+<td bgcolor="#fef1de"><div align="right">2.4 %</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">MB (メガバイト)</td>
+<td bgcolor="#FFFFCC"><div align="right">1,000,000</div></td>
+<td bgcolor="#fef1de">MiB (メビバイト)</td>
+<td bgcolor="#FFFFCC"><div align="right">1,048,576</div></td>
+<td bgcolor="#fef1de"><div align="right">4.9 %</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">GB (ギガバイト)</td>
+<td bgcolor="#FFFFCC"><div align="right">1,000,000,000</div></td>
+<td bgcolor="#fef1de">GiB (ギビバイト)</td>
+<td bgcolor="#FFFFCC"><div align="right">1,073,741,824</div></td>
+<td bgcolor="#fef1de"><div align="right">7.37 %</div></td>
+</tr>
+<tr>
+<td bgcolor="#fef1de">TB (テラバイト)</td>
+<td bgcolor="#FFFFCC"><div align="right">1,000,000,000,000</div></td>
+<td bgcolor="#fef1de">TiB (テビバイト)</td>
+<td bgcolor="#FFFFCC"><div align="right">1,099,511,627,776</div></td>
+<td bgcolor="#fef1de"><div align="right">9.95 %</div></td>
+</tr>
+</table>
+<BR>
+Windows は 1024 で計算するので 1TB ハードディスクは<BR>
+全容量が 930 GB 程度に少なく表示される。<BR>
+<BR>
+この i 表記は 1024 と 1000 を混ぜて計算した値に使えないとしている。<BR>
+(1,024,000 ≒ MB ≠ MiB)<BR>
+
+<BR><HR><BR>
+
+<BR><BR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>

@@ -1,0 +1,139 @@
+
+***XP Standard
+GL Vender : ATI Technologies Inc.
+GL Renderer : RADEON XPRESS 200M Series SW TCL x86/MMX/3DNow!/SSE2
+GL Version : 1.4.5014 WinXP Release
+GLSL Version : 1.10
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+***CATALYST 8.2
+GL Vender : ATI Technologies Inc.
+GL Renderer : ATI MOBILITY RADEON XPRESS 200
+GL Version : 2.1.7278 Release
+GLSL Version : 1.20
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 1024 x 768 : color 32 bits
+# 1, RGBA 8/8/8/8, Z 24, S 8, WIN, GL
+# 2, RGBA 8/8/8/8, db, Z 24, S 8, WIN, GL
+# 4, RGBA 8/8/8/8, Z 24, S 8, WIN, GL
+# 5, RGBA 8/8/8/8, db, Z 24, S 8, WIN, GL
+#61, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#62, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#65, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#66, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#69, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#70, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#71, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#72, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#73, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#74, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#75, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#76, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#77, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#78, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#79, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#80, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#81, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#82, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#83, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#84, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#85, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#86, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#87, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#88, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#89, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#90, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#91, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#92, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#93, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#94, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#95, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#96, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_AMD_performance_monitor
+GL_ARB_depth_texture
+GL_ARB_draw_buffers
+GL_ARB_fragment_program
+GL_ARB_fragment_shader
+GL_ARB_multisample
+GL_ARB_multitexture
+GL_ARB_occlusion_query
+GL_ARB_pixel_buffer_object
+GL_ARB_point_parameters
+GL_ARB_point_sprite
+GL_ARB_shader_objects
+GL_ARB_shading_language_100
+GL_ARB_shadow
+GL_ARB_shadow_ambient
+GL_ARB_texture_border_clamp
+GL_ARB_texture_compression
+GL_ARB_texture_cube_map
+GL_ARB_texture_env_add
+GL_ARB_texture_env_combine
+GL_ARB_texture_env_crossbar
+GL_ARB_texture_env_dot3
+GL_ARB_texture_float
+GL_ARB_texture_mirrored_repeat
+GL_ARB_texture_rectangle
+GL_ARB_transpose_matrix
+GL_ARB_vertex_buffer_object
+GL_ARB_vertex_program
+GL_ARB_vertex_shader
+GL_ARB_window_pos
+GL_ATI_draw_buffers
+GL_ATI_envmap_bumpmap
+GL_ATI_fragment_shader
+GL_ATI_meminfo
+GL_ATI_separate_stencil
+GL_ATI_texture_env_combine3
+GL_ATI_texture_float
+GL_EXT_abgr
+GL_EXT_bgra
+GL_EXT_blend_color
+GL_EXT_blend_func_separate
+GL_EXT_blend_minmax
+GL_EXT_blend_subtract
+GL_EXT_compiled_vertex_array
+GL_EXT_copy_texture
+GL_EXT_draw_range_elements
+GL_EXT_fog_coord
+GL_EXT_framebuffer_object
+GL_EXT_gpu_program_parameters
+GL_EXT_multi_draw_arrays
+GL_EXT_packed_depth_stencil
+GL_EXT_packed_pixels
+GL_EXT_point_parameters
+GL_EXT_rescale_normal
+GL_EXT_secondary_color
+GL_EXT_separate_specular_color
+GL_EXT_shadow_funcs
+GL_EXT_stencil_wrap
+GL_EXT_subtexture
+GL_EXT_texgen_reflection
+GL_EXT_texture3D
+GL_EXT_texture_compression_s3tc
+GL_EXT_texture_cube_map
+GL_EXT_texture_edge_clamp
+GL_EXT_texture_env_add
+GL_EXT_texture_env_combine
+GL_EXT_texture_env_dot3
+GL_EXT_texture_filter_anisotropic
+GL_EXT_texture_lod_bias
+GL_EXT_texture_mirror_clamp
+GL_EXT_texture_object
+GL_EXT_texture_rectangle
+GL_EXT_texture_sRGB
+GL_EXT_vertex_array
+GL_KTX_buffer_region
+GL_NV_blend_square
+GL_NV_texgen_reflection
+GL_SGIS_generate_mipmap
+GL_SGIS_texture_edge_clamp
+GL_SGIS_texture_lod
+GL_WIN_swap_hint
+WGL_EXT_swap_control
+
+

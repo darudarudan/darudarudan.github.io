@@ -1,0 +1,47 @@
+ReactOS 0.3.16 in VMware 5.0.2
+VGA-compatible graphics card (2007/08/24 ver 1.10.0.0)
+
+
+gl_caps.exe : 2014/02/08
+GL Vender : Brian Paul
+GL Renderer : ReactOS Software Implementation
+GL Version : 1.2 Mesa 8.0.4
+GLSL Version : Not Supported
+GLU Version : 1.3
+
+
+Display 800 x 600 : color 16 bits
+# 1, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+# 2, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+# 9, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#10, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#11, RGBA 5/6/5/0, db, Z 32, S 8, WIN, GL, GFMT
+#12, RGBA 5/6/5/0, db, Z 16, S 8, WIN, GL, GFMT
+#13, RGBA 5/6/5/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#14, RGBA 5/6/5/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+
+
+GLU_EXT_nurbs_tessellator
+GLU_EXT_object_space_tess
+
+
+GL_ARB_shader_objects : Not Found
+
+
+Low Level Shader
+　GL_ARB_vertex_program : Not Found
+　GL_ARB_fragment_program : Not Found
+　GL_NV_vertex_program : Not Found
+　GL_NV_vertex_program1_1 : Not Found
+　GL_NV_fragment_program : Not Found
+　GL_NV_vertex_program2 : Not Found
+　GL_NV_fragment_program_option : Not Found
+　GL_NV_fragment_program2 : Not Found
+　GL_NV_vertex_program2_option : Not Found
+　GL_NV_vertex_program3 : Not Found
+　GL_EXT_gpu_program_parameters : Not Found
+　GL_NV_gpu_program4 : Not Found
+　GL_NV_geometry_program4 : Not Found
+　GL_NV_fragment_program4 : Not Found
+
+

@@ -1,0 +1,83 @@
+cx700_winxp_22-03-01o_(1).zip
+
+GL Vender : S3 Graphics
+GL Renderer : VIA/S3G UniChrome Pro II IGP/MMX/SSE
+GL Version : 1.2
+GLSL Version : Not Supported
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 1024 x 768 : color 32 bits
+# 3, RGBA 8/8/8/8, Z 16, WIN, GDI, GL
+# 4, RGBA 8/8/8/8, Z 32, WIN, GDI, GL
+# 5, RGBA 8/8/8/8, db, Z 16, WIN, GDI, GL
+# 6, RGBA 8/8/8/8, db, Z 32, WIN, GDI, GL
+# 7, RGBA 8/8/8/8, Z 32, S 8, WIN, GDI, GL
+# 8, RGBA 8/8/8/8, db, Z 32, S 8, WIN, GDI, GL
+# 9, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#10, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#13, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#14, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#17, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#18, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#19, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#20, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#21, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#22, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#23, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#24, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#25, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#26, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#27, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#28, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#29, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#30, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#31, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#32, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#33, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#34, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#35, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#36, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#37, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#38, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#39, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#40, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#41, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#42, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#43, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#44, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_ARB_point_parameters
+GL_ARB_multitexture
+GL_EXT_blend_color
+GL_EXT_blend_minmax
+GL_EXT_blend_subtract
+GL_ARB_texture_env_combine
+GL_EXT_texture_env_combine
+GL_ARB_texture_env_dot3
+GL_EXT_texture_env_dot3
+GL_ARB_texture_env_add
+GL_EXT_texture_env_add
+GL_EXT_secondary_color
+GL_EXT_texture_lod_bias
+GL_ARB_texture_mirrored_repeat
+GL_EXT_stencil_wrap
+GL_EXT_fog_coord
+GL_ARB_transpose_matrix
+GL_EXT_separate_specular_color
+GL_EXT_rescale_normal
+GL_ARB_window_pos
+GL_EXT_draw_range_elements
+GL_EXT_abgr
+GL_EXT_bgra
+GL_EXT_packed_pixels
+GL_EXT_paletted_texture
+GL_EXT_vertex_array
+GL_EXT_compiled_vertex_array
+GL_WIN_swap_hint
+WGL_EXT_extensions_string
+WGL_ARB_extensions_string
+GL_EXT_texture_compression_s3tc
+GL_ARB_texture_compression
+GL_S3_s3tc

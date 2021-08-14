@@ -1,0 +1,52 @@
+Microsoft
+
+GL Vender : Microsoft Corporation
+GL Renderer : GDI Generic
+GL Version : 1.1.0
+GLSL Version : Not Supported
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 1024 x 768 : color 32 bits
+# 1, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+# 2, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+# 3, RGBA 8/8/8/0, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+# 4, RGBA 8/8/8/0, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+# 5, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+# 6, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+# 7, RGBA 8/8/8/8, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+# 8, RGBA 8/8/8/8, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+# 9, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#10, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#11, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#12, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#13, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#14, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#15, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#16, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#17, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#18, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#19, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#20, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#21, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#22, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#23, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#24, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#25, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#26, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#27, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#28, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#29, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#30, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#31, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#32, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#33, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#34, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#35, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#36, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_WIN_swap_hint
+GL_EXT_bgra
+
+

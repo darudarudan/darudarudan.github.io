@@ -1,0 +1,148 @@
+WindowsXP
+SiS M672(Mirage3+)
+2007/10/03 6.14.10.3830
+2010/10/26 6.14.10.3930
+
+gl_caps.exe : 2014/02/08
+GL Vender : SiS
+GL Renderer : Mirage Graphics3
+GL Version : 1.5.0
+GLSL Version : Not Supported
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 1280 x 800 : color 32 bits
+# 1, RGBA 8/8/8/8, Z 16, WIN, GDI, GL
+# 2, RGBA 8/8/8/8, db, Z 16, WIN, GL, SWCP
+# 5, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+# 6, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+# 7, RGBA 8/8/8/0, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+# 8, RGBA 8/8/8/0, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+# 9, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#10, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#11, RGBA 8/8/8/8, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#12, RGBA 8/8/8/8, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#13, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#14, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#15, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#16, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#17, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#18, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#19, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#20, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#21, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#22, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#23, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#24, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#25, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#26, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#27, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#28, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#29, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#30, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#31, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#32, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#33, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#34, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#35, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#36, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#37, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#38, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#39, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#40, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_ARB_depth_texture
+GL_ARB_fragment_program
+GL_ARB_multisample
+GL_ARB_multitexture
+GL_ARB_point_parameters
+GL_ARB_occlusion_query
+GL_ARB_shadow
+GL_ARB_texture_border_clamp
+GL_ARB_texture_compression
+GL_ARB_texture_cube_map
+GL_ARB_texture_env_add
+GL_ARB_texture_env_combine
+GL_ARB_texture_env_crossbar
+GL_ARB_texture_env_dot3
+GL_ARB_texture_mirrored_repeat
+GL_ARB_transpose_matrix
+GL_ARB_vertex_buffer_object
+GL_ARB_vertex_program
+GL_ARB_window_pos
+GL_EXT_abgr
+GL_EXT_bgra
+GL_EXT_blend_color
+GL_EXT_blend_func_separate
+GL_EXT_blend_minmax
+GL_EXT_blend_subtract
+GL_EXT_compiled_vertex_array
+GL_EXT_draw_range_elements
+GL_EXT_fog_coord
+GL_EXT_multi_draw_arrays
+GL_EXT_packed_pixels
+GL_EXT_point_parameters
+GL_EXT_polygon_offset
+GL_EXT_rescale_normal
+GL_EXT_secondary_color
+GL_EXT_separate_specular_color
+GL_EXT_shadow_funcs
+GL_EXT_stencil_two_side
+GL_EXT_stencil_wrap
+GL_EXT_swap_control
+GL_EXT_texture3D
+GL_EXT_texture_edge_clamp
+GL_EXT_texture_env_add
+GL_EXT_texture_env_combine
+GL_EXT_texture_env_dot3
+GL_EXT_texture_filter_anisotropic
+GL_EXT_texture_lod_bias
+GL_EXT_texture_object
+GL_EXT_vertex_array
+GL_ATI_element_array
+GL_HP_occlusion_test
+GL_KTX_buffer_region
+GL_NV_blend_square
+GL_NV_occlusion_query
+GL_NV_point_sprite
+GL_SGIS_generate_mipmap
+GL_SGIS_multitexture
+GL_SGIS_texture_edge_clamp
+GL_SGIS_texture_lod
+GL_ARB_texture_non_power_of_two
+GL_WIN_swap_hint
+WGL_ARB_extensions_string
+WGL_EXT_swap_control
+WGL_ARB_extensions_string
+WGL_ARB_multisample
+WGL_ARB_pixel_format
+WGL_EXT_extensions_string
+WGL_EXT_pixel_format
+WGL_EXT_swap_control
+WGL_ARB_pbuffer
+WGL_ARB_render_texture
+
+
+GL_ARB_shader_objects : Not Supported
+
+
+Shader (Low Level)
+　GL_ARB_vertex_program : Supported
+　GL_ARB_fragment_program : Supported
+　GL_EXT_gpu_program_parameters : Not Found
+　GL_NV_vertex_program : Not Found
+　GL_NV_vertex_program1_1 : Not Found
+　GL_NV_vertex_program2 : Not Found
+　GL_NV_vertex_program2_option : Not Found
+　GL_NV_vertex_program3 : Not Found
+　GL_NV_vertex_program4 : Not Found
+　GL_NV_fragment_program : Not Found
+　GL_NV_fragment_program_option : Not Found
+　GL_NV_fragment_program2 : Not Found
+　GL_NV_fragment_program4 : Not Found
+　GL_NV_gpu_program4 : Not Found
+　GL_NV_gpu_program5 : Not Found
+　GL_NV_geometry_program4 : Not Found
+　GL_NV_fragment_program4 : Not Found
+　GL_NV_tessellation_program5 : Not Found

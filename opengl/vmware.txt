@@ -1,0 +1,248 @@
+Windows2000 in VMware 6.0.0
+VMware SVGA II (2012/02/17 ver 11.9.1.0)
+tools-windows-9.6.0.exe
+
+gl_caps.exe : 2014/02/01
+GL Vender : VMware, Inc.
+GL Renderer : Gallium 0.4 on SVGA3D; build: RELEASE;  
+GL Version : 2.1 Mesa 7.12-devel (git-d6c318e)
+GLSL Version : 1.20
+GLU Version : 1.2.2.0 Microsoft Corporation
+
+
+Display 800 x 600 : color 32 bits
+# 1, RGBA 8/8/8/0, Z 24, WIN, GL, CPOS
+# 2, RGBA 8/8/8/0, Z 24, WIN, GL, CPOS
+# 3, RGBA 8/8/8/0, Z 16, WIN, GL, CPOS
+# 4, RGBA 8/8/8/0, Z 16, WIN, GL, CPOS
+# 5, RGBA 8/8/8/0, Z 24, S 8, WIN, GL, CPOS
+# 6, RGBA 8/8/8/0, Z 24, S 8, WIN, GL, CPOS
+# 7, RGBA 8/8/8/0, db, Z 24, WIN, GL, SWCP, CPOS
+# 8, RGBA 8/8/8/0, db, Z 24, WIN, GL, SWCP, CPOS
+# 9, RGBA 8/8/8/0, db, Z 16, WIN, GL, SWCP, CPOS
+#10, RGBA 8/8/8/0, db, Z 16, WIN, GL, SWCP, CPOS
+#11, RGBA 8/8/8/0, db, Z 24, S 8, WIN, GL, SWCP, CPOS
+#12, RGBA 8/8/8/0, db, Z 24, S 8, WIN, GL, SWCP, CPOS
+#13, RGBA 5/6/5/0, Z 24, WIN, GL, CPOS
+#14, RGBA 5/6/5/0, Z 24, WIN, GL, CPOS
+#15, RGBA 5/6/5/0, Z 16, WIN, GL, CPOS
+#16, RGBA 5/6/5/0, Z 16, WIN, GL, CPOS
+#17, RGBA 5/6/5/0, Z 24, S 8, WIN, GL, CPOS
+#18, RGBA 5/6/5/0, Z 24, S 8, WIN, GL, CPOS
+#19, RGBA 5/6/5/0, db, Z 24, WIN, GL, SWCP, CPOS
+#20, RGBA 5/6/5/0, db, Z 24, WIN, GL, SWCP, CPOS
+#21, RGBA 5/6/5/0, db, Z 16, WIN, GL, SWCP, CPOS
+#22, RGBA 5/6/5/0, db, Z 16, WIN, GL, SWCP, CPOS
+#23, RGBA 5/6/5/0, db, Z 24, S 8, WIN, GL, SWCP, CPOS
+#24, RGBA 5/6/5/0, db, Z 24, S 8, WIN, GL, SWCP, CPOS
+#25, RGBA 8/8/8/8, Z 24, WIN, GL, CPOS
+#26, RGBA 8/8/8/8, Z 24, WIN, GL, CPOS
+#27, RGBA 8/8/8/8, Z 16, WIN, GL, CPOS
+#28, RGBA 8/8/8/8, Z 16, WIN, GL, CPOS
+#29, RGBA 8/8/8/8, Z 24, S 8, WIN, GL, CPOS
+#30, RGBA 8/8/8/8, Z 24, S 8, WIN, GL, CPOS
+#31, RGBA 8/8/8/8, db, Z 24, WIN, GL, SWCP, CPOS
+#32, RGBA 8/8/8/8, db, Z 24, WIN, GL, SWCP, CPOS
+#33, RGBA 8/8/8/8, db, Z 16, WIN, GL, SWCP, CPOS
+#34, RGBA 8/8/8/8, db, Z 16, WIN, GL, SWCP, CPOS
+#35, RGBA 8/8/8/8, db, Z 24, S 8, WIN, GL, SWCP, CPOS
+#36, RGBA 8/8/8/8, db, Z 24, S 8, WIN, GL, SWCP, CPOS
+#37, RGBA 8/8/8/0, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#38, RGBA 8/8/8/0, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#41, RGBA 8/8/8/8, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#42, RGBA 8/8/8/8, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#45, CI 32, Z 32, S 8, WIN, BMP, GDI, GL, GFMT
+#46, CI 32, Z 16, S 8, WIN, BMP, GDI, GL, GFMT
+#47, CI 32, db, Z 32, S 8, WIN, GL, GFMT, SWCP
+#48, CI 32, db, Z 16, S 8, WIN, GL, GFMT, SWCP
+#49, RGBA 8/8/8/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#50, RGBA 8/8/8/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#51, RGBA 8/8/8/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#52, RGBA 8/8/8/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#53, CI 24, Z 32, S 8, BMP, GDI, GL, GFMT
+#54, CI 24, Z 16, S 8, BMP, GDI, GL, GFMT
+#55, RGBA 5/5/5/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#56, RGBA 5/5/5/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#57, RGBA 5/5/5/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#58, RGBA 5/5/5/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#59, CI 16, Z 32, S 8, BMP, GDI, GL, GFMT
+#60, CI 16, Z 16, S 8, BMP, GDI, GL, GFMT
+#61, RGBA 3/3/2/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#62, RGBA 3/3/2/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#63, RGBA 3/3/2/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#64, RGBA 3/3/2/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#65, CI 8, Z 32, S 8, BMP, GDI, GL, GFMT
+#66, CI 8, Z 16, S 8, BMP, GDI, GL, GFMT
+#67, RGBA 1/1/1/0, Z 32, S 8, BMP, GDI, GL, GFMT
+#68, RGBA 1/1/1/0, Z 16, S 8, BMP, GDI, GL, GFMT
+#69, RGBA 1/1/1/8, Z 32, S 8, BMP, GDI, GL, GFMT
+#70, RGBA 1/1/1/8, Z 16, S 8, BMP, GDI, GL, GFMT
+#71, CI 4, Z 32, S 8, BMP, GDI, GL, GFMT
+#72, CI 4, Z 16, S 8, BMP, GDI, GL, GFMT
+
+
+GL_ARB_multisample
+GL_EXT_abgr
+GL_EXT_bgra
+GL_EXT_blend_color
+GL_EXT_blend_minmax
+GL_EXT_blend_subtract
+GL_EXT_copy_texture
+GL_EXT_polygon_offset
+GL_EXT_subtexture
+GL_EXT_texture_object
+GL_EXT_vertex_array
+GL_EXT_compiled_vertex_array
+GL_EXT_texture
+GL_EXT_texture3D
+GL_IBM_rasterpos_clip
+GL_ARB_point_parameters
+GL_EXT_draw_range_elements
+GL_EXT_packed_pixels
+GL_EXT_point_parameters
+GL_EXT_rescale_normal
+GL_EXT_separate_specular_color
+GL_EXT_texture_edge_clamp
+GL_SGIS_generate_mipmap
+GL_SGIS_texture_border_clamp
+GL_SGIS_texture_edge_clamp
+GL_SGIS_texture_lod
+GL_ARB_framebuffer_sRGB
+GL_ARB_multitexture
+GL_EXT_framebuffer_sRGB
+GL_IBM_multimode_draw_arrays
+GL_IBM_texture_mirrored_repeat
+GL_ARB_texture_cube_map
+GL_ARB_texture_env_add
+GL_ARB_transpose_matrix
+GL_EXT_blend_func_separate
+GL_EXT_fog_coord
+GL_EXT_multi_draw_arrays
+GL_EXT_secondary_color
+GL_EXT_texture_env_add
+GL_EXT_texture_filter_anisotropic
+GL_EXT_texture_lod_bias
+GL_INGR_blend_func_separate
+GL_NV_blend_square
+GL_NV_light_max_exponent
+GL_NV_texgen_reflection
+GL_NV_texture_env_combine4
+GL_SUN_multi_draw_arrays
+GL_ARB_texture_border_clamp
+GL_ARB_texture_compression
+GL_EXT_framebuffer_object
+GL_EXT_texture_env_dot3
+GL_MESA_window_pos
+GL_NV_packed_depth_stencil
+GL_NV_texture_rectangle
+GL_ARB_depth_texture
+GL_ARB_occlusion_query
+GL_ARB_shadow
+GL_ARB_texture_env_combine
+GL_ARB_texture_env_crossbar
+GL_ARB_texture_env_dot3
+GL_ARB_texture_mirrored_repeat
+GL_ARB_window_pos
+GL_EXT_stencil_two_side
+GL_EXT_texture_cube_map
+GL_APPLE_packed_pixels
+GL_APPLE_vertex_array_object
+GL_ARB_draw_buffers
+GL_ARB_fragment_program
+GL_ARB_fragment_shader
+GL_ARB_shader_objects
+GL_ARB_vertex_program
+GL_ARB_vertex_shader
+GL_ATI_draw_buffers
+GL_ATI_texture_env_combine3
+GL_ATI_texture_float
+GL_EXT_shadow_funcs
+GL_EXT_stencil_wrap
+GL_MESA_pack_invert
+GL_NV_primitive_restart
+GL_ARB_fragment_program_shadow
+GL_ARB_half_float_pixel
+GL_ARB_occlusion_query2
+GL_ARB_point_sprite
+GL_ARB_shading_language_100
+GL_ARB_sync
+GL_ARB_texture_non_power_of_two
+GL_ARB_vertex_buffer_object
+GL_ATI_blend_equation_separate
+GL_EXT_blend_equation_separate
+GL_OES_read_format
+GL_ARB_pixel_buffer_object
+GL_ARB_texture_float
+GL_ARB_texture_rectangle
+GL_EXT_pixel_buffer_object
+GL_EXT_texture_rectangle
+GL_EXT_texture_sRGB
+GL_ARB_framebuffer_object
+GL_EXT_framebuffer_blit
+GL_EXT_framebuffer_multisample
+GL_EXT_packed_depth_stencil
+GL_ARB_vertex_array_object
+GL_ATI_separate_stencil
+GL_EXT_gpu_program_parameters
+GL_EXT_texture_env_combine
+GL_EXT_texture_sRGB_decode
+GL_OES_EGL_image
+GL_ARB_copy_buffer
+GL_ARB_half_float_vertex
+GL_ARB_map_buffer_range
+GL_ARB_texture_swizzle
+GL_ARB_vertex_array_bgra
+GL_EXT_separate_shader_objects
+GL_EXT_texture_swizzle
+GL_EXT_vertex_array_bgra
+GL_ARB_draw_elements_base_vertex
+GL_ARB_explicit_attrib_location
+GL_ARB_fragment_coord_conventions
+GL_ARB_provoking_vertex
+GL_ARB_sampler_objects
+GL_EXT_provoking_vertex
+GL_ARB_robustness
+WGL_ARB_extensions_string
+WGL_ARB_multisample
+WGL_ARB_pbuffer
+WGL_ARB_pixel_format
+
+
+Low Level Shader
+　GL_ARB_vertex_program : Supported
+　GL_ARB_fragment_program : Supported
+　GL_EXT_gpu_program_parameters : Supported
+　GL_NV_vertex_program : Not Found
+　GL_NV_vertex_program1_1 : Not Found
+　GL_NV_vertex_program2 : Not Found
+　GL_NV_vertex_program2_option : Not Found
+　GL_NV_vertex_program3 : Not Found
+　GL_NV_vertex_program4 : Not Found
+　GL_NV_fragment_program : Not Found
+　GL_NV_fragment_program_option : Not Found
+　GL_NV_fragment_program2 : Not Found
+　GL_NV_fragment_program4 : Not Found
+　GL_NV_gpu_program4 : Not Found
+　GL_NV_gpu_program5 : Not Found
+　GL_NV_geometry_program4 : Not Found
+　GL_NV_fragment_program4 : Not Found
+　GL_NV_tessellation_program5 : Not Found
+GL_ARB_shader_objects
+　GL_ARB_vertex_shader : Supported
+　GL_ARB_fragment_shader : Supported
+　GL_ARB_geometry_shader4 : Not Found
+　GL_ARB_gpu_shader_fp64 : Not Found
+　GL_ARB_shader_subroutine : Not Found
+　GL_ATI_fragment_shader : Not Found
+　GL_ATI_text_fragment_shader : Not Found
+　GL_EXT_vertex_shader : Not Found
+　GL_EXT_geometry_shader4 : Not Found
+　GL_EXT_gpu_shader4 : Not Found
+　GL_EXT_gpu_shader5 : Not Found
+　GL_NV_texture_shader : Not Found
+　GL_NV_texture_shader2 : Not Found
+　GL_NV_texture_shader3 : Not Found
+　GL_NV_geometry_shader4 : Not Found
+　GL_NV_gpu_shader5 : Not Found
+
+

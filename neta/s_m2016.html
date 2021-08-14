@@ -1,0 +1,427 @@
+<HTML>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<TITLE>PC Memo</TITLE>
+</HEAD>
+<BODY BGCOLOR="#90B0C0" TEXT="#101010" VLINK="#5050A0">
+<FONT SIZE=8>
+<I>PC Memo</I><BR>
+</FONT>
+
+<BR>
+<A HREF="s_m2006.html">2006年</A>　<A HREF="s_m2007.html">2007年</A>　<A HREF="s_m2008.html">2008年</A>　<A HREF="s_m2009.html">2009年</A><BR>
+<A HREF="s_m2010.html">2010年</A>　<A HREF="s_m2011.html">2011年</A>
+　<A HREF="s_m2012.html">2012年</A>　<A HREF="s_m2013.html">2013年</A>　<A HREF="s_m2014.html">2014年</A>
+　<A HREF="s_m2015.html">2015年</A>　2016年　<A HREF="s_m2017.html">2017年</A>
+　<A HREF="s_m2018.html">2018年</A>　<A HREF="s_m2019.html">2019年</A>
+<A HREF="s_m2020.html">2020年</A>　<A HREF="s_m2021.html">2021年</A>
+
+<!--
+<BR><HR>
+2016/04/xx - <BR>
+<BR>
+<BR>
+-->
+<BR><HR>
+2016/12/27 - PS Vita のアナログスティック暴走<BR>
+<BR>
+気がついたら Vita の左アナログスティックを動かすと<BR>
+右への入力が勝手に入るようになっていた…<BR>
+上下に動かすと右上、右下になってしまって、アクションゲームは辛い。<BR>
+<BR>
+この症状が出て修理に出した人もいるようだが 100% 直るわけではないらしい。<BR>
+とりあえず、アナログスティックを２回グルグル回すと直るという情報が<BR>
+あったので試してみたけど直らない…。<BR>
+<BR>
+いろいろ試した結果、ゲームを終了して HOME 画面でアナログスティックを<BR>
+何度も時計周り、反時計回りで回していたら調整されたらしく、一応直った。<BR>
+グルグル２回だと少ないようで、10回くらいはグルグルした方がいいかも知れない。<BR>
+（多少良くなったと思ってもそのままグルグルを続けた方が直る率が高いかも。）<BR>
+<BR>
+でも、システムアップデートしたら調整情報（キャリブレーション）も<BR>
+リセットされたらしく症状が再発。それも上記の方法で一応解決。<BR>
+<BR>
+ちなみに PSP では「本体設定」→「本体情報」の画面で<BR>
+アナログスティックをグルグル回すと直るらしい。<BR>
+<BR>
+<BR><HR>
+2016/11/29 - 中国製スマートフォンにバックドア？<BR>
+<BR>
+Shanghai ADUPS Technology  製ファームウェアを採用したスマートフォンは<BR>
+バックドアが仕組まれているとニュース記事になっていた。<BR>
+<BR>
+ADUPS は中国の大手企業で、同社が開発したファームウェアを<BR>
+組み込んだスマートフォンはインターネット経由で<BR>
+ファームウェアのアップデートができるようになる。<BR>
+<BR>
+で、このファームウェアを採用しているとユーザーの位置情報や<BR>
+ユーザーの通話履歴、連絡先情報、および入力したテキストなどを収集し、<BR>
+72時間おきにバックドアから中国にあるサーバーに送信していたらしい。<BR>
+<BR>
+ADUPS はこの機能が中国市場向けに開発したもので、<BR>
+誤って他国向けのモデルに実装されたとしている。<BR>
+<BR>
+ADUPS のファームウェアは Huawei や ZTE といったメーカーが採用し、<BR>
+出荷数は７億台に上るらしい。<BR>
+<BR>
+ZTE や FREETEL は日本向けモデルにこの問題となるファームウェアは<BR>
+使われていないと Web サイト上で発表している。<BR>
+<BR>
+11月16日の一部報道に関して - ZTE Japan<BR>
+http://www.zte.co.jp/press_center/news/ztejapan/201611/t20161117_15445.html<BR>
+<BR>
+当社製品のFOTAアプリケーションについて FREETEL(フリーテル)<BR>
+https://blg.freetel.jp/news/16753.html<BR>
+<BR>
+<BR><HR>
+2016/08/09 - SSD の TRIM 対応２<BR>
+<BR>
+Windows7 から SSD の TRIMコマンドに対応している。<BR>
+エクスペリエンス インデックスのディスクの値が高いと SSD と認識するとかしないとか。<BR>
+<BR>
+とりあえずディスクの書き込みが減るようにハイバネとスワップ機能をオフにする。<BR>
+ハイバネはスリープ機能に関係しているのでスリープを使わないなら影響は少ないが、<BR>
+ノートPCではスリープの使い方によって影響する可能性がある。<BR>
+（スリープ中の電源切れ等）<BR>
+<BR>
+さらにデフラグのデフォルト設定が１週間に一度になっているのでこれもオフにする。<BR>
+<BR>
+Windows8 以降では SSD に対してデフラグを実行しないようになっていて、<BR>
+デフラグを実行すると TRIM コマンド手動実行したことになる。<BR>
+<BR>
+SSD はランダムアクセスがハードディスクのように極端に遅くならないので<BR>
+デフラグがあってもそれほど遅くならないと思われる。<BR>
+<BR>
+Windows の TRIM が有効になっているかどうかの確認は、<BR>
+管理者権限で実行したコマンドプロンプトから<BR>
+fsutil behavior query DisableDeleteNotify<BR>
+と実行して結果がゼロなら有効になっている。<BR>
+<BR>
+（Disable が 0 だから「無効になっていない」で有効ってややこしい…）<BR>
+<BR>
+
+<BR><HR>
+2016/08/02 - SSD の TRIM 対応<BR>
+<BR>
+SSD の TRIM を有効にするには Windows7 以降のOSと対応ドライバが必要。<BR>
+さらにPC本体の SATA の設定モードが「AHCI」になっている必要がある。<BR>
+<BR>
+SATA のモードが 「IDE」や「RAID」になっていると TRIM コマンドは無効になる。<BR>
+<BR>
+PCによっては「RAID」設定でもストレージが１つなら RAID は無効なので<BR>
+TRIM は有効になるという話しもある。（インテル系？）<BR>
+<BR>
+ノートPCでもメーカーによっては標準設定で「RAID」になっている場合がある。<BR>
+OSインストール後にこの設定を変更するとブルースクリーンで起動しなくなる。<BR>
+<BR>
+SATAのモード変更にはレジストリ書き換え→ドライバ削除→電源オフ→<BR>
+電源オン→BIOS(UEFI)で設定変更→再起動→ドライバインストールという手順が必要。<BR>
+（「IDE」から「AHCI」に変更する手順とほぼ同じ。）<BR>
+<BR>
+
+<BR><HR>
+2016/04/17 - HDD 500GB の比較<BR>
+<BR>
+2.5インチ 500GB の比較。<BR>
+<BR>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR BGCOLOR="#eeeff1">
+<TD>-</TD>
+<TD>WD5000LPLX</TD>
+<TD>WD5000LPCX</TD>
+<TD>WD5000LPVX</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">シリーズ</TD>
+<TD>WD Black</TD>
+<TD>WD Blue</TD>
+<TD>WD Blue</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">容量</TD>
+<TD>500 GB</TD>
+<TD>500 GB</TD>
+<TD>500 GB</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">I/F</TD>
+<TD>SATA 6 Gb/s</TD>
+<TD>SATA 6 Gb/s</TD>
+<TD>SATA 6 Gb/s</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">速度</TD>
+<TD>? MB/s</TD>
+<TD>147 MB/s</TD>
+<TD>147 MB/s</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">キャッシュ</TD>
+<TD>32 MB/s</TD>
+<TD>16 MB/s</TD>
+<TD>8 MB/s</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">平均待ち時間</TD>
+<TD>? ms</TD>
+<TD>5.5 ms</TD>
+<TD>5.5 ms</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">回転速度</TD>
+<TD>7200 RPM</TD>
+<TD>5400 RPM</TD>
+<TD>5400 RPM</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">動作音（アイドル）</TD>
+<TD>23 dBA</TD>
+<TD>17 dBA</TD>
+<TD>17 dBA</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">動作音（シーク）</TD>
+<TD>25 dBA</TD>
+<TD>22 dBA</TD>
+<TD>22 dBA</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">重量</TD>
+<TD>0.092 kg</TD>
+<TD>0.09 kg</TD>
+<TD>0.09 kg</TD>
+</TR>
+<TR BGCOLOR="#FFFFCC">
+<TD BGCOLOR="#eeeff1">備考</TD>
+<TD>-</TD>
+<TD>-</TD>
+<TD>旧製品</TD>
+</TR>
+</TABLE>
+<BR>
+
+<BR><HR>
+2016/02/09 - 静音マウス<BR>
+<BR>
+今使っているマウスのクリックボタンが劣化して「ガチッ」っとすごい音が出るので<BR>
+新しい静音 BlueLED 有線式マウスをゲット。<BR>
+<BR>
+対応OSが Windows 7 / 8 / 8.1 / Mac OS X 10.4～ / PS3 となっているけど、<BR>
+汎用デバイスなので Vista でも接続するだけでドライバが自動的に入った。<BR>
+<BR>
+クリック音は「ポク」って感じ。ホイールは静か。<BR>
+クリック感は普通のマウスと比べるとやや物足りない感じもする。<BR>
+ホイールの回転は普通。ホイールのクリックは固め。<BR>
+<BR>
+静音マウスは普通のマウスに比べて耐久性が低いと言われる事が多いから<BR>
+どのくらい持つのか試してみないと。<BR>
+<BR>
+
+<BR><HR>
+2016/01/01 - インテル統合グラフィックのドライバ<BR>
+<BR>
+最近のインテル統合グラフィック。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>製品名</td>
+<td>コア</td>
+<td>GPU</td>
+<td>API</td>
+<td>備考</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Chipset 3x<BR></td>
+<td>Bearlake</td>
+<td>Intel Graphics Media Accelerator 3100<BR>Intel Graphics Media Accelerator X3500</td>
+<td>DirectX 9.0c , OpenGL 2.0</td>
+<td>略称は GMA 3100</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Chipset 4x<BR></td>
+<td>Eaglelake</td>
+<td>Intel Graphics Media Accelerator 4500<BR>Intel Graphics Media Accelerator X4500</td>
+<td>DirectX 10 , OpenGL 2.1</td>
+<td>略称は GMA 4500</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Core i3,i5,i7 xxx<BR></td>
+<td>Clarkdale<BR>Arrandale</td>
+<td>HD Graphics</td>
+<td>DirectX 10.1 , OpenGL 2.1</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Core i3,i5,i7 2xxx<BR></td>
+<td>SandyBridge</td>
+<td>HD Graphics 2000<BR>HD Graphics 3000</td>
+<td>DirectX 10.1 , OpenGL 3.0</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Core i3,i5,i7 3xxx</td>
+<td>IvyBridge</td>
+<td>HD Graphics 2500<BR>HD Graphics 4000</td>
+<td>DirectX 11 , OpenGL 4.0</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Core i3,i5,i7 4xxx</td>
+<td>Haswell</td>
+<td>HD Graphics 4600<BR>Iris Pro Graphics 5200</td>
+<td>DirectX 11.2 , OpenGL 4.3</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Core i3,i5,i7 5xxx</td>
+<td>Broadwell</td>
+<td>Iris Pro Graphics 6200</td>
+<td>DirectX 11.2 , OpenGL 4.3</td>
+<td>-</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Core i3,i5,i7 6xxx</td>
+<td>Skylake</td>
+<td>HD Graphics 510<BR>HD Graphics 530</td>
+<td>DirectX 12 , OpenGL 4.4</td>
+<td>-</td>
+</tr>
+</table>
+<BR>
+
+<BR>
+OS別のドライバの最終更新日。<BR>
+<BR>
+<table border="0" cellpadding="1">
+<tr bgcolor="#eeeff1">
+<td>コア</td>
+<td>XP 32</td>
+<td>XP 64</td>
+<td>Vista 32</td>
+<td>Vista 64</td>
+<td>7 32</td>
+<td>7 64</td>
+<td>8 32</td>
+<td>8 64</td>
+<td>10 32</td>
+<td>10 64</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Bearlake<BR></td>
+<td>2010.01</td>
+<td>2010.01</td>
+<td>2009.03</td>
+<td>2009.03</td>
+<td>2009.10</td>
+<td>2009.10</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Eaglelake<BR></td>
+<td>2010.01</td>
+<td>2010.01</td>
+<td>2009.03</td>
+<td>2009.03</td>
+<td>2012.11</td>
+<td>2012.11</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Clarkdale<BR>Arrandale<BR></td>
+<td>2013.02</td>
+<td>2013.02</td>
+<td>2012.01</td>
+<td>2012.01</td>
+<td>?</td>
+<td>?</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">SandyBridge<BR></td>
+<td>2013.02</td>
+<td>2013.02</td>
+<td>2012.01</td>
+<td>2012.01</td>
+<td>?</td>
+<td>?</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">IvyBridge</td>
+<td>?</td>
+<td>?</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Haswell</td>
+<td>?</td>
+<td>?</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Broadwell</td>
+<td>?</td>
+<td>?</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+</tr>
+<tr bgcolor="#FFFFCC">
+<td bgcolor="#eeeff1">Skylake</td>
+<td>?</td>
+<td>?</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+<td>2015.10</td>
+</tr>
+</table>
+<BR>
+※1 XP 用のドライバは Vista でも使える場合がある。<BR>
+※2 Vista 用のドライバは 7 でも使える場合がある。<BR>
+※3 インテルがドライバを配布していなくても Windows Update にドライバがある。<BR>
+　　ただし、DirectX は使えても OpenGL は無効になっている。<BR>
+<BR>
+
+<BR><HR><BR>
+
+<BR><BR><BR>
+<A HREF="../index.html" TARGET="_top">Back</A><BR>
+<BR><BR><BR>
+</BODY>
+</HTML>
